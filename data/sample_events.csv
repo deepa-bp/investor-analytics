@@ -1,0 +1,1963 @@
+event_id,investor_id,date,event,detail
+E00001,INV-10001,2022-12-10,First website visit,Insights article
+E00002,INV-10001,2022-12-16,Used portfolio-fit tool,
+E00003,INV-10001,2022-12-20,Registered,Website sign-up
+E00004,INV-10001,2022-12-28,Eligibility verified,Accredited
+E00005,INV-10001,2023-01-03,IR meeting,
+E00006,INV-10001,2023-01-11,Subscription started,Series B
+E00007,INV-10001,2023-01-19,Funded,"$645,000"
+E00008,INV-10001,2023-09-04,Top-up,"$170,000"
+E00009,INV-10001,2026-05-21,Redemption requested,Performance drawdown
+E00010,INV-10001,2026-05-28,Fully redeemed,"$975,315"
+E00011,INV-10002,2022-12-12,First website visit,Insights article
+E00012,INV-10002,2022-12-21,Used portfolio-fit tool,
+E00013,INV-10002,2022-12-26,Registered,Website sign-up
+E00014,INV-10002,2023-01-06,Eligibility verified,QEP
+E00015,INV-10002,2023-01-15,IR meeting,
+E00016,INV-10002,2023-01-29,Subscription started,Series B
+E00017,INV-10002,2023-02-09,Funded,"$1,175,000"
+E00018,INV-10002,2023-07-06,Top-up,"$610,000"
+E00019,INV-10003,2023-01-25,First website visit,Insights article
+E00020,INV-10003,2023-02-03,Used portfolio-fit tool,
+E00021,INV-10003,2023-02-08,Registered,Website sign-up
+E00022,INV-10003,2023-02-19,Eligibility verified,Accredited
+E00023,INV-10003,2023-02-28,IR meeting,
+E00024,INV-10003,2023-03-13,Subscription started,Series B
+E00025,INV-10003,2023-03-24,Funded,"$355,000"
+E00026,INV-10003,2024-11-13,Redemption requested,Rebalancing
+E00027,INV-10003,2024-11-28,Fully redeemed,"$377,534"
+E00028,INV-10004,2023-01-07,First website visit,Insights article
+E00029,INV-10004,2023-01-21,Used portfolio-fit tool,
+E00030,INV-10004,2023-01-28,Registered,Website sign-up
+E00031,INV-10004,2023-02-13,Eligibility verified,Accredited
+E00032,INV-10004,2023-02-27,IR meeting,
+E00033,INV-10004,2023-03-16,Subscription started,Series B
+E00034,INV-10004,2023-04-01,Funded,"$330,000"
+E00035,INV-10004,2023-06-26,Redemption requested,Rebalancing
+E00036,INV-10004,2023-06-28,Fully redeemed,"$323,396"
+E00037,INV-10005,2023-05-06,First website visit,Insights article
+E00038,INV-10005,2023-05-14,Used portfolio-fit tool,
+E00039,INV-10005,2023-05-19,Registered,Website sign-up
+E00040,INV-10005,2023-05-29,Eligibility verified,Accredited
+E00041,INV-10005,2023-06-06,IR meeting,
+E00042,INV-10005,2023-06-18,Subscription started,Series B
+E00043,INV-10005,2023-06-28,Funded,"$315,000"
+E00044,INV-10006,2023-05-04,First website visit,Insights article
+E00045,INV-10006,2023-05-18,Used portfolio-fit tool,
+E00046,INV-10006,2023-05-25,Registered,Website sign-up
+E00047,INV-10006,2023-06-10,Eligibility verified,Accredited
+E00048,INV-10006,2023-06-24,IR meeting,
+E00049,INV-10006,2023-07-11,Subscription started,Series B
+E00050,INV-10006,2023-07-27,Funded,"$245,000"
+E00051,INV-10006,2025-12-12,Top-up,"$75,000"
+E00052,INV-10007,2023-05-22,First website visit,Insights article
+E00053,INV-10007,2023-05-28,Used portfolio-fit tool,
+E00054,INV-10007,2023-06-01,Registered,Website sign-up
+E00055,INV-10007,2023-06-09,Eligibility verified,Accredited
+E00056,INV-10007,2023-06-15,IR meeting,
+E00057,INV-10007,2023-06-24,Subscription started,Series B
+E00058,INV-10007,2023-07-02,Funded,"$110,000"
+E00059,INV-10007,2023-11-25,Redemption requested,Performance drawdown
+E00060,INV-10007,2023-11-28,Fully redeemed,"$119,394"
+E00061,INV-10008,2023-06-13,First website visit,Insights article
+E00062,INV-10008,2023-06-23,Used portfolio-fit tool,
+E00063,INV-10008,2023-06-28,Registered,Website sign-up
+E00064,INV-10008,2023-07-10,Eligibility verified,Accredited
+E00065,INV-10008,2023-07-20,IR meeting,
+E00066,INV-10008,2023-08-03,Subscription started,Series B
+E00067,INV-10008,2023-08-15,Funded,"$425,000"
+E00068,INV-10009,2023-09-13,First website visit,Insights article
+E00069,INV-10009,2023-09-20,Used portfolio-fit tool,
+E00070,INV-10009,2023-09-23,Registered,Website sign-up
+E00071,INV-10009,2023-10-01,Eligibility verified,Accredited
+E00072,INV-10009,2023-10-08,IR meeting,
+E00073,INV-10009,2023-10-18,Subscription started,Series B
+E00074,INV-10009,2023-10-26,Funded,"$630,000"
+E00075,INV-10010,2023-10-18,First website visit,Insights article
+E00076,INV-10010,2023-10-21,Used portfolio-fit tool,
+E00077,INV-10010,2023-10-23,Registered,Website sign-up
+E00078,INV-10010,2023-10-27,Eligibility verified,Accredited
+E00079,INV-10010,2023-10-30,IR meeting,
+E00080,INV-10010,2023-11-04,Subscription started,Series B
+E00081,INV-10010,2023-11-08,Funded,"$430,000"
+E00082,INV-10010,2024-06-24,Top-up,"$230,000"
+E00083,INV-10010,2026-02-01,Redemption requested,Performance drawdown
+E00084,INV-10010,2026-02-28,Fully redeemed,"$718,041"
+E00085,INV-10011,2023-09-18,First website visit,Insights article
+E00086,INV-10011,2023-09-26,Used portfolio-fit tool,
+E00087,INV-10011,2023-09-30,Registered,Website sign-up
+E00088,INV-10011,2023-10-10,Eligibility verified,Accredited
+E00089,INV-10011,2023-10-18,IR meeting,
+E00090,INV-10011,2023-10-29,Subscription started,Series B
+E00091,INV-10011,2023-11-08,Funded,"$160,000"
+E00092,INV-10012,2023-11-21,First website visit,Insights article
+E00093,INV-10012,2023-11-29,Used portfolio-fit tool,
+E00094,INV-10012,2023-12-03,Registered,Website sign-up
+E00095,INV-10012,2023-12-12,Eligibility verified,QEP
+E00096,INV-10012,2023-12-20,IR meeting,
+E00097,INV-10012,2023-12-30,Subscription started,Series B
+E00098,INV-10012,2024-01-08,Funded,"$335,000"
+E00099,INV-10012,2024-02-08,Redemption requested,Estate or other
+E00100,INV-10012,2024-02-28,Fully redeemed,"$345,032"
+E00101,INV-10013,2023-12-24,First website visit,Insights article
+E00102,INV-10013,2024-01-01,Used portfolio-fit tool,
+E00103,INV-10013,2024-01-06,Registered,Website sign-up
+E00104,INV-10013,2024-01-16,Eligibility verified,Accredited
+E00105,INV-10013,2024-01-24,IR meeting,
+E00106,INV-10013,2024-02-05,Subscription started,Series B
+E00107,INV-10013,2024-02-15,Funded,"$360,000"
+E00108,INV-10013,2026-04-24,Redemption requested,Liquidity need
+E00109,INV-10013,2026-04-28,Fully redeemed,"$397,568"
+E00110,INV-10014,2023-12-09,First website visit,Insights article
+E00111,INV-10014,2023-12-26,Used portfolio-fit tool,
+E00112,INV-10014,2024-01-04,Registered,Website sign-up
+E00113,INV-10014,2024-01-25,Eligibility verified,Accredited
+E00114,INV-10014,2024-02-11,IR meeting,
+E00115,INV-10014,2024-03-03,Subscription started,Series B
+E00116,INV-10014,2024-03-24,Funded,"$215,000"
+E00117,INV-10014,2024-08-15,Top-up,"$115,000"
+E00118,INV-10015,2023-12-24,First website visit,Insights article
+E00119,INV-10015,2024-01-05,Used portfolio-fit tool,
+E00120,INV-10015,2024-01-12,Registered,Website sign-up
+E00121,INV-10015,2024-01-27,Eligibility verified,Accredited
+E00122,INV-10015,2024-02-08,IR meeting,
+E00123,INV-10015,2024-02-24,Subscription started,Series B
+E00124,INV-10015,2024-03-10,Funded,"$470,000"
+E00125,INV-10015,2025-10-19,Top-up,"$165,000"
+E00126,INV-10015,2026-03-22,Redemption requested,Rebalancing
+E00127,INV-10015,2026-03-28,Fully redeemed,"$654,144"
+E00128,INV-10016,2024-03-08,First website visit,Insights article
+E00129,INV-10016,2024-03-21,Used portfolio-fit tool,
+E00130,INV-10016,2024-03-27,Registered,Website sign-up
+E00131,INV-10016,2024-04-11,Eligibility verified,Accredited
+E00132,INV-10016,2024-04-24,IR meeting,
+E00133,INV-10016,2024-05-10,Subscription started,Series B
+E00134,INV-10016,2024-05-25,Funded,"$135,000"
+E00135,INV-10017,2024-04-16,First website visit,Insights article
+E00136,INV-10017,2024-04-26,Used portfolio-fit tool,
+E00137,INV-10017,2024-05-02,Registered,Website sign-up
+E00138,INV-10017,2024-05-14,Eligibility verified,Accredited
+E00139,INV-10017,2024-05-24,IR meeting,
+E00140,INV-10017,2024-06-07,Subscription started,Series B
+E00141,INV-10017,2024-06-19,Funded,"$190,000"
+E00142,INV-10018,2024-04-22,First website visit,Insights article
+E00143,INV-10018,2024-05-07,Used portfolio-fit tool,
+E00144,INV-10018,2024-05-15,Registered,Website sign-up
+E00145,INV-10018,2024-06-02,Eligibility verified,Accredited
+E00146,INV-10018,2024-06-17,IR meeting,
+E00147,INV-10018,2024-07-06,Subscription started,Series B
+E00148,INV-10018,2024-07-24,Funded,"$280,000"
+E00149,INV-10018,2026-03-24,Top-up,"$160,000"
+E00150,INV-10018,2026-04-19,Top-up,"$125,000"
+E00151,INV-10019,2024-04-30,First website visit,Insights article
+E00152,INV-10019,2024-05-13,Used portfolio-fit tool,
+E00153,INV-10019,2024-05-19,Registered,Website sign-up
+E00154,INV-10019,2024-06-03,Eligibility verified,Accredited
+E00155,INV-10019,2024-06-16,IR meeting,
+E00156,INV-10019,2024-07-03,Subscription started,Series B
+E00157,INV-10019,2024-07-18,Funded,"$150,000"
+E00158,INV-10020,2024-09-02,First website visit,Insights article
+E00159,INV-10020,2024-09-09,Used portfolio-fit tool,
+E00160,INV-10020,2024-09-12,Registered,Website sign-up
+E00161,INV-10020,2024-09-20,Eligibility verified,Accredited
+E00162,INV-10020,2024-09-27,IR meeting,
+E00163,INV-10020,2024-10-06,Subscription started,Series B
+E00164,INV-10020,2024-10-14,Funded,"$405,000"
+E00165,INV-10020,2026-09-27,Top-up,"$130,000"
+E00166,INV-10021,2024-12-07,First website visit,Insights article
+E00167,INV-10021,2024-12-10,Used portfolio-fit tool,
+E00168,INV-10021,2024-12-11,Registered,Website sign-up
+E00169,INV-10021,2024-12-14,Eligibility verified,Accredited
+E00170,INV-10021,2024-12-17,IR meeting,
+E00171,INV-10021,2024-12-23,Subscription started,Series B
+E00172,INV-10021,2024-12-26,Funded,"$195,000"
+E00173,INV-10021,2026-05-23,Top-up,"$95,000"
+E00174,INV-10022,2024-11-19,First website visit,Insights article
+E00175,INV-10022,2024-11-22,Used portfolio-fit tool,
+E00176,INV-10022,2024-11-23,Registered,Website sign-up
+E00177,INV-10022,2024-11-26,Eligibility verified,Accredited
+E00178,INV-10022,2024-11-29,IR meeting,
+E00179,INV-10022,2024-12-05,Subscription started,Series B
+E00180,INV-10022,2024-12-08,Funded,"$300,000"
+E00181,INV-10022,2026-08-25,Top-up,"$160,000"
+E00182,INV-10023,2025-01-03,First website visit,Insights article
+E00183,INV-10023,2025-01-14,Used portfolio-fit tool,
+E00184,INV-10023,2025-01-20,Registered,Website sign-up
+E00185,INV-10023,2025-02-02,Eligibility verified,Accredited
+E00186,INV-10023,2025-02-13,IR meeting,
+E00187,INV-10023,2025-02-27,Subscription started,Series B
+E00188,INV-10023,2025-03-12,Funded,"$195,000"
+E00189,INV-10023,2025-11-28,Top-up,"$105,000"
+E00190,INV-10023,2026-03-27,Redemption requested,Rebalancing
+E00191,INV-10023,2026-03-28,Fully redeemed,"$315,102"
+E00192,INV-10024,2024-11-28,First website visit,Insights article
+E00193,INV-10024,2024-12-14,Used portfolio-fit tool,
+E00194,INV-10024,2024-12-22,Registered,Website sign-up
+E00195,INV-10024,2025-01-10,Eligibility verified,Accredited
+E00196,INV-10024,2025-01-26,IR meeting,
+E00197,INV-10024,2025-02-15,Subscription started,Series B
+E00198,INV-10024,2025-03-06,Funded,"$400,000"
+E00199,INV-10025,2025-02-25,First website visit,Insights article
+E00200,INV-10025,2025-03-01,Used portfolio-fit tool,
+E00201,INV-10025,2025-03-03,Registered,Website sign-up
+E00202,INV-10025,2025-03-07,Eligibility verified,Accredited
+E00203,INV-10025,2025-03-11,IR meeting,
+E00204,INV-10025,2025-03-17,Subscription started,Series B
+E00205,INV-10025,2025-03-21,Funded,"$210,000"
+E00206,INV-10026,2025-03-23,First website visit,Insights article
+E00207,INV-10026,2025-03-28,Used portfolio-fit tool,
+E00208,INV-10026,2025-03-31,Registered,Website sign-up
+E00209,INV-10026,2025-04-06,Eligibility verified,Accredited
+E00210,INV-10026,2025-04-11,IR meeting,
+E00211,INV-10026,2025-04-20,Subscription started,Series B
+E00212,INV-10026,2025-04-26,Funded,"$340,000"
+E00213,INV-10026,2026-05-11,Top-up,"$145,000"
+E00214,INV-10027,2025-01-23,First website visit,Insights article
+E00215,INV-10027,2025-02-09,Used portfolio-fit tool,
+E00216,INV-10027,2025-02-18,Registered,Website sign-up
+E00217,INV-10027,2025-03-11,Eligibility verified,Accredited
+E00218,INV-10027,2025-03-28,IR meeting,
+E00219,INV-10027,2025-04-19,Subscription started,Series B
+E00220,INV-10027,2025-05-10,Funded,"$95,000"
+E00221,INV-10028,2025-04-22,First website visit,Insights article
+E00222,INV-10028,2025-04-30,Used portfolio-fit tool,
+E00223,INV-10028,2025-05-04,Registered,Website sign-up
+E00224,INV-10028,2025-05-14,Eligibility verified,QEP
+E00225,INV-10028,2025-05-22,IR meeting,
+E00226,INV-10028,2025-06-02,Subscription started,Series B
+E00227,INV-10028,2025-06-12,Funded,"$415,000"
+E00228,INV-10029,2025-04-17,First website visit,Insights article
+E00229,INV-10029,2025-04-25,Used portfolio-fit tool,
+E00230,INV-10029,2025-04-29,Registered,Website sign-up
+E00231,INV-10029,2025-05-08,Eligibility verified,Accredited
+E00232,INV-10029,2025-05-16,IR meeting,
+E00233,INV-10029,2025-05-27,Subscription started,Series B
+E00234,INV-10029,2025-06-05,Funded,"$515,000"
+E00235,INV-10029,2025-11-13,Top-up,"$270,000"
+E00236,INV-10030,2025-05-24,First website visit,Insights article
+E00237,INV-10030,2025-05-29,Used portfolio-fit tool,
+E00238,INV-10030,2025-06-01,Registered,Website sign-up
+E00239,INV-10030,2025-06-07,Eligibility verified,Accredited
+E00240,INV-10030,2025-06-12,IR meeting,
+E00241,INV-10030,2025-06-19,Subscription started,Series B
+E00242,INV-10030,2025-06-25,Funded,"$585,000"
+E00243,INV-10030,2026-03-10,Redemption requested,Rebalancing
+E00244,INV-10030,2026-03-28,Fully redeemed,"$569,557"
+E00245,INV-10031,2025-05-10,First website visit,Insights article
+E00246,INV-10031,2025-05-15,Used portfolio-fit tool,
+E00247,INV-10031,2025-05-18,Registered,Website sign-up
+E00248,INV-10031,2025-05-24,Eligibility verified,Accredited
+E00249,INV-10031,2025-05-29,IR meeting,
+E00250,INV-10031,2025-06-06,Subscription started,Series B
+E00251,INV-10031,2025-06-12,Funded,"$430,000"
+E00252,INV-10031,2025-11-20,Top-up,"$110,000"
+E00253,INV-10031,2026-01-11,Top-up,"$255,000"
+E00254,INV-10031,2026-04-18,Top-up,"$125,000"
+E00255,INV-10032,2025-05-20,First website visit,Insights article
+E00256,INV-10032,2025-05-25,Used portfolio-fit tool,
+E00257,INV-10032,2025-05-28,Registered,Website sign-up
+E00258,INV-10032,2025-06-03,Eligibility verified,Accredited
+E00259,INV-10032,2025-06-08,IR meeting,
+E00260,INV-10032,2025-06-17,Subscription started,Series B
+E00261,INV-10032,2025-06-23,Funded,"$355,000"
+E00262,INV-10033,2025-04-15,First website visit,Insights article
+E00263,INV-10033,2025-04-24,Used portfolio-fit tool,
+E00264,INV-10033,2025-04-29,Registered,Website sign-up
+E00265,INV-10033,2025-05-10,Eligibility verified,Accredited
+E00266,INV-10033,2025-05-19,IR meeting,
+E00267,INV-10033,2025-06-02,Subscription started,Series B
+E00268,INV-10033,2025-06-13,Funded,"$490,000"
+E00269,INV-10034,2025-05-15,First website visit,Insights article
+E00270,INV-10034,2025-05-23,Used portfolio-fit tool,
+E00271,INV-10034,2025-05-28,Registered,Website sign-up
+E00272,INV-10034,2025-06-07,Eligibility verified,Accredited
+E00273,INV-10034,2025-06-15,IR meeting,
+E00274,INV-10034,2025-06-27,Subscription started,Series B
+E00275,INV-10034,2025-07-07,Funded,"$610,000"
+E00276,INV-10035,2025-05-30,First website visit,Insights article
+E00277,INV-10035,2025-06-10,Used portfolio-fit tool,
+E00278,INV-10035,2025-06-15,Registered,Website sign-up
+E00279,INV-10035,2025-06-28,Eligibility verified,Accredited
+E00280,INV-10035,2025-07-09,IR meeting,
+E00281,INV-10035,2025-07-23,Subscription started,Series B
+E00282,INV-10035,2025-08-05,Funded,"$245,000"
+E00283,INV-10036,2025-07-01,First website visit,Insights article
+E00284,INV-10036,2025-07-06,Used portfolio-fit tool,
+E00285,INV-10036,2025-07-09,Registered,Website sign-up
+E00286,INV-10036,2025-07-15,Eligibility verified,QEP
+E00287,INV-10036,2025-07-20,IR meeting,
+E00288,INV-10036,2025-07-27,Subscription started,Series B
+E00289,INV-10036,2025-08-02,Funded,"$235,000"
+E00290,INV-10036,2026-03-24,Top-up,"$115,000"
+E00291,INV-10037,2025-08-21,First website visit,Insights article
+E00292,INV-10037,2025-08-30,Used portfolio-fit tool,
+E00293,INV-10037,2025-09-03,Registered,Website sign-up
+E00294,INV-10037,2025-09-13,Eligibility verified,Accredited
+E00295,INV-10037,2025-09-22,IR meeting,
+E00296,INV-10037,2025-10-04,Subscription started,Series B
+E00297,INV-10037,2025-10-14,Funded,"$395,000"
+E00298,INV-10037,2026-01-21,Redemption requested,Liquidity need
+E00299,INV-10037,2026-01-28,Fully redeemed,"$406,927"
+E00300,INV-10038,2025-08-24,First website visit,Insights article
+E00301,INV-10038,2025-08-31,Used portfolio-fit tool,
+E00302,INV-10038,2025-09-04,Registered,Website sign-up
+E00303,INV-10038,2025-09-13,Eligibility verified,Accredited
+E00304,INV-10038,2025-09-20,IR meeting,
+E00305,INV-10038,2025-10-01,Subscription started,Series B
+E00306,INV-10038,2025-10-10,Funded,"$165,000"
+E00307,INV-10039,2025-09-24,First website visit,Insights article
+E00308,INV-10039,2025-09-27,Used portfolio-fit tool,
+E00309,INV-10039,2025-09-29,Registered,Website sign-up
+E00310,INV-10039,2025-10-03,Eligibility verified,Accredited
+E00311,INV-10039,2025-10-06,IR meeting,
+E00312,INV-10039,2025-10-13,Subscription started,Series B
+E00313,INV-10039,2025-10-17,Funded,"$110,000"
+E00314,INV-10039,2026-07-14,Top-up,"$65,000"
+E00315,INV-10040,2025-09-22,First website visit,Insights article
+E00316,INV-10040,2025-09-27,Used portfolio-fit tool,
+E00317,INV-10040,2025-09-30,Registered,Website sign-up
+E00318,INV-10040,2025-10-06,Eligibility verified,Accredited
+E00319,INV-10040,2025-10-11,IR meeting,
+E00320,INV-10040,2025-10-19,Subscription started,Series B
+E00321,INV-10040,2025-10-25,Funded,"$225,000"
+E00322,INV-10041,2025-11-19,First website visit,Insights article
+E00323,INV-10041,2025-11-25,Used portfolio-fit tool,
+E00324,INV-10041,2025-11-28,Registered,Website sign-up
+E00325,INV-10041,2025-12-05,Eligibility verified,Accredited
+E00326,INV-10041,2025-12-11,IR meeting,
+E00327,INV-10041,2025-12-21,Subscription started,Series B
+E00328,INV-10041,2025-12-28,Funded,"$235,000"
+E00329,INV-10042,2025-11-13,First website visit,Insights article
+E00330,INV-10042,2025-11-17,Used portfolio-fit tool,
+E00331,INV-10042,2025-11-20,Registered,Website sign-up
+E00332,INV-10042,2025-11-25,Eligibility verified,Accredited
+E00333,INV-10042,2025-11-29,IR meeting,
+E00334,INV-10042,2025-12-07,Subscription started,Series B
+E00335,INV-10042,2025-12-12,Funded,"$235,000"
+E00336,INV-10043,2025-12-12,First website visit,Insights article
+E00337,INV-10043,2025-12-24,Used portfolio-fit tool,
+E00338,INV-10043,2025-12-30,Registered,Website sign-up
+E00339,INV-10043,2026-01-13,Eligibility verified,Accredited
+E00340,INV-10043,2026-01-25,IR meeting,
+E00341,INV-10043,2026-02-10,Subscription started,Series B
+E00342,INV-10043,2026-02-24,Funded,"$350,000"
+E00343,INV-10043,2026-08-08,Top-up,"$150,000"
+E00344,INV-10044,2026-01-11,First website visit,Insights article
+E00345,INV-10044,2026-01-19,Used portfolio-fit tool,
+E00346,INV-10044,2026-01-23,Registered,Website sign-up
+E00347,INV-10044,2026-02-02,Eligibility verified,Accredited
+E00348,INV-10044,2026-02-10,IR meeting,
+E00349,INV-10044,2026-02-20,Subscription started,Series B
+E00350,INV-10044,2026-03-02,Funded,"$340,000"
+E00351,INV-10045,2026-01-31,First website visit,Insights article
+E00352,INV-10045,2026-02-17,Used portfolio-fit tool,
+E00353,INV-10045,2026-02-25,Registered,Website sign-up
+E00354,INV-10045,2026-03-17,Eligibility verified,Accredited
+E00355,INV-10045,2026-04-03,IR meeting,
+E00356,INV-10045,2026-04-24,Subscription started,Series B
+E00357,INV-10045,2026-05-14,Funded,"$325,000"
+E00358,INV-10045,2026-07-27,Redemption requested,Estate or other
+E00359,INV-10045,2026-07-28,Fully redeemed,"$335,084"
+E00360,INV-10046,2026-03-14,First website visit,Insights article
+E00361,INV-10046,2026-03-24,Used portfolio-fit tool,
+E00362,INV-10046,2026-03-29,Registered,Website sign-up
+E00363,INV-10046,2026-04-10,Eligibility verified,Accredited
+E00364,INV-10046,2026-04-20,IR meeting,
+E00365,INV-10046,2026-05-03,Subscription started,Series B
+E00366,INV-10046,2026-05-15,Funded,"$835,000"
+E00367,INV-10046,2026-08-07,Redemption requested,Estate or other
+E00368,INV-10046,2026-08-28,Fully redeemed,"$830,162"
+E00369,INV-10047,2026-02-05,First website visit,Insights article
+E00370,INV-10047,2026-02-19,Used portfolio-fit tool,
+E00371,INV-10047,2026-02-27,Registered,Website sign-up
+E00372,INV-10047,2026-03-16,Eligibility verified,Accredited
+E00373,INV-10047,2026-03-30,IR meeting,
+E00374,INV-10047,2026-04-17,Subscription started,Series B
+E00375,INV-10047,2026-05-04,Funded,"$890,000"
+E00376,INV-10048,2026-03-17,First website visit,Insights article
+E00377,INV-10048,2026-03-31,Used portfolio-fit tool,
+E00378,INV-10048,2026-04-08,Registered,Website sign-up
+E00379,INV-10048,2026-04-25,Eligibility verified,QEP
+E00380,INV-10048,2026-05-09,IR meeting,
+E00381,INV-10048,2026-05-27,Subscription started,Series B
+E00382,INV-10048,2026-06-13,Funded,"$680,000"
+E00383,INV-10049,2026-04-12,First website visit,Insights article
+E00384,INV-10049,2026-04-20,Used portfolio-fit tool,
+E00385,INV-10049,2026-04-24,Registered,Website sign-up
+E00386,INV-10049,2026-05-04,Eligibility verified,Accredited
+E00387,INV-10049,2026-05-12,IR meeting,
+E00388,INV-10049,2026-05-22,Subscription started,Series B
+E00389,INV-10049,2026-06-01,Funded,"$180,000"
+E00390,INV-10050,2026-04-18,First website visit,Insights article
+E00391,INV-10050,2026-04-27,Used portfolio-fit tool,
+E00392,INV-10050,2026-05-01,Registered,Website sign-up
+E00393,INV-10050,2026-05-12,Eligibility verified,Accredited
+E00394,INV-10050,2026-05-21,IR meeting,
+E00395,INV-10050,2026-06-01,Subscription started,Series B
+E00396,INV-10050,2026-06-12,Funded,"$250,000"
+E00397,INV-10050,2026-09-04,Top-up,"$55,000"
+E00398,INV-10051,2026-06-06,First website visit,Insights article
+E00399,INV-10051,2026-06-11,Used portfolio-fit tool,
+E00400,INV-10051,2026-06-14,Registered,Website sign-up
+E00401,INV-10051,2026-06-21,Eligibility verified,Accredited
+E00402,INV-10051,2026-06-26,IR meeting,
+E00403,INV-10051,2026-07-04,Subscription started,Series B
+E00404,INV-10051,2026-07-11,Funded,"$310,000"
+E00405,INV-10052,2026-04-15,First website visit,Insights article
+E00406,INV-10052,2026-04-29,Used portfolio-fit tool,
+E00407,INV-10052,2026-05-06,Registered,Website sign-up
+E00408,INV-10052,2026-05-22,Eligibility verified,Accredited
+E00409,INV-10052,2026-06-05,IR meeting,
+E00410,INV-10052,2026-06-22,Subscription started,Series B
+E00411,INV-10052,2026-07-08,Funded,"$230,000"
+E00412,INV-10053,2026-06-27,First website visit,Insights article
+E00413,INV-10053,2026-07-07,Used portfolio-fit tool,
+E00414,INV-10053,2026-07-12,Registered,Website sign-up
+E00415,INV-10053,2026-07-24,Eligibility verified,Accredited
+E00416,INV-10053,2026-08-03,IR meeting,
+E00417,INV-10053,2026-08-15,Subscription started,Series B
+E00418,INV-10053,2026-08-27,Funded,"$220,000"
+E00419,INV-10053,2026-09-07,Redemption requested,Rebalancing
+E00420,INV-10053,2026-09-28,Fully redeemed,"$221,619"
+E00421,INV-10054,2026-05-07,First website visit,Insights article
+E00422,INV-10054,2026-05-22,Used portfolio-fit tool,
+E00423,INV-10054,2026-05-29,Registered,Website sign-up
+E00424,INV-10054,2026-06-16,Eligibility verified,Accredited
+E00425,INV-10054,2026-07-01,IR meeting,
+E00426,INV-10054,2026-07-19,Subscription started,Series B
+E00427,INV-10054,2026-08-06,Funded,"$270,000"
+E00428,INV-10055,2026-06-07,First website visit,Insights article
+E00429,INV-10055,2026-06-17,Used portfolio-fit tool,
+E00430,INV-10055,2026-06-22,Registered,Website sign-up
+E00431,INV-10055,2026-07-04,Eligibility verified,Accredited
+E00432,INV-10055,2026-07-14,IR meeting,
+E00433,INV-10055,2026-07-28,Subscription started,Series B
+E00434,INV-10055,2026-08-09,Funded,"$260,000"
+E00435,INV-10056,2026-07-23,First website visit,Insights article
+E00436,INV-10056,2026-07-31,Used portfolio-fit tool,
+E00437,INV-10056,2026-08-04,Registered,Website sign-up
+E00438,INV-10056,2026-08-14,Eligibility verified,QEP
+E00439,INV-10056,2026-08-22,IR meeting,
+E00440,INV-10056,2026-09-01,Subscription started,Series B
+E00441,INV-10056,2026-09-11,Funded,"$115,000"
+E00442,INV-10057,2022-12-11,Registered,Introduced by existing client
+E00443,INV-10057,2022-12-16,Eligibility verified,Accredited
+E00444,INV-10057,2022-12-20,IR meeting,
+E00445,INV-10057,2023-01-01,Subscription started,Series C
+E00446,INV-10057,2023-01-06,Funded,"$565,000"
+E00447,INV-10057,2023-06-08,Top-up,"$325,000"
+E00448,INV-10058,2022-11-15,Registered,Introduced by existing client
+E00449,INV-10058,2022-11-28,Eligibility verified,Accredited
+E00450,INV-10058,2022-12-09,IR meeting,
+E00451,INV-10058,2023-01-09,Subscription started,Series C
+E00452,INV-10058,2023-01-22,Funded,"$515,000"
+E00453,INV-10059,2022-12-25,Registered,Introduced by existing client
+E00454,INV-10059,2023-01-02,Eligibility verified,Accredited
+E00455,INV-10059,2023-01-09,IR meeting,
+E00456,INV-10059,2023-01-30,Subscription started,Series C
+E00457,INV-10059,2023-02-07,Funded,"$450,000"
+E00458,INV-10060,2023-01-29,Registered,Introduced by existing client
+E00459,INV-10060,2023-02-03,Eligibility verified,QEP
+E00460,INV-10060,2023-02-07,IR meeting,
+E00461,INV-10060,2023-02-20,Subscription started,Series C
+E00462,INV-10060,2023-02-25,Funded,"$1,055,000"
+E00463,INV-10060,2023-11-08,Redemption requested,Performance drawdown
+E00464,INV-10060,2023-11-28,Fully redeemed,"$1,160,180"
+E00465,INV-10061,2023-01-07,Registered,Introduced by existing client
+E00466,INV-10061,2023-01-17,Eligibility verified,Accredited
+E00467,INV-10061,2023-01-25,IR meeting,
+E00468,INV-10061,2023-02-16,Subscription started,Series C
+E00469,INV-10061,2023-02-26,Funded,"$245,000"
+E00470,INV-10061,2023-06-25,Top-up,"$115,000"
+E00471,INV-10062,2023-02-02,Registered,Introduced by existing client
+E00472,INV-10062,2023-02-08,Eligibility verified,Accredited
+E00473,INV-10062,2023-02-13,IR meeting,
+E00474,INV-10062,2023-03-01,Subscription started,Series C
+E00475,INV-10062,2023-03-07,Funded,"$860,000"
+E00476,INV-10062,2023-08-11,Redemption requested,Estate or other
+E00477,INV-10062,2023-08-28,Fully redeemed,"$887,199"
+E00478,INV-10063,2023-02-04,Registered,Introduced by existing client
+E00479,INV-10063,2023-02-13,Eligibility verified,Accredited
+E00480,INV-10063,2023-02-21,IR meeting,
+E00481,INV-10063,2023-03-15,Subscription started,Series C
+E00482,INV-10063,2023-03-24,Funded,"$170,000"
+E00483,INV-10064,2023-03-03,Registered,Introduced by existing client
+E00484,INV-10064,2023-03-13,Eligibility verified,Accredited
+E00485,INV-10064,2023-03-21,IR meeting,
+E00486,INV-10064,2023-04-15,Subscription started,Series C
+E00487,INV-10064,2023-04-25,Funded,"$230,000"
+E00488,INV-10064,2024-12-01,Top-up,"$85,000"
+E00489,INV-10064,2025-06-26,Top-up,"$120,000"
+E00490,INV-10064,2026-04-11,Top-up,"$100,000"
+E00491,INV-10065,2023-02-25,Registered,Introduced by existing client
+E00492,INV-10065,2023-03-06,Eligibility verified,QEP
+E00493,INV-10065,2023-03-14,IR meeting,
+E00494,INV-10065,2023-04-05,Subscription started,Series C
+E00495,INV-10065,2023-04-14,Funded,"$2,205,000"
+E00496,INV-10065,2023-05-19,Redemption requested,Liquidity need
+E00497,INV-10065,2023-05-28,Fully redeemed,"$2,160,811"
+E00498,INV-10066,2023-03-20,Registered,Introduced by existing client
+E00499,INV-10066,2023-03-24,Eligibility verified,QEP
+E00500,INV-10066,2023-03-28,IR meeting,
+E00501,INV-10066,2023-04-09,Subscription started,Series C
+E00502,INV-10066,2023-04-13,Funded,"$1,585,000"
+E00503,INV-10067,2023-07-01,Registered,Introduced by existing client
+E00504,INV-10067,2023-07-05,Eligibility verified,QEP
+E00505,INV-10067,2023-07-08,IR meeting,
+E00506,INV-10067,2023-07-18,Subscription started,Series C
+E00507,INV-10067,2023-07-22,Funded,"$2,525,000"
+E00508,INV-10067,2024-12-13,Top-up,"$730,000"
+E00509,INV-10068,2023-06-07,Registered,Introduced by existing client
+E00510,INV-10068,2023-06-14,Eligibility verified,QEP
+E00511,INV-10068,2023-06-20,IR meeting,
+E00512,INV-10068,2023-07-07,Subscription started,Series C
+E00513,INV-10068,2023-07-14,Funded,"$1,920,000"
+E00514,INV-10068,2026-06-11,Top-up,"$805,000"
+E00515,INV-10069,2023-08-27,Registered,Introduced by existing client
+E00516,INV-10069,2023-09-01,Eligibility verified,QEP
+E00517,INV-10069,2023-09-05,IR meeting,
+E00518,INV-10069,2023-09-17,Subscription started,Series C
+E00519,INV-10069,2023-09-22,Funded,"$1,430,000"
+E00520,INV-10069,2024-03-03,Redemption requested,Estate or other
+E00521,INV-10069,2024-03-28,Fully redeemed,"$1,501,678"
+E00522,INV-10070,2023-08-28,Registered,Introduced by existing client
+E00523,INV-10070,2023-08-31,Eligibility verified,Accredited
+E00524,INV-10070,2023-09-02,IR meeting,
+E00525,INV-10070,2023-09-09,Subscription started,Series C
+E00526,INV-10070,2023-09-12,Funded,"$455,000"
+E00527,INV-10071,2023-09-08,Registered,Introduced by existing client
+E00528,INV-10071,2023-09-14,Eligibility verified,Accredited
+E00529,INV-10071,2023-09-19,IR meeting,
+E00530,INV-10071,2023-10-03,Subscription started,Series C
+E00531,INV-10071,2023-10-09,Funded,"$425,000"
+E00532,INV-10071,2026-01-09,Top-up,"$220,000"
+E00533,INV-10072,2023-09-14,Registered,Introduced by existing client
+E00534,INV-10072,2023-09-19,Eligibility verified,Accredited
+E00535,INV-10072,2023-09-23,IR meeting,
+E00536,INV-10072,2023-10-06,Subscription started,Series C
+E00537,INV-10072,2023-10-11,Funded,"$370,000"
+E00538,INV-10072,2025-05-15,Redemption requested,Rebalancing
+E00539,INV-10072,2025-05-28,Fully redeemed,"$394,417"
+E00540,INV-10073,2023-10-12,Registered,Introduced by existing client
+E00541,INV-10073,2023-10-16,Eligibility verified,Accredited
+E00542,INV-10073,2023-10-19,IR meeting,
+E00543,INV-10073,2023-10-28,Subscription started,Series C
+E00544,INV-10073,2023-11-01,Funded,"$515,000"
+E00545,INV-10073,2024-03-13,Top-up,"$165,000"
+E00546,INV-10074,2023-11-18,Registered,Introduced by existing client
+E00547,INV-10074,2023-11-23,Eligibility verified,Accredited
+E00548,INV-10074,2023-11-27,IR meeting,
+E00549,INV-10074,2023-12-12,Subscription started,Series C
+E00550,INV-10074,2023-12-17,Funded,"$355,000"
+E00551,INV-10075,2024-03-03,Registered,Introduced by existing client
+E00552,INV-10075,2024-03-06,Eligibility verified,Accredited
+E00553,INV-10075,2024-03-09,IR meeting,
+E00554,INV-10075,2024-03-18,Subscription started,Series C
+E00555,INV-10075,2024-03-21,Funded,"$300,000"
+E00556,INV-10075,2024-12-08,Top-up,"$115,000"
+E00557,INV-10076,2024-03-05,Registered,Introduced by existing client
+E00558,INV-10076,2024-03-15,Eligibility verified,Accredited
+E00559,INV-10076,2024-03-23,IR meeting,
+E00560,INV-10076,2024-04-16,Subscription started,Series C
+E00561,INV-10076,2024-04-26,Funded,"$435,000"
+E00562,INV-10077,2024-06-25,Registered,Introduced by existing client
+E00563,INV-10077,2024-07-02,Eligibility verified,QEP
+E00564,INV-10077,2024-07-08,IR meeting,
+E00565,INV-10077,2024-07-25,Subscription started,Series C
+E00566,INV-10077,2024-08-01,Funded,"$1,000,000"
+E00567,INV-10078,2024-07-17,Registered,Introduced by existing client
+E00568,INV-10078,2024-07-21,Eligibility verified,Accredited
+E00569,INV-10078,2024-07-25,IR meeting,
+E00570,INV-10078,2024-08-06,Subscription started,Series C
+E00571,INV-10078,2024-08-10,Funded,"$645,000"
+E00572,INV-10079,2024-10-26,Registered,Introduced by existing client
+E00573,INV-10079,2024-10-31,Eligibility verified,Accredited
+E00574,INV-10079,2024-11-04,IR meeting,
+E00575,INV-10079,2024-11-16,Subscription started,Series C
+E00576,INV-10079,2024-11-21,Funded,"$885,000"
+E00577,INV-10080,2024-11-25,Registered,Introduced by existing client
+E00578,INV-10080,2024-12-04,Eligibility verified,QEP
+E00579,INV-10080,2024-12-11,IR meeting,
+E00580,INV-10080,2025-01-02,Subscription started,Series C
+E00581,INV-10080,2025-01-11,Funded,"$975,000"
+E00582,INV-10081,2025-02-02,Registered,Introduced by existing client
+E00583,INV-10081,2025-02-10,Eligibility verified,Accredited
+E00584,INV-10081,2025-02-16,IR meeting,
+E00585,INV-10081,2025-03-07,Subscription started,Series C
+E00586,INV-10081,2025-03-15,Funded,"$470,000"
+E00587,INV-10082,2025-03-22,Registered,Introduced by existing client
+E00588,INV-10082,2025-03-27,Eligibility verified,Accredited
+E00589,INV-10082,2025-03-31,IR meeting,
+E00590,INV-10082,2025-04-12,Subscription started,Series C
+E00591,INV-10082,2025-04-17,Funded,"$555,000"
+E00592,INV-10082,2025-06-22,Top-up,"$205,000"
+E00593,INV-10083,2025-04-09,Registered,Introduced by existing client
+E00594,INV-10083,2025-04-14,Eligibility verified,Accredited
+E00595,INV-10083,2025-04-18,IR meeting,
+E00596,INV-10083,2025-04-29,Subscription started,Series C
+E00597,INV-10083,2025-05-04,Funded,"$840,000"
+E00598,INV-10084,2025-04-21,Registered,Introduced by existing client
+E00599,INV-10084,2025-04-25,Eligibility verified,Accredited
+E00600,INV-10084,2025-04-28,IR meeting,
+E00601,INV-10084,2025-05-10,Subscription started,Series C
+E00602,INV-10084,2025-05-14,Funded,"$380,000"
+E00603,INV-10085,2025-04-25,Registered,Introduced by existing client
+E00604,INV-10085,2025-04-30,Eligibility verified,QEP
+E00605,INV-10085,2025-05-04,IR meeting,
+E00606,INV-10085,2025-05-15,Subscription started,Series C
+E00607,INV-10085,2025-05-20,Funded,"$1,335,000"
+E00608,INV-10086,2025-03-29,Registered,Introduced by existing client
+E00609,INV-10086,2025-04-06,Eligibility verified,QEP
+E00610,INV-10086,2025-04-12,IR meeting,
+E00611,INV-10086,2025-04-30,Subscription started,Series C
+E00612,INV-10086,2025-05-08,Funded,"$1,155,000"
+E00613,INV-10086,2026-02-04,Top-up,"$425,000"
+E00614,INV-10087,2025-04-28,Registered,Introduced by existing client
+E00615,INV-10087,2025-05-10,Eligibility verified,QEP
+E00616,INV-10087,2025-05-20,IR meeting,
+E00617,INV-10087,2025-06-19,Subscription started,Series C
+E00618,INV-10087,2025-07-01,Funded,"$1,220,000"
+E00619,INV-10087,2025-09-24,Top-up,"$655,000"
+E00620,INV-10087,2026-03-06,Redemption requested,Performance drawdown
+E00621,INV-10087,2026-03-28,Fully redeemed,"$1,858,511"
+E00622,INV-10088,2025-05-30,Registered,Introduced by existing client
+E00623,INV-10088,2025-06-06,Eligibility verified,Accredited
+E00624,INV-10088,2025-06-12,IR meeting,
+E00625,INV-10088,2025-06-30,Subscription started,Series C
+E00626,INV-10088,2025-07-07,Funded,"$700,000"
+E00627,INV-10089,2025-06-28,Registered,Introduced by existing client
+E00628,INV-10089,2025-07-02,Eligibility verified,Accredited
+E00629,INV-10089,2025-07-05,IR meeting,
+E00630,INV-10089,2025-07-14,Subscription started,Series C
+E00631,INV-10089,2025-07-18,Funded,"$720,000"
+E00632,INV-10090,2025-09-23,Registered,Introduced by existing client
+E00633,INV-10090,2025-09-26,Eligibility verified,Accredited
+E00634,INV-10090,2025-09-28,IR meeting,
+E00635,INV-10090,2025-10-07,Subscription started,Series C
+E00636,INV-10090,2025-10-10,Funded,"$745,000"
+E00637,INV-10090,2026-05-04,Top-up,"$330,000"
+E00638,INV-10091,2025-09-03,Registered,Introduced by existing client
+E00639,INV-10091,2025-09-10,Eligibility verified,Accredited
+E00640,INV-10091,2025-09-16,IR meeting,
+E00641,INV-10091,2025-10-05,Subscription started,Series C
+E00642,INV-10091,2025-10-12,Funded,"$815,000"
+E00643,INV-10091,2026-09-25,Top-up,"$205,000"
+E00644,INV-10092,2025-10-11,Registered,Introduced by existing client
+E00645,INV-10092,2025-10-17,Eligibility verified,QEP
+E00646,INV-10092,2025-10-22,IR meeting,
+E00647,INV-10092,2025-11-05,Subscription started,Series C
+E00648,INV-10092,2025-11-11,Funded,"$1,480,000"
+E00649,INV-10093,2025-09-26,Registered,Introduced by existing client
+E00650,INV-10093,2025-10-04,Eligibility verified,QEP
+E00651,INV-10093,2025-10-11,IR meeting,
+E00652,INV-10093,2025-11-01,Subscription started,Series C
+E00653,INV-10093,2025-11-09,Funded,"$1,075,000"
+E00654,INV-10093,2026-04-07,Top-up,"$365,000"
+E00655,INV-10093,2026-05-12,Top-up,"$450,000"
+E00656,INV-10094,2025-10-28,Registered,Introduced by existing client
+E00657,INV-10094,2025-11-04,Eligibility verified,Accredited
+E00658,INV-10094,2025-11-10,IR meeting,
+E00659,INV-10094,2025-11-26,Subscription started,Series C
+E00660,INV-10094,2025-12-03,Funded,"$845,000"
+E00661,INV-10095,2025-12-11,Registered,Introduced by existing client
+E00662,INV-10095,2025-12-16,Eligibility verified,Accredited
+E00663,INV-10095,2025-12-20,IR meeting,
+E00664,INV-10095,2026-01-04,Subscription started,Series C
+E00665,INV-10095,2026-01-09,Funded,"$500,000"
+E00666,INV-10096,2026-01-22,Registered,Introduced by existing client
+E00667,INV-10096,2026-01-29,Eligibility verified,Accredited
+E00668,INV-10096,2026-02-03,IR meeting,
+E00669,INV-10096,2026-02-19,Subscription started,Series C
+E00670,INV-10096,2026-02-26,Funded,"$625,000"
+E00671,INV-10097,2026-04-16,Registered,Introduced by existing client
+E00672,INV-10097,2026-04-18,Eligibility verified,Accredited
+E00673,INV-10097,2026-04-20,IR meeting,
+E00674,INV-10097,2026-04-26,Subscription started,Series C
+E00675,INV-10097,2026-04-28,Funded,"$995,000"
+E00676,INV-10098,2026-06-14,Registered,Introduced by existing client
+E00677,INV-10098,2026-06-20,Eligibility verified,QEP
+E00678,INV-10098,2026-06-25,IR meeting,
+E00679,INV-10098,2026-07-09,Subscription started,Series C
+E00680,INV-10098,2026-07-15,Funded,"$1,120,000"
+E00681,INV-10099,2026-06-30,Registered,Introduced by existing client
+E00682,INV-10099,2026-07-09,Eligibility verified,QEP
+E00683,INV-10099,2026-07-17,IR meeting,
+E00684,INV-10099,2026-08-09,Subscription started,Series C
+E00685,INV-10099,2026-08-18,Funded,"$2,340,000"
+E00686,INV-10100,2026-07-04,Registered,Introduced by existing client
+E00687,INV-10100,2026-07-10,Eligibility verified,Accredited
+E00688,INV-10100,2026-07-15,IR meeting,
+E00689,INV-10100,2026-07-28,Subscription started,Series C
+E00690,INV-10100,2026-08-03,Funded,"$890,000"
+E00691,INV-10101,2026-08-02,Registered,Introduced by existing client
+E00692,INV-10101,2026-08-10,Eligibility verified,Accredited
+E00693,INV-10101,2026-08-16,IR meeting,
+E00694,INV-10101,2026-09-04,Subscription started,Series C
+E00695,INV-10101,2026-09-12,Funded,"$815,000"
+E00696,INV-10102,2026-08-05,Registered,Introduced by existing client
+E00697,INV-10102,2026-08-14,Eligibility verified,Accredited
+E00698,INV-10102,2026-08-21,IR meeting,
+E00699,INV-10102,2026-09-10,Subscription started,Series C
+E00700,INV-10102,2026-09-19,Funded,"$470,000"
+E00701,INV-10103,2022-12-09,Registered,Via RIA-043
+E00702,INV-10103,2022-12-14,Eligibility verified,Accredited
+E00703,INV-10103,2022-12-18,Proposal sent,
+E00704,INV-10103,2023-01-02,Subscription started,Series D
+E00705,INV-10103,2023-01-07,Funded,"$755,000"
+E00706,INV-10103,2023-08-15,Redemption requested,Performance drawdown
+E00707,INV-10103,2023-08-28,Fully redeemed,"$794,442"
+E00708,INV-10104,2022-12-05,Registered,Via RIA-088
+E00709,INV-10104,2022-12-11,Eligibility verified,Accredited
+E00710,INV-10104,2022-12-16,Proposal sent,
+E00711,INV-10104,2023-01-01,Subscription started,Series D
+E00712,INV-10104,2023-01-07,Funded,"$165,000"
+E00713,INV-10104,2023-07-24,Top-up,"$40,000"
+E00714,INV-10104,2024-07-15,Top-up,"$35,000"
+E00715,INV-10105,2022-12-25,Registered,Via RIA-127
+E00716,INV-10105,2022-12-30,Eligibility verified,Accredited
+E00717,INV-10105,2023-01-03,Proposal sent,
+E00718,INV-10105,2023-01-15,Subscription started,Series D
+E00719,INV-10105,2023-01-20,Funded,"$310,000"
+E00720,INV-10105,2024-11-28,Top-up,"$125,000"
+E00721,INV-10105,2025-04-02,Top-up,"$65,000"
+E00722,INV-10105,2026-07-07,Redemption requested,Performance drawdown
+E00723,INV-10105,2026-07-28,Fully redeemed,"$604,657"
+E00724,INV-10106,2022-12-16,Registered,Via RIA-187
+E00725,INV-10106,2022-12-23,Eligibility verified,Accredited
+E00726,INV-10106,2022-12-29,Proposal sent,
+E00727,INV-10106,2023-01-15,Subscription started,Series D
+E00728,INV-10106,2023-01-22,Funded,"$325,000"
+E00729,INV-10106,2025-11-19,Top-up,"$175,000"
+E00730,INV-10107,2023-01-20,Registered,Via RIA-156
+E00731,INV-10107,2023-01-26,Eligibility verified,Accredited
+E00732,INV-10107,2023-01-31,Proposal sent,
+E00733,INV-10107,2023-02-15,Subscription started,Series D
+E00734,INV-10107,2023-02-21,Funded,"$155,000"
+E00735,INV-10107,2023-06-01,Top-up,"$55,000"
+E00736,INV-10107,2025-02-24,Top-up,"$35,000"
+E00737,INV-10108,2023-02-24,Registered,Via RIA-135
+E00738,INV-10108,2023-02-28,Eligibility verified,Accredited
+E00739,INV-10108,2023-03-04,Proposal sent,
+E00740,INV-10108,2023-03-16,Subscription started,Series D
+E00741,INV-10108,2023-03-20,Funded,"$165,000"
+E00742,INV-10108,2023-06-17,Top-up,"$55,000"
+E00743,INV-10108,2026-04-04,Top-up,"$90,000"
+E00744,INV-10109,2023-03-02,Registered,Via RIA-108
+E00745,INV-10109,2023-03-10,Eligibility verified,Accredited
+E00746,INV-10109,2023-03-17,Proposal sent,
+E00747,INV-10109,2023-04-06,Subscription started,Series D
+E00748,INV-10109,2023-04-14,Funded,"$255,000"
+E00749,INV-10109,2023-07-01,Top-up,"$65,000"
+E00750,INV-10109,2025-02-21,Top-up,"$70,000"
+E00751,INV-10110,2023-03-19,Registered,Via RIA-043
+E00752,INV-10110,2023-03-28,Eligibility verified,Accredited
+E00753,INV-10110,2023-04-04,Proposal sent,
+E00754,INV-10110,2023-04-26,Subscription started,Series D
+E00755,INV-10110,2023-05-05,Funded,"$285,000"
+E00756,INV-10110,2023-07-23,Top-up,"$140,000"
+E00757,INV-10110,2024-08-17,Redemption requested,Performance drawdown
+E00758,INV-10110,2024-08-28,Fully redeemed,"$439,351"
+E00759,INV-10111,2023-04-12,Registered,Via RIA-019
+E00760,INV-10111,2023-04-16,Eligibility verified,Accredited
+E00761,INV-10111,2023-04-19,Proposal sent,
+E00762,INV-10111,2023-05-01,Subscription started,Series D
+E00763,INV-10111,2023-05-05,Funded,"$430,000"
+E00764,INV-10111,2024-01-23,Redemption requested,Estate or other
+E00765,INV-10111,2024-01-28,Fully redeemed,"$469,585"
+E00766,INV-10112,2023-05-06,Registered,Via RIA-135
+E00767,INV-10112,2023-05-15,Eligibility verified,Accredited
+E00768,INV-10112,2023-05-22,Proposal sent,
+E00769,INV-10112,2023-06-12,Subscription started,Series D
+E00770,INV-10112,2023-06-21,Funded,"$165,000"
+E00771,INV-10113,2023-08-19,Registered,Via RIA-031
+E00772,INV-10113,2023-08-23,Eligibility verified,Accredited
+E00773,INV-10113,2023-08-26,Proposal sent,
+E00774,INV-10113,2023-09-05,Subscription started,Series D
+E00775,INV-10113,2023-09-09,Funded,"$355,000"
+E00776,INV-10114,2023-07-24,Registered,Via RIA-127
+E00777,INV-10114,2023-08-04,Eligibility verified,Accredited
+E00778,INV-10114,2023-08-13,Proposal sent,
+E00779,INV-10114,2023-09-10,Subscription started,Series D
+E00780,INV-10114,2023-09-21,Funded,"$275,000"
+E00781,INV-10115,2023-08-08,Registered,Via RIA-019
+E00782,INV-10115,2023-08-15,Eligibility verified,Accredited
+E00783,INV-10115,2023-08-21,Proposal sent,
+E00784,INV-10115,2023-09-06,Subscription started,Series D
+E00785,INV-10115,2023-09-13,Funded,"$235,000"
+E00786,INV-10116,2023-09-23,Registered,Via RIA-132
+E00787,INV-10116,2023-09-29,Eligibility verified,Accredited
+E00788,INV-10116,2023-10-04,Proposal sent,
+E00789,INV-10116,2023-10-21,Subscription started,Series D
+E00790,INV-10116,2023-10-27,Funded,"$105,000"
+E00791,INV-10117,2023-09-15,Registered,Via RIA-115
+E00792,INV-10117,2023-09-21,Eligibility verified,Accredited
+E00793,INV-10117,2023-09-26,Proposal sent,
+E00794,INV-10117,2023-10-11,Subscription started,Series D
+E00795,INV-10117,2023-10-17,Funded,"$105,000"
+E00796,INV-10118,2023-10-17,Registered,Via RIA-187
+E00797,INV-10118,2023-10-21,Eligibility verified,Accredited
+E00798,INV-10118,2023-10-25,Proposal sent,
+E00799,INV-10118,2023-11-06,Subscription started,Series D
+E00800,INV-10118,2023-11-10,Funded,"$140,000"
+E00801,INV-10119,2023-09-30,Registered,Via RIA-108
+E00802,INV-10119,2023-10-11,Eligibility verified,Accredited
+E00803,INV-10119,2023-10-20,Proposal sent,
+E00804,INV-10119,2023-11-16,Subscription started,Series D
+E00805,INV-10119,2023-11-27,Funded,"$285,000"
+E00806,INV-10120,2023-11-09,Registered,Via RIA-031
+E00807,INV-10120,2023-11-17,Eligibility verified,Accredited
+E00808,INV-10120,2023-11-23,Proposal sent,
+E00809,INV-10120,2023-12-12,Subscription started,Series D
+E00810,INV-10120,2023-12-20,Funded,"$290,000"
+E00811,INV-10120,2025-09-14,Top-up,"$130,000"
+E00812,INV-10121,2023-11-26,Registered,Via RIA-019
+E00813,INV-10121,2023-11-29,Eligibility verified,Accredited
+E00814,INV-10121,2023-12-02,Proposal sent,
+E00815,INV-10121,2023-12-11,Subscription started,Series D
+E00816,INV-10121,2023-12-14,Funded,"$120,000"
+E00817,INV-10122,2023-12-17,Registered,Via RIA-187
+E00818,INV-10122,2023-12-29,Eligibility verified,Accredited
+E00819,INV-10122,2024-01-08,Proposal sent,
+E00820,INV-10122,2024-02-05,Subscription started,Series D
+E00821,INV-10122,2024-02-17,Funded,"$90,000"
+E00822,INV-10123,2023-12-17,Registered,Via RIA-031
+E00823,INV-10123,2023-12-26,Eligibility verified,QEP
+E00824,INV-10123,2024-01-03,Proposal sent,
+E00825,INV-10123,2024-01-26,Subscription started,Series D
+E00826,INV-10123,2024-02-04,Funded,"$460,000"
+E00827,INV-10124,2023-12-29,Registered,Via RIA-074
+E00828,INV-10124,2024-01-06,Eligibility verified,QEP
+E00829,INV-10124,2024-01-13,Proposal sent,
+E00830,INV-10124,2024-02-01,Subscription started,Series D
+E00831,INV-10124,2024-02-09,Funded,"$155,000"
+E00832,INV-10125,2024-03-02,Registered,Via RIA-156
+E00833,INV-10125,2024-03-06,Eligibility verified,Accredited
+E00834,INV-10125,2024-03-10,Proposal sent,
+E00835,INV-10125,2024-03-22,Subscription started,Series D
+E00836,INV-10125,2024-03-26,Funded,"$395,000"
+E00837,INV-10126,2024-02-23,Registered,Via RIA-132
+E00838,INV-10126,2024-02-29,Eligibility verified,Accredited
+E00839,INV-10126,2024-03-05,Proposal sent,
+E00840,INV-10126,2024-03-20,Subscription started,Series D
+E00841,INV-10126,2024-03-26,Funded,"$330,000"
+E00842,INV-10126,2025-06-09,Redemption requested,Performance drawdown
+E00843,INV-10126,2025-06-28,Fully redeemed,"$352,740"
+E00844,INV-10127,2024-01-01,Registered,Via RIA-135
+E00845,INV-10127,2024-01-13,Eligibility verified,Accredited
+E00846,INV-10127,2024-01-23,Proposal sent,
+E00847,INV-10127,2024-02-19,Subscription started,Series D
+E00848,INV-10127,2024-03-02,Funded,"$395,000"
+E00849,INV-10128,2024-03-17,Registered,Via RIA-127
+E00850,INV-10128,2024-03-25,Eligibility verified,Accredited
+E00851,INV-10128,2024-03-31,Proposal sent,
+E00852,INV-10128,2024-04-18,Subscription started,Series D
+E00853,INV-10128,2024-04-26,Funded,"$165,000"
+E00854,INV-10128,2025-10-26,Redemption requested,Rebalancing
+E00855,INV-10128,2025-10-28,Fully redeemed,"$168,332"
+E00856,INV-10129,2024-05-06,Registered,Via RIA-115
+E00857,INV-10129,2024-05-10,Eligibility verified,Accredited
+E00858,INV-10129,2024-05-13,Proposal sent,
+E00859,INV-10129,2024-05-24,Subscription started,Series D
+E00860,INV-10129,2024-05-28,Funded,"$140,000"
+E00861,INV-10129,2025-03-08,Top-up,"$35,000"
+E00862,INV-10130,2024-04-02,Registered,Via RIA-043
+E00863,INV-10130,2024-04-08,Eligibility verified,Accredited
+E00864,INV-10130,2024-04-13,Proposal sent,
+E00865,INV-10130,2024-04-30,Subscription started,Series D
+E00866,INV-10130,2024-05-06,Funded,"$330,000"
+E00867,INV-10130,2025-09-05,Top-up,"$150,000"
+E00868,INV-10130,2025-12-23,Top-up,"$115,000"
+E00869,INV-10131,2024-04-11,Registered,Via RIA-108
+E00870,INV-10131,2024-04-17,Eligibility verified,Accredited
+E00871,INV-10131,2024-04-22,Proposal sent,
+E00872,INV-10131,2024-05-09,Subscription started,Series D
+E00873,INV-10131,2024-05-15,Funded,"$525,000"
+E00874,INV-10131,2024-06-25,Redemption requested,Liquidity need
+E00875,INV-10131,2024-06-28,Fully redeemed,"$502,515"
+E00876,INV-10132,2024-04-04,Registered,Via RIA-074
+E00877,INV-10132,2024-04-10,Eligibility verified,QEP
+E00878,INV-10132,2024-04-15,Proposal sent,
+E00879,INV-10132,2024-05-02,Subscription started,Series D
+E00880,INV-10132,2024-05-08,Funded,"$90,000"
+E00881,INV-10133,2024-05-18,Registered,Via RIA-156
+E00882,INV-10133,2024-05-23,Eligibility verified,Accredited
+E00883,INV-10133,2024-05-27,Proposal sent,
+E00884,INV-10133,2024-06-07,Subscription started,Series D
+E00885,INV-10133,2024-06-12,Funded,"$110,000"
+E00886,INV-10134,2024-05-06,Registered,Via RIA-108
+E00887,INV-10134,2024-05-14,Eligibility verified,Accredited
+E00888,INV-10134,2024-05-21,Proposal sent,
+E00889,INV-10134,2024-06-10,Subscription started,Series D
+E00890,INV-10134,2024-06-18,Funded,"$215,000"
+E00891,INV-10135,2024-05-11,Registered,Via RIA-127
+E00892,INV-10135,2024-05-16,Eligibility verified,Accredited
+E00893,INV-10135,2024-05-20,Proposal sent,
+E00894,INV-10135,2024-06-01,Subscription started,Series D
+E00895,INV-10135,2024-06-06,Funded,"$395,000"
+E00896,INV-10135,2025-07-19,Top-up,"$175,000"
+E00897,INV-10136,2024-06-02,Registered,Via RIA-135
+E00898,INV-10136,2024-06-06,Eligibility verified,Accredited
+E00899,INV-10136,2024-06-10,Proposal sent,
+E00900,INV-10136,2024-06-22,Subscription started,Series D
+E00901,INV-10136,2024-06-26,Funded,"$290,000"
+E00902,INV-10137,2024-06-03,Registered,Via RIA-132
+E00903,INV-10137,2024-06-07,Eligibility verified,Accredited
+E00904,INV-10137,2024-06-11,Proposal sent,
+E00905,INV-10137,2024-06-23,Subscription started,Series D
+E00906,INV-10137,2024-06-27,Funded,"$190,000"
+E00907,INV-10137,2024-10-08,Top-up,"$100,000"
+E00908,INV-10138,2024-06-10,Registered,Via RIA-135
+E00909,INV-10138,2024-06-15,Eligibility verified,Accredited
+E00910,INV-10138,2024-06-19,Proposal sent,
+E00911,INV-10138,2024-07-04,Subscription started,Series D
+E00912,INV-10138,2024-07-09,Funded,"$200,000"
+E00913,INV-10139,2024-06-10,Registered,Via RIA-088
+E00914,INV-10139,2024-06-15,Eligibility verified,Accredited
+E00915,INV-10139,2024-06-19,Proposal sent,
+E00916,INV-10139,2024-07-03,Subscription started,Series D
+E00917,INV-10139,2024-07-08,Funded,"$165,000"
+E00918,INV-10140,2024-05-29,Registered,Via RIA-088
+E00919,INV-10140,2024-06-07,Eligibility verified,Accredited
+E00920,INV-10140,2024-06-14,Proposal sent,
+E00921,INV-10140,2024-07-05,Subscription started,Series D
+E00922,INV-10140,2024-07-14,Funded,"$650,000"
+E00923,INV-10141,2024-06-10,Registered,Via RIA-115
+E00924,INV-10141,2024-06-19,Eligibility verified,Accredited
+E00925,INV-10141,2024-06-26,Proposal sent,
+E00926,INV-10141,2024-07-18,Subscription started,Series D
+E00927,INV-10141,2024-07-27,Funded,"$670,000"
+E00928,INV-10141,2024-08-15,Redemption requested,Estate or other
+E00929,INV-10141,2024-08-28,Fully redeemed,"$665,237"
+E00930,INV-10142,2024-06-25,Registered,Via RIA-043
+E00931,INV-10142,2024-07-01,Eligibility verified,Accredited
+E00932,INV-10142,2024-07-06,Proposal sent,
+E00933,INV-10142,2024-07-19,Subscription started,Series D
+E00934,INV-10142,2024-07-25,Funded,"$150,000"
+E00935,INV-10143,2024-04-20,Registered,Via RIA-115
+E00936,INV-10143,2024-05-05,Eligibility verified,Accredited
+E00937,INV-10143,2024-05-18,Proposal sent,
+E00938,INV-10143,2024-06-23,Subscription started,Series D
+E00939,INV-10143,2024-07-08,Funded,"$280,000"
+E00940,INV-10144,2024-07-12,Registered,Via RIA-115
+E00941,INV-10144,2024-07-20,Eligibility verified,Accredited
+E00942,INV-10144,2024-07-27,Proposal sent,
+E00943,INV-10144,2024-08-15,Subscription started,Series D
+E00944,INV-10144,2024-08-23,Funded,"$270,000"
+E00945,INV-10145,2024-07-02,Registered,Via RIA-132
+E00946,INV-10145,2024-07-13,Eligibility verified,Accredited
+E00947,INV-10145,2024-07-22,Proposal sent,
+E00948,INV-10145,2024-08-15,Subscription started,Series D
+E00949,INV-10145,2024-08-26,Funded,"$240,000"
+E00950,INV-10145,2024-11-22,Top-up,"$65,000"
+E00951,INV-10145,2026-05-13,Top-up,"$95,000"
+E00952,INV-10146,2024-07-16,Registered,Via RIA-156
+E00953,INV-10146,2024-07-27,Eligibility verified,QEP
+E00954,INV-10146,2024-08-05,Proposal sent,
+E00955,INV-10146,2024-08-29,Subscription started,Series D
+E00956,INV-10146,2024-09-09,Funded,"$235,000"
+E00957,INV-10146,2026-01-25,Redemption requested,Rebalancing
+E00958,INV-10146,2026-01-28,Fully redeemed,"$272,357"
+E00959,INV-10147,2024-08-02,Registered,Via RIA-074
+E00960,INV-10147,2024-08-09,Eligibility verified,Accredited
+E00961,INV-10147,2024-08-15,Proposal sent,
+E00962,INV-10147,2024-08-31,Subscription started,Series D
+E00963,INV-10147,2024-09-07,Funded,"$360,000"
+E00964,INV-10148,2024-09-20,Registered,Via RIA-135
+E00965,INV-10148,2024-09-24,Eligibility verified,Accredited
+E00966,INV-10148,2024-09-27,Proposal sent,
+E00967,INV-10148,2024-10-09,Subscription started,Series D
+E00968,INV-10148,2024-10-13,Funded,"$100,000"
+E00969,INV-10148,2026-03-14,Top-up,"$50,000"
+E00970,INV-10149,2024-09-09,Registered,Via RIA-187
+E00971,INV-10149,2024-09-14,Eligibility verified,QEP
+E00972,INV-10149,2024-09-18,Proposal sent,
+E00973,INV-10149,2024-09-29,Subscription started,Series D
+E00974,INV-10149,2024-10-04,Funded,"$150,000"
+E00975,INV-10150,2024-08-10,Registered,Via RIA-031
+E00976,INV-10150,2024-08-23,Eligibility verified,Accredited
+E00977,INV-10150,2024-09-03,Proposal sent,
+E00978,INV-10150,2024-10-04,Subscription started,Series D
+E00979,INV-10150,2024-10-17,Funded,"$215,000"
+E00980,INV-10150,2025-11-19,Redemption requested,Liquidity need
+E00981,INV-10150,2025-11-28,Fully redeemed,"$246,445"
+E00982,INV-10151,2024-10-09,Registered,Via RIA-115
+E00983,INV-10151,2024-10-12,Eligibility verified,Accredited
+E00984,INV-10151,2024-10-15,Proposal sent,
+E00985,INV-10151,2024-10-25,Subscription started,Series D
+E00986,INV-10151,2024-10-28,Funded,"$280,000"
+E00987,INV-10152,2024-09-12,Registered,Via RIA-108
+E00988,INV-10152,2024-09-17,Eligibility verified,Accredited
+E00989,INV-10152,2024-09-21,Proposal sent,
+E00990,INV-10152,2024-10-06,Subscription started,Series D
+E00991,INV-10152,2024-10-11,Funded,"$280,000"
+E00992,INV-10153,2024-11-05,Registered,Via RIA-132
+E00993,INV-10153,2024-11-13,Eligibility verified,Accredited
+E00994,INV-10153,2024-11-19,Proposal sent,
+E00995,INV-10153,2024-12-07,Subscription started,Series D
+E00996,INV-10153,2024-12-15,Funded,"$440,000"
+E00997,INV-10154,2024-10-10,Registered,Via RIA-115
+E00998,INV-10154,2024-10-23,Eligibility verified,Accredited
+E00999,INV-10154,2024-11-03,Proposal sent,
+E01000,INV-10154,2024-12-04,Subscription started,Series D
+E01001,INV-10154,2024-12-17,Funded,"$145,000"
+E01002,INV-10155,2024-12-20,Registered,Via RIA-127
+E01003,INV-10155,2024-12-29,Eligibility verified,Accredited
+E01004,INV-10155,2025-01-06,Proposal sent,
+E01005,INV-10155,2025-01-28,Subscription started,Series D
+E01006,INV-10155,2025-02-06,Funded,"$325,000"
+E01007,INV-10156,2025-01-15,Registered,Via RIA-127
+E01008,INV-10156,2025-01-20,Eligibility verified,Accredited
+E01009,INV-10156,2025-01-24,Proposal sent,
+E01010,INV-10156,2025-02-06,Subscription started,Series D
+E01011,INV-10156,2025-02-11,Funded,"$295,000"
+E01012,INV-10157,2024-12-25,Registered,Via RIA-088
+E01013,INV-10157,2025-01-09,Eligibility verified,Accredited
+E01014,INV-10157,2025-01-21,Proposal sent,
+E01015,INV-10157,2025-02-23,Subscription started,Series D
+E01016,INV-10157,2025-03-10,Funded,"$215,000"
+E01017,INV-10158,2025-02-10,Registered,Via RIA-156
+E01018,INV-10158,2025-02-21,Eligibility verified,Accredited
+E01019,INV-10158,2025-03-02,Proposal sent,
+E01020,INV-10158,2025-03-26,Subscription started,Series D
+E01021,INV-10158,2025-04-06,Funded,"$280,000"
+E01022,INV-10158,2025-05-06,Redemption requested,Liquidity need
+E01023,INV-10158,2025-05-28,Fully redeemed,"$286,044"
+E01024,INV-10159,2025-04-28,Registered,Via RIA-108
+E01025,INV-10159,2025-05-03,Eligibility verified,Accredited
+E01026,INV-10159,2025-05-07,Proposal sent,
+E01027,INV-10159,2025-05-21,Subscription started,Series D
+E01028,INV-10159,2025-05-26,Funded,"$430,000"
+E01029,INV-10159,2025-06-07,Top-up,"$95,000"
+E01030,INV-10159,2025-11-24,Redemption requested,Estate or other
+E01031,INV-10159,2025-11-28,Fully redeemed,"$540,124"
+E01032,INV-10160,2025-03-19,Registered,Via RIA-019
+E01033,INV-10160,2025-03-28,Eligibility verified,Accredited
+E01034,INV-10160,2025-04-05,Proposal sent,
+E01035,INV-10160,2025-04-27,Subscription started,Series D
+E01036,INV-10160,2025-05-06,Funded,"$670,000"
+E01037,INV-10161,2025-06-09,Registered,Via RIA-088
+E01038,INV-10161,2025-06-11,Eligibility verified,Accredited
+E01039,INV-10161,2025-06-13,Proposal sent,
+E01040,INV-10161,2025-06-21,Subscription started,Series D
+E01041,INV-10161,2025-06-23,Funded,"$425,000"
+E01042,INV-10161,2026-07-26,Top-up,"$105,000"
+E01043,INV-10162,2025-08-09,Registered,Via RIA-187
+E01044,INV-10162,2025-08-12,Eligibility verified,Accredited
+E01045,INV-10162,2025-08-15,Proposal sent,
+E01046,INV-10162,2025-08-24,Subscription started,Series D
+E01047,INV-10162,2025-08-27,Funded,"$155,000"
+E01048,INV-10163,2025-08-08,Registered,Via RIA-019
+E01049,INV-10163,2025-08-13,Eligibility verified,Accredited
+E01050,INV-10163,2025-08-17,Proposal sent,
+E01051,INV-10163,2025-08-31,Subscription started,Series D
+E01052,INV-10163,2025-09-05,Funded,"$380,000"
+E01053,INV-10163,2025-10-03,Top-up,"$145,000"
+E01054,INV-10164,2025-09-29,Registered,Via RIA-135
+E01055,INV-10164,2025-10-04,Eligibility verified,Accredited
+E01056,INV-10164,2025-10-08,Proposal sent,
+E01057,INV-10164,2025-10-21,Subscription started,Series D
+E01058,INV-10164,2025-10-26,Funded,"$550,000"
+E01059,INV-10165,2025-08-18,Registered,Via RIA-088
+E01060,INV-10165,2025-08-28,Eligibility verified,QEP
+E01061,INV-10165,2025-09-05,Proposal sent,
+E01062,INV-10165,2025-09-28,Subscription started,Series D
+E01063,INV-10165,2025-10-08,Funded,"$155,000"
+E01064,INV-10166,2025-09-03,Registered,Via RIA-043
+E01065,INV-10166,2025-09-10,Eligibility verified,Accredited
+E01066,INV-10166,2025-09-16,Proposal sent,
+E01067,INV-10166,2025-10-02,Subscription started,Series D
+E01068,INV-10166,2025-10-09,Funded,"$320,000"
+E01069,INV-10167,2025-09-23,Registered,Via RIA-127
+E01070,INV-10167,2025-09-30,Eligibility verified,Accredited
+E01071,INV-10167,2025-10-06,Proposal sent,
+E01072,INV-10167,2025-10-25,Subscription started,Series D
+E01073,INV-10167,2025-11-01,Funded,"$265,000"
+E01074,INV-10167,2026-06-20,Top-up,"$110,000"
+E01075,INV-10168,2025-10-25,Registered,Via RIA-156
+E01076,INV-10168,2025-10-30,Eligibility verified,Accredited
+E01077,INV-10168,2025-11-03,Proposal sent,
+E01078,INV-10168,2025-11-15,Subscription started,Series D
+E01079,INV-10168,2025-11-20,Funded,"$105,000"
+E01080,INV-10169,2025-10-05,Registered,Via RIA-187
+E01081,INV-10169,2025-10-13,Eligibility verified,QEP
+E01082,INV-10169,2025-10-19,Proposal sent,
+E01083,INV-10169,2025-11-07,Subscription started,Series D
+E01084,INV-10169,2025-11-15,Funded,"$480,000"
+E01085,INV-10170,2025-11-05,Registered,Via RIA-019
+E01086,INV-10170,2025-11-10,Eligibility verified,Accredited
+E01087,INV-10170,2025-11-14,Proposal sent,
+E01088,INV-10170,2025-11-29,Subscription started,Series D
+E01089,INV-10170,2025-12-04,Funded,"$260,000"
+E01090,INV-10170,2026-02-26,Top-up,"$60,000"
+E01091,INV-10171,2025-11-18,Registered,Via RIA-127
+E01092,INV-10171,2025-11-24,Eligibility verified,Accredited
+E01093,INV-10171,2025-11-29,Proposal sent,
+E01094,INV-10171,2025-12-16,Subscription started,Series D
+E01095,INV-10171,2025-12-22,Funded,"$315,000"
+E01096,INV-10172,2025-11-13,Registered,Via RIA-187
+E01097,INV-10172,2025-11-27,Eligibility verified,Accredited
+E01098,INV-10172,2025-12-08,Proposal sent,
+E01099,INV-10172,2026-01-09,Subscription started,Series D
+E01100,INV-10172,2026-01-23,Funded,"$450,000"
+E01101,INV-10173,2026-01-01,Registered,Via RIA-132
+E01102,INV-10173,2026-01-06,Eligibility verified,Accredited
+E01103,INV-10173,2026-01-10,Proposal sent,
+E01104,INV-10173,2026-01-22,Subscription started,Series D
+E01105,INV-10173,2026-01-27,Funded,"$120,000"
+E01106,INV-10174,2025-12-10,Registered,Via RIA-115
+E01107,INV-10174,2025-12-18,Eligibility verified,Accredited
+E01108,INV-10174,2025-12-25,Proposal sent,
+E01109,INV-10174,2026-01-15,Subscription started,Series D
+E01110,INV-10174,2026-01-23,Funded,"$250,000"
+E01111,INV-10175,2025-12-15,Registered,Via RIA-187
+E01112,INV-10175,2025-12-23,Eligibility verified,Accredited
+E01113,INV-10175,2025-12-30,Proposal sent,
+E01114,INV-10175,2026-01-20,Subscription started,Series D
+E01115,INV-10175,2026-01-28,Funded,"$170,000"
+E01116,INV-10175,2026-03-08,Redemption requested,Liquidity need
+E01117,INV-10175,2026-03-28,Fully redeemed,"$165,037"
+E01118,INV-10176,2026-01-03,Registered,Via RIA-156
+E01119,INV-10176,2026-01-13,Eligibility verified,Accredited
+E01120,INV-10176,2026-01-21,Proposal sent,
+E01121,INV-10176,2026-02-14,Subscription started,Series D
+E01122,INV-10176,2026-02-24,Funded,"$95,000"
+E01123,INV-10176,2026-09-04,Redemption requested,Rebalancing
+E01124,INV-10176,2026-09-28,Fully redeemed,"$96,488"
+E01125,INV-10177,2025-12-20,Registered,Via RIA-043
+E01126,INV-10177,2025-12-31,Eligibility verified,Accredited
+E01127,INV-10177,2026-01-09,Proposal sent,
+E01128,INV-10177,2026-02-04,Subscription started,Series D
+E01129,INV-10177,2026-02-15,Funded,"$130,000"
+E01130,INV-10178,2026-02-12,Registered,Via RIA-127
+E01131,INV-10178,2026-02-17,Eligibility verified,Accredited
+E01132,INV-10178,2026-02-21,Proposal sent,
+E01133,INV-10178,2026-03-04,Subscription started,Series D
+E01134,INV-10178,2026-03-09,Funded,"$235,000"
+E01135,INV-10179,2026-03-12,Registered,Via RIA-115
+E01136,INV-10179,2026-03-17,Eligibility verified,Accredited
+E01137,INV-10179,2026-03-21,Proposal sent,
+E01138,INV-10179,2026-04-05,Subscription started,Series D
+E01139,INV-10179,2026-04-10,Funded,"$235,000"
+E01140,INV-10180,2026-03-27,Registered,Via RIA-132
+E01141,INV-10180,2026-04-01,Eligibility verified,Accredited
+E01142,INV-10180,2026-04-05,Proposal sent,
+E01143,INV-10180,2026-04-20,Subscription started,Series D
+E01144,INV-10180,2026-04-25,Funded,"$215,000"
+E01145,INV-10180,2026-08-14,Redemption requested,Adviser moved client
+E01146,INV-10180,2026-08-28,Fully redeemed,"$210,201"
+E01147,INV-10181,2026-01-31,Registered,Via RIA-156
+E01148,INV-10181,2026-02-13,Eligibility verified,Accredited
+E01149,INV-10181,2026-02-24,Proposal sent,
+E01150,INV-10181,2026-03-28,Subscription started,Series D
+E01151,INV-10181,2026-04-10,Funded,"$195,000"
+E01152,INV-10182,2026-04-05,Registered,Via RIA-031
+E01153,INV-10182,2026-04-13,Eligibility verified,Accredited
+E01154,INV-10182,2026-04-20,Proposal sent,
+E01155,INV-10182,2026-05-09,Subscription started,Series D
+E01156,INV-10182,2026-05-17,Funded,"$230,000"
+E01157,INV-10183,2026-04-19,Registered,Via RIA-156
+E01158,INV-10183,2026-04-24,Eligibility verified,Accredited
+E01159,INV-10183,2026-04-28,Proposal sent,
+E01160,INV-10183,2026-05-11,Subscription started,Series D
+E01161,INV-10183,2026-05-16,Funded,"$365,000"
+E01162,INV-10183,2026-08-28,Top-up,"$145,000"
+E01163,INV-10184,2026-03-18,Registered,Via RIA-088
+E01164,INV-10184,2026-03-29,Eligibility verified,Accredited
+E01165,INV-10184,2026-04-07,Proposal sent,
+E01166,INV-10184,2026-05-05,Subscription started,Series D
+E01167,INV-10184,2026-05-16,Funded,"$190,000"
+E01168,INV-10185,2026-05-27,Registered,Via RIA-187
+E01169,INV-10185,2026-06-01,Eligibility verified,Accredited
+E01170,INV-10185,2026-06-05,Proposal sent,
+E01171,INV-10185,2026-06-17,Subscription started,Series D
+E01172,INV-10185,2026-06-22,Funded,"$85,000"
+E01173,INV-10186,2026-05-12,Registered,Via RIA-187
+E01174,INV-10186,2026-05-20,Eligibility verified,Accredited
+E01175,INV-10186,2026-05-26,Proposal sent,
+E01176,INV-10186,2026-06-14,Subscription started,Series D
+E01177,INV-10186,2026-06-22,Funded,"$200,000"
+E01178,INV-10186,2026-09-16,Redemption requested,Adviser moved client
+E01179,INV-10186,2026-09-28,Fully redeemed,"$197,762"
+E01180,INV-10187,2026-04-01,Registered,Via RIA-187
+E01181,INV-10187,2026-04-17,Eligibility verified,Accredited
+E01182,INV-10187,2026-05-01,Proposal sent,
+E01183,INV-10187,2026-06-08,Subscription started,Series D
+E01184,INV-10187,2026-06-24,Funded,"$200,000"
+E01185,INV-10188,2026-05-15,Registered,Via RIA-135
+E01186,INV-10188,2026-05-23,Eligibility verified,Accredited
+E01187,INV-10188,2026-05-30,Proposal sent,
+E01188,INV-10188,2026-06-20,Subscription started,Series D
+E01189,INV-10188,2026-06-28,Funded,"$430,000"
+E01190,INV-10189,2026-06-06,Registered,Via RIA-074
+E01191,INV-10189,2026-06-15,Eligibility verified,Accredited
+E01192,INV-10189,2026-06-22,Proposal sent,
+E01193,INV-10189,2026-07-14,Subscription started,Series D
+E01194,INV-10189,2026-07-23,Funded,"$160,000"
+E01195,INV-10190,2026-05-18,Registered,Via RIA-088
+E01196,INV-10190,2026-05-27,Eligibility verified,Accredited
+E01197,INV-10190,2026-06-04,Proposal sent,
+E01198,INV-10190,2026-06-26,Subscription started,Series D
+E01199,INV-10190,2026-07-05,Funded,"$175,000"
+E01200,INV-10191,2026-07-20,Registered,Via RIA-132
+E01201,INV-10191,2026-07-25,Eligibility verified,Accredited
+E01202,INV-10191,2026-07-29,Proposal sent,
+E01203,INV-10191,2026-08-09,Subscription started,Series D
+E01204,INV-10191,2026-08-14,Funded,"$375,000"
+E01205,INV-10192,2026-06-25,Registered,Via RIA-088
+E01206,INV-10192,2026-07-07,Eligibility verified,Accredited
+E01207,INV-10192,2026-07-17,Proposal sent,
+E01208,INV-10192,2026-08-13,Subscription started,Series D
+E01209,INV-10192,2026-08-25,Funded,"$70,000"
+E01210,INV-10193,2026-08-16,Registered,Via RIA-115
+E01211,INV-10193,2026-08-20,Eligibility verified,Accredited
+E01212,INV-10193,2026-08-24,Proposal sent,
+E01213,INV-10193,2026-09-05,Subscription started,Series D
+E01214,INV-10193,2026-09-09,Funded,"$210,000"
+E01215,INV-10194,2023-01-01,Registered,Via BD-011
+E01216,INV-10194,2023-01-05,Eligibility verified,Accredited
+E01217,INV-10194,2023-01-09,Proposal sent,
+E01218,INV-10194,2023-01-21,Subscription started,Series A
+E01219,INV-10194,2023-01-25,Funded,"$335,000"
+E01220,INV-10194,2026-07-11,Top-up,"$155,000"
+E01221,INV-10195,2023-01-07,Registered,Via BD-039
+E01222,INV-10195,2023-01-14,Eligibility verified,Accredited
+E01223,INV-10195,2023-01-20,Proposal sent,
+E01224,INV-10195,2023-02-06,Subscription started,Series A
+E01225,INV-10195,2023-02-13,Funded,"$220,000"
+E01226,INV-10195,2025-07-15,Redemption requested,Performance drawdown
+E01227,INV-10195,2025-07-28,Fully redeemed,"$260,598"
+E01228,INV-10196,2023-01-25,Registered,Via BD-143
+E01229,INV-10196,2023-01-31,Eligibility verified,Accredited
+E01230,INV-10196,2023-02-05,Proposal sent,
+E01231,INV-10196,2023-02-20,Subscription started,Series A
+E01232,INV-10196,2023-02-26,Funded,"$195,000"
+E01233,INV-10196,2025-01-23,Top-up,"$65,000"
+E01234,INV-10197,2023-02-13,Registered,Via BD-196
+E01235,INV-10197,2023-02-18,Eligibility verified,QEP
+E01236,INV-10197,2023-02-22,Proposal sent,
+E01237,INV-10197,2023-03-06,Subscription started,Series A
+E01238,INV-10197,2023-03-11,Funded,"$65,000"
+E01239,INV-10198,2023-03-21,Registered,Via BD-172
+E01240,INV-10198,2023-03-25,Eligibility verified,Accredited
+E01241,INV-10198,2023-03-28,Proposal sent,
+E01242,INV-10198,2023-04-09,Subscription started,Series A
+E01243,INV-10198,2023-04-13,Funded,"$190,000"
+E01244,INV-10198,2025-02-21,Redemption requested,Performance drawdown
+E01245,INV-10198,2025-02-28,Fully redeemed,"$206,596"
+E01246,INV-10199,2023-05-06,Registered,Via BD-172
+E01247,INV-10199,2023-05-08,Eligibility verified,Accredited
+E01248,INV-10199,2023-05-10,Proposal sent,
+E01249,INV-10199,2023-05-16,Subscription started,Series A
+E01250,INV-10199,2023-05-18,Funded,"$90,000"
+E01251,INV-10199,2025-03-08,Top-up,"$50,000"
+E01252,INV-10200,2023-05-10,Registered,Via BD-196
+E01253,INV-10200,2023-05-15,Eligibility verified,Accredited
+E01254,INV-10200,2023-05-19,Proposal sent,
+E01255,INV-10200,2023-06-01,Subscription started,Series A
+E01256,INV-10200,2023-06-06,Funded,"$55,000"
+E01257,INV-10201,2023-05-30,Registered,Via BD-011
+E01258,INV-10201,2023-05-31,Eligibility verified,Accredited
+E01259,INV-10201,2023-06-01,Proposal sent,
+E01260,INV-10201,2023-06-04,Subscription started,Series A
+E01261,INV-10201,2023-06-06,Funded,"$405,000"
+E01262,INV-10201,2024-05-26,Top-up,"$175,000"
+E01263,INV-10201,2025-06-22,Redemption requested,Adviser moved client
+E01264,INV-10201,2025-06-28,Fully redeemed,"$688,039"
+E01265,INV-10202,2023-07-21,Registered,Via BD-126
+E01266,INV-10202,2023-07-24,Eligibility verified,Accredited
+E01267,INV-10202,2023-07-27,Proposal sent,
+E01268,INV-10202,2023-08-06,Subscription started,Series A
+E01269,INV-10202,2023-08-09,Funded,"$100,000"
+E01270,INV-10202,2024-04-09,Top-up,"$45,000"
+E01271,INV-10203,2023-07-25,Registered,Via BD-088
+E01272,INV-10203,2023-07-29,Eligibility verified,Accredited
+E01273,INV-10203,2023-08-01,Proposal sent,
+E01274,INV-10203,2023-08-11,Subscription started,Series A
+E01275,INV-10203,2023-08-15,Funded,"$100,000"
+E01276,INV-10203,2024-03-12,Redemption requested,Rebalancing
+E01277,INV-10203,2024-03-28,Fully redeemed,"$108,691"
+E01278,INV-10204,2023-06-19,Registered,Via BD-147
+E01279,INV-10204,2023-07-02,Eligibility verified,Accredited
+E01280,INV-10204,2023-07-12,Proposal sent,
+E01281,INV-10204,2023-08-10,Subscription started,Series A
+E01282,INV-10204,2023-08-23,Funded,"$250,000"
+E01283,INV-10204,2024-08-07,Top-up,"$95,000"
+E01284,INV-10204,2025-05-19,Top-up,"$110,000"
+E01285,INV-10205,2023-07-23,Registered,Via BD-194
+E01286,INV-10205,2023-08-02,Eligibility verified,QEP
+E01287,INV-10205,2023-08-10,Proposal sent,
+E01288,INV-10205,2023-09-03,Subscription started,Series A
+E01289,INV-10205,2023-09-13,Funded,"$350,000"
+E01290,INV-10205,2023-12-10,Redemption requested,Performance drawdown
+E01291,INV-10205,2023-12-28,Fully redeemed,"$364,620"
+E01292,INV-10206,2023-09-21,Registered,Via BD-108
+E01293,INV-10206,2023-09-27,Eligibility verified,Accredited
+E01294,INV-10206,2023-10-02,Proposal sent,
+E01295,INV-10206,2023-10-19,Subscription started,Series A
+E01296,INV-10206,2023-10-25,Funded,"$280,000"
+E01297,INV-10206,2024-02-22,Top-up,"$160,000"
+E01298,INV-10206,2025-05-16,Top-up,"$95,000"
+E01299,INV-10206,2026-08-24,Redemption requested,Liquidity need
+E01300,INV-10206,2026-08-28,Fully redeemed,"$577,739"
+E01301,INV-10207,2023-09-10,Registered,Via BD-126
+E01302,INV-10207,2023-09-14,Eligibility verified,Accredited
+E01303,INV-10207,2023-09-18,Proposal sent,
+E01304,INV-10207,2023-09-30,Subscription started,Series A
+E01305,INV-10207,2023-10-04,Funded,"$100,000"
+E01306,INV-10208,2023-08-12,Registered,Via BD-126
+E01307,INV-10208,2023-08-22,Eligibility verified,Accredited
+E01308,INV-10208,2023-08-30,Proposal sent,
+E01309,INV-10208,2023-09-21,Subscription started,Series A
+E01310,INV-10208,2023-10-01,Funded,"$25,000"
+E01311,INV-10208,2024-01-12,Redemption requested,Rebalancing
+E01312,INV-10208,2024-01-28,Fully redeemed,"$24,666"
+E01313,INV-10209,2023-09-04,Registered,Via BD-194
+E01314,INV-10209,2023-09-20,Eligibility verified,Accredited
+E01315,INV-10209,2023-10-03,Proposal sent,
+E01316,INV-10209,2023-11-09,Subscription started,Series A
+E01317,INV-10209,2023-11-25,Funded,"$65,000"
+E01318,INV-10209,2026-09-04,Top-up,"$25,000"
+E01319,INV-10210,2023-11-21,Registered,Via BD-147
+E01320,INV-10210,2023-11-22,Eligibility verified,Accredited
+E01321,INV-10210,2023-11-23,Proposal sent,
+E01322,INV-10210,2023-11-25,Subscription started,Series A
+E01323,INV-10210,2023-11-27,Funded,"$100,000"
+E01324,INV-10210,2024-01-09,Top-up,"$25,000"
+E01325,INV-10210,2024-02-10,Redemption requested,Performance drawdown
+E01326,INV-10210,2024-02-28,Fully redeemed,"$125,662"
+E01327,INV-10211,2023-09-23,Registered,Via BD-011
+E01328,INV-10211,2023-10-05,Eligibility verified,Accredited
+E01329,INV-10211,2023-10-15,Proposal sent,
+E01330,INV-10211,2023-11-10,Subscription started,Series A
+E01331,INV-10211,2023-11-22,Funded,"$685,000"
+E01332,INV-10212,2023-12-14,Registered,Via BD-147
+E01333,INV-10212,2023-12-17,Eligibility verified,Accredited
+E01334,INV-10212,2023-12-20,Proposal sent,
+E01335,INV-10212,2023-12-30,Subscription started,Series A
+E01336,INV-10212,2024-01-02,Funded,"$135,000"
+E01337,INV-10213,2024-01-22,Registered,Via BD-147
+E01338,INV-10213,2024-01-25,Eligibility verified,Accredited
+E01339,INV-10213,2024-01-27,Proposal sent,
+E01340,INV-10213,2024-02-04,Subscription started,Series A
+E01341,INV-10213,2024-02-07,Funded,"$280,000"
+E01342,INV-10213,2025-07-19,Top-up,"$155,000"
+E01343,INV-10214,2024-02-14,Registered,Via BD-081
+E01344,INV-10214,2024-02-20,Eligibility verified,Accredited
+E01345,INV-10214,2024-02-25,Proposal sent,
+E01346,INV-10214,2024-03-12,Subscription started,Series A
+E01347,INV-10214,2024-03-18,Funded,"$185,000"
+E01348,INV-10214,2024-06-25,Top-up,"$65,000"
+E01349,INV-10214,2025-09-03,Redemption requested,Adviser moved client
+E01350,INV-10214,2025-09-28,Fully redeemed,"$263,976"
+E01351,INV-10215,2024-02-28,Registered,Via BD-143
+E01352,INV-10215,2024-03-05,Eligibility verified,Accredited
+E01353,INV-10215,2024-03-10,Proposal sent,
+E01354,INV-10215,2024-03-27,Subscription started,Series A
+E01355,INV-10215,2024-04-02,Funded,"$270,000"
+E01356,INV-10215,2025-04-25,Redemption requested,Rebalancing
+E01357,INV-10215,2025-04-28,Fully redeemed,"$266,448"
+E01358,INV-10216,2024-03-19,Registered,Via BD-126
+E01359,INV-10216,2024-03-24,Eligibility verified,Accredited
+E01360,INV-10216,2024-03-28,Proposal sent,
+E01361,INV-10216,2024-04-10,Subscription started,Series A
+E01362,INV-10216,2024-04-15,Funded,"$100,000"
+E01363,INV-10217,2024-03-11,Registered,Via BD-172
+E01364,INV-10217,2024-03-15,Eligibility verified,Accredited
+E01365,INV-10217,2024-03-18,Proposal sent,
+E01366,INV-10217,2024-03-30,Subscription started,Series A
+E01367,INV-10217,2024-04-03,Funded,"$550,000"
+E01368,INV-10217,2026-09-04,Top-up,"$210,000"
+E01369,INV-10218,2024-03-22,Registered,Via BD-088
+E01370,INV-10218,2024-03-26,Eligibility verified,Accredited
+E01371,INV-10218,2024-03-29,Proposal sent,
+E01372,INV-10218,2024-04-10,Subscription started,Series A
+E01373,INV-10218,2024-04-14,Funded,"$210,000"
+E01374,INV-10219,2024-03-18,Registered,Via BD-088
+E01375,INV-10219,2024-03-22,Eligibility verified,Accredited
+E01376,INV-10219,2024-03-26,Proposal sent,
+E01377,INV-10219,2024-04-07,Subscription started,Series A
+E01378,INV-10219,2024-04-11,Funded,"$105,000"
+E01379,INV-10219,2024-09-09,Top-up,"$30,000"
+E01380,INV-10219,2026-07-23,Top-up,"$25,000"
+E01381,INV-10220,2024-03-12,Registered,Via BD-172
+E01382,INV-10220,2024-03-17,Eligibility verified,Accredited
+E01383,INV-10220,2024-03-21,Proposal sent,
+E01384,INV-10220,2024-04-04,Subscription started,Series A
+E01385,INV-10220,2024-04-09,Funded,"$165,000"
+E01386,INV-10221,2024-06-21,Registered,Via BD-143
+E01387,INV-10221,2024-06-25,Eligibility verified,Accredited
+E01388,INV-10221,2024-06-28,Proposal sent,
+E01389,INV-10221,2024-07-08,Subscription started,Series A
+E01390,INV-10221,2024-07-12,Funded,"$55,000"
+E01391,INV-10222,2024-05-31,Registered,Via BD-081
+E01392,INV-10222,2024-06-07,Eligibility verified,Accredited
+E01393,INV-10222,2024-06-12,Proposal sent,
+E01394,INV-10222,2024-06-28,Subscription started,Series A
+E01395,INV-10222,2024-07-05,Funded,"$470,000"
+E01396,INV-10222,2026-04-15,Redemption requested,Performance drawdown
+E01397,INV-10222,2026-04-28,Fully redeemed,"$554,101"
+E01398,INV-10223,2024-06-14,Registered,Via BD-011
+E01399,INV-10223,2024-06-18,Eligibility verified,Accredited
+E01400,INV-10223,2024-06-21,Proposal sent,
+E01401,INV-10223,2024-06-30,Subscription started,Series A
+E01402,INV-10223,2024-07-04,Funded,"$40,000"
+E01403,INV-10224,2024-06-20,Registered,Via BD-011
+E01404,INV-10224,2024-06-24,Eligibility verified,Accredited
+E01405,INV-10224,2024-06-28,Proposal sent,
+E01406,INV-10224,2024-07-10,Subscription started,Series A
+E01407,INV-10224,2024-07-14,Funded,"$85,000"
+E01408,INV-10225,2024-05-09,Registered,Via BD-196
+E01409,INV-10225,2024-05-30,Eligibility verified,Accredited
+E01410,INV-10225,2024-06-17,Proposal sent,
+E01411,INV-10225,2024-08-05,Subscription started,Series A
+E01412,INV-10225,2024-08-26,Funded,"$130,000"
+E01413,INV-10225,2024-11-16,Redemption requested,Adviser moved client
+E01414,INV-10225,2024-11-28,Fully redeemed,"$135,242"
+E01415,INV-10226,2024-07-26,Registered,Via BD-143
+E01416,INV-10226,2024-07-31,Eligibility verified,Accredited
+E01417,INV-10226,2024-08-04,Proposal sent,
+E01418,INV-10226,2024-08-18,Subscription started,Series A
+E01419,INV-10226,2024-08-23,Funded,"$85,000"
+E01420,INV-10226,2024-12-01,Redemption requested,Performance drawdown
+E01421,INV-10226,2024-12-28,Fully redeemed,"$87,368"
+E01422,INV-10227,2024-08-08,Registered,Via BD-081
+E01423,INV-10227,2024-08-14,Eligibility verified,Accredited
+E01424,INV-10227,2024-08-19,Proposal sent,
+E01425,INV-10227,2024-09-01,Subscription started,Series A
+E01426,INV-10227,2024-09-07,Funded,"$120,000"
+E01427,INV-10227,2025-10-08,Top-up,"$60,000"
+E01428,INV-10228,2024-08-16,Registered,Via BD-143
+E01429,INV-10228,2024-08-19,Eligibility verified,Accredited
+E01430,INV-10228,2024-08-21,Proposal sent,
+E01431,INV-10228,2024-08-29,Subscription started,Series A
+E01432,INV-10228,2024-09-01,Funded,"$260,000"
+E01433,INV-10229,2024-08-30,Registered,Via BD-088
+E01434,INV-10229,2024-09-05,Eligibility verified,QEP
+E01435,INV-10229,2024-09-10,Proposal sent,
+E01436,INV-10229,2024-09-26,Subscription started,Series A
+E01437,INV-10229,2024-10-02,Funded,"$135,000"
+E01438,INV-10230,2024-10-30,Registered,Via BD-020
+E01439,INV-10230,2024-11-05,Eligibility verified,Accredited
+E01440,INV-10230,2024-11-10,Proposal sent,
+E01441,INV-10230,2024-11-26,Subscription started,Series A
+E01442,INV-10230,2024-12-02,Funded,"$160,000"
+E01443,INV-10231,2024-12-23,Registered,Via BD-143
+E01444,INV-10231,2024-12-25,Eligibility verified,QEP
+E01445,INV-10231,2024-12-27,Proposal sent,
+E01446,INV-10231,2025-01-02,Subscription started,Series A
+E01447,INV-10231,2025-01-04,Funded,"$140,000"
+E01448,INV-10232,2025-01-01,Registered,Via BD-196
+E01449,INV-10232,2025-01-09,Eligibility verified,Accredited
+E01450,INV-10232,2025-01-15,Proposal sent,
+E01451,INV-10232,2025-02-03,Subscription started,Series A
+E01452,INV-10232,2025-02-11,Funded,"$140,000"
+E01453,INV-10233,2025-02-08,Registered,Via BD-088
+E01454,INV-10233,2025-02-12,Eligibility verified,Accredited
+E01455,INV-10233,2025-02-16,Proposal sent,
+E01456,INV-10233,2025-02-28,Subscription started,Series A
+E01457,INV-10233,2025-03-04,Funded,"$190,000"
+E01458,INV-10234,2025-04-30,Registered,Via BD-172
+E01459,INV-10234,2025-05-05,Eligibility verified,Accredited
+E01460,INV-10234,2025-05-09,Proposal sent,
+E01461,INV-10234,2025-05-20,Subscription started,Series A
+E01462,INV-10234,2025-05-25,Funded,"$205,000"
+E01463,INV-10235,2025-03-23,Registered,Via BD-081
+E01464,INV-10235,2025-04-02,Eligibility verified,Accredited
+E01465,INV-10235,2025-04-10,Proposal sent,
+E01466,INV-10235,2025-05-02,Subscription started,Series A
+E01467,INV-10235,2025-05-12,Funded,"$175,000"
+E01468,INV-10236,2025-05-06,Registered,Via BD-147
+E01469,INV-10236,2025-05-09,Eligibility verified,Accredited
+E01470,INV-10236,2025-05-12,Proposal sent,
+E01471,INV-10236,2025-05-22,Subscription started,Series A
+E01472,INV-10236,2025-05-25,Funded,"$80,000"
+E01473,INV-10237,2025-03-25,Registered,Via BD-194
+E01474,INV-10237,2025-04-02,Eligibility verified,Accredited
+E01475,INV-10237,2025-04-08,Proposal sent,
+E01476,INV-10237,2025-04-27,Subscription started,Series A
+E01477,INV-10237,2025-05-05,Funded,"$155,000"
+E01478,INV-10238,2025-04-30,Registered,Via BD-088
+E01479,INV-10238,2025-05-10,Eligibility verified,Accredited
+E01480,INV-10238,2025-05-18,Proposal sent,
+E01481,INV-10238,2025-06-12,Subscription started,Series A
+E01482,INV-10238,2025-06-22,Funded,"$235,000"
+E01483,INV-10238,2025-08-18,Redemption requested,Estate or other
+E01484,INV-10238,2025-08-28,Fully redeemed,"$228,911"
+E01485,INV-10239,2025-06-13,Registered,Via BD-126
+E01486,INV-10239,2025-06-17,Eligibility verified,Accredited
+E01487,INV-10239,2025-06-20,Proposal sent,
+E01488,INV-10239,2025-07-01,Subscription started,Series A
+E01489,INV-10239,2025-07-05,Funded,"$345,000"
+E01490,INV-10240,2025-06-14,Registered,Via BD-143
+E01491,INV-10240,2025-06-21,Eligibility verified,Accredited
+E01492,INV-10240,2025-06-27,Proposal sent,
+E01493,INV-10240,2025-07-14,Subscription started,Series A
+E01494,INV-10240,2025-07-21,Funded,"$45,000"
+E01495,INV-10241,2025-06-18,Registered,Via BD-088
+E01496,INV-10241,2025-06-21,Eligibility verified,Accredited
+E01497,INV-10241,2025-06-24,Proposal sent,
+E01498,INV-10241,2025-07-03,Subscription started,Series A
+E01499,INV-10241,2025-07-06,Funded,"$95,000"
+E01500,INV-10241,2026-01-09,Top-up,"$55,000"
+E01501,INV-10242,2025-07-14,Registered,Via BD-196
+E01502,INV-10242,2025-07-19,Eligibility verified,Accredited
+E01503,INV-10242,2025-07-23,Proposal sent,
+E01504,INV-10242,2025-08-03,Subscription started,Series A
+E01505,INV-10242,2025-08-08,Funded,"$125,000"
+E01506,INV-10243,2025-08-08,Registered,Via BD-172
+E01507,INV-10243,2025-08-09,Eligibility verified,QEP
+E01508,INV-10243,2025-08-10,Proposal sent,
+E01509,INV-10243,2025-08-14,Subscription started,Series A
+E01510,INV-10243,2025-08-16,Funded,"$45,000"
+E01511,INV-10244,2025-08-23,Registered,Via BD-081
+E01512,INV-10244,2025-08-27,Eligibility verified,Accredited
+E01513,INV-10244,2025-08-30,Proposal sent,
+E01514,INV-10244,2025-09-09,Subscription started,Series A
+E01515,INV-10244,2025-09-13,Funded,"$240,000"
+E01516,INV-10245,2025-08-29,Registered,Via BD-147
+E01517,INV-10245,2025-09-05,Eligibility verified,Accredited
+E01518,INV-10245,2025-09-10,Proposal sent,
+E01519,INV-10245,2025-09-26,Subscription started,Series A
+E01520,INV-10245,2025-10-03,Funded,"$115,000"
+E01521,INV-10245,2026-02-10,Redemption requested,Liquidity need
+E01522,INV-10245,2026-02-28,Fully redeemed,"$116,009"
+E01523,INV-10246,2025-09-29,Registered,Via BD-126
+E01524,INV-10246,2025-10-03,Eligibility verified,Accredited
+E01525,INV-10246,2025-10-07,Proposal sent,
+E01526,INV-10246,2025-10-19,Subscription started,Series A
+E01527,INV-10246,2025-10-23,Funded,"$115,000"
+E01528,INV-10247,2025-08-16,Registered,Via BD-143
+E01529,INV-10247,2025-08-26,Eligibility verified,Accredited
+E01530,INV-10247,2025-09-03,Proposal sent,
+E01531,INV-10247,2025-09-27,Subscription started,Series A
+E01532,INV-10247,2025-10-07,Funded,"$265,000"
+E01533,INV-10248,2025-10-19,Registered,Via BD-126
+E01534,INV-10248,2025-10-22,Eligibility verified,Accredited
+E01535,INV-10248,2025-10-24,Proposal sent,
+E01536,INV-10248,2025-11-02,Subscription started,Series A
+E01537,INV-10248,2025-11-05,Funded,"$95,000"
+E01538,INV-10249,2025-12-06,Registered,Via BD-020
+E01539,INV-10249,2025-12-09,Eligibility verified,Accredited
+E01540,INV-10249,2025-12-11,Proposal sent,
+E01541,INV-10249,2025-12-19,Subscription started,Series A
+E01542,INV-10249,2025-12-22,Funded,"$40,000"
+E01543,INV-10249,2026-05-10,Top-up,"$20,000"
+E01544,INV-10250,2025-12-05,Registered,Via BD-196
+E01545,INV-10250,2025-12-14,Eligibility verified,Accredited
+E01546,INV-10250,2025-12-21,Proposal sent,
+E01547,INV-10250,2026-01-10,Subscription started,Series A
+E01548,INV-10250,2026-01-19,Funded,"$70,000"
+E01549,INV-10251,2026-01-18,Registered,Via BD-196
+E01550,INV-10251,2026-01-20,Eligibility verified,Accredited
+E01551,INV-10251,2026-01-22,Proposal sent,
+E01552,INV-10251,2026-01-30,Subscription started,Series A
+E01553,INV-10251,2026-02-01,Funded,"$445,000"
+E01554,INV-10252,2026-02-26,Registered,Via BD-172
+E01555,INV-10252,2026-03-02,Eligibility verified,Accredited
+E01556,INV-10252,2026-03-05,Proposal sent,
+E01557,INV-10252,2026-03-15,Subscription started,Series A
+E01558,INV-10252,2026-03-19,Funded,"$115,000"
+E01559,INV-10253,2026-03-19,Registered,Via BD-194
+E01560,INV-10253,2026-03-23,Eligibility verified,Accredited
+E01561,INV-10253,2026-03-26,Proposal sent,
+E01562,INV-10253,2026-04-04,Subscription started,Series A
+E01563,INV-10253,2026-04-08,Funded,"$55,000"
+E01564,INV-10253,2026-09-05,Top-up,"$25,000"
+E01565,INV-10254,2026-03-03,Registered,Via BD-194
+E01566,INV-10254,2026-03-11,Eligibility verified,Accredited
+E01567,INV-10254,2026-03-17,Proposal sent,
+E01568,INV-10254,2026-04-04,Subscription started,Series A
+E01569,INV-10254,2026-04-12,Funded,"$75,000"
+E01570,INV-10255,2026-03-06,Registered,Via BD-126
+E01571,INV-10255,2026-03-13,Eligibility verified,QEP
+E01572,INV-10255,2026-03-19,Proposal sent,
+E01573,INV-10255,2026-04-07,Subscription started,Series A
+E01574,INV-10255,2026-04-14,Funded,"$205,000"
+E01575,INV-10256,2026-03-30,Registered,Via BD-172
+E01576,INV-10256,2026-04-05,Eligibility verified,Accredited
+E01577,INV-10256,2026-04-10,Proposal sent,
+E01578,INV-10256,2026-04-25,Subscription started,Series A
+E01579,INV-10256,2026-05-01,Funded,"$120,000"
+E01580,INV-10257,2026-06-24,Registered,Via BD-126
+E01581,INV-10257,2026-06-26,Eligibility verified,QEP
+E01582,INV-10257,2026-06-28,Proposal sent,
+E01583,INV-10257,2026-07-06,Subscription started,Series A
+E01584,INV-10257,2026-07-08,Funded,"$135,000"
+E01585,INV-10258,2026-06-26,Registered,Via BD-108
+E01586,INV-10258,2026-07-01,Eligibility verified,Accredited
+E01587,INV-10258,2026-07-05,Proposal sent,
+E01588,INV-10258,2026-07-20,Subscription started,Series A
+E01589,INV-10258,2026-07-25,Funded,"$105,000"
+E01590,INV-10259,2026-07-07,Registered,Via BD-081
+E01591,INV-10259,2026-07-12,Eligibility verified,Accredited
+E01592,INV-10259,2026-07-16,Proposal sent,
+E01593,INV-10259,2026-07-29,Subscription started,Series A
+E01594,INV-10259,2026-08-03,Funded,"$305,000"
+E01595,INV-10260,2026-07-23,Registered,Via BD-126
+E01596,INV-10260,2026-07-28,Eligibility verified,Accredited
+E01597,INV-10260,2026-08-01,Proposal sent,
+E01598,INV-10260,2026-08-13,Subscription started,Series A
+E01599,INV-10260,2026-08-18,Funded,"$135,000"
+E01600,INV-10261,2026-07-14,Registered,Via BD-194
+E01601,INV-10261,2026-07-18,Eligibility verified,Accredited
+E01602,INV-10261,2026-07-22,Proposal sent,
+E01603,INV-10261,2026-08-03,Subscription started,Series A
+E01604,INV-10261,2026-08-07,Funded,"$165,000"
+E01605,INV-10262,2022-12-29,Registered,Via PLT-149
+E01606,INV-10262,2023-01-02,Eligibility verified,Accredited
+E01607,INV-10262,2023-01-05,Proposal sent,
+E01608,INV-10262,2023-01-17,Subscription started,Series A
+E01609,INV-10262,2023-01-21,Funded,"$395,000"
+E01610,INV-10262,2023-12-23,Top-up,"$140,000"
+E01611,INV-10262,2024-10-26,Redemption requested,Adviser moved client
+E01612,INV-10262,2024-10-28,Fully redeemed,"$550,970"
+E01613,INV-10263,2023-02-26,Registered,Via PLT-024
+E01614,INV-10263,2023-03-01,Eligibility verified,Accredited
+E01615,INV-10263,2023-03-04,Proposal sent,
+E01616,INV-10263,2023-03-13,Subscription started,Series A
+E01617,INV-10263,2023-03-16,Funded,"$205,000"
+E01618,INV-10264,2023-04-22,Registered,Via PLT-179
+E01619,INV-10264,2023-04-28,Eligibility verified,Accredited
+E01620,INV-10264,2023-05-03,Proposal sent,
+E01621,INV-10264,2023-05-20,Subscription started,Series A
+E01622,INV-10264,2023-05-26,Funded,"$255,000"
+E01623,INV-10265,2023-07-21,Registered,Via PLT-090
+E01624,INV-10265,2023-07-24,Eligibility verified,Accredited
+E01625,INV-10265,2023-07-27,Proposal sent,
+E01626,INV-10265,2023-08-05,Subscription started,Series A
+E01627,INV-10265,2023-08-08,Funded,"$95,000"
+E01628,INV-10265,2023-10-26,Top-up,"$35,000"
+E01629,INV-10265,2026-08-24,Top-up,"$30,000"
+E01630,INV-10266,2024-01-02,Registered,Via PLT-018
+E01631,INV-10266,2024-01-04,Eligibility verified,QEP
+E01632,INV-10266,2024-01-05,Proposal sent,
+E01633,INV-10266,2024-01-11,Subscription started,Series A
+E01634,INV-10266,2024-01-13,Funded,"$210,000"
+E01635,INV-10266,2024-05-17,Redemption requested,Rebalancing
+E01636,INV-10266,2024-05-28,Fully redeemed,"$215,751"
+E01637,INV-10267,2024-03-06,Registered,Via PLT-018
+E01638,INV-10267,2024-03-09,Eligibility verified,Accredited
+E01639,INV-10267,2024-03-11,Proposal sent,
+E01640,INV-10267,2024-03-20,Subscription started,Series A
+E01641,INV-10267,2024-03-23,Funded,"$200,000"
+E01642,INV-10267,2025-05-13,Redemption requested,Performance drawdown
+E01643,INV-10267,2025-05-28,Fully redeemed,"$205,655"
+E01644,INV-10268,2024-03-28,Registered,Via PLT-149
+E01645,INV-10268,2024-04-01,Eligibility verified,Accredited
+E01646,INV-10268,2024-04-04,Proposal sent,
+E01647,INV-10268,2024-04-15,Subscription started,Series A
+E01648,INV-10268,2024-04-19,Funded,"$175,000"
+E01649,INV-10268,2026-08-08,Redemption requested,Rebalancing
+E01650,INV-10268,2026-08-28,Fully redeemed,"$181,585"
+E01651,INV-10269,2024-03-16,Registered,Via PLT-090
+E01652,INV-10269,2024-03-19,Eligibility verified,Accredited
+E01653,INV-10269,2024-03-22,Proposal sent,
+E01654,INV-10269,2024-03-31,Subscription started,Series A
+E01655,INV-10269,2024-04-03,Funded,"$215,000"
+E01656,INV-10269,2025-10-08,Top-up,"$65,000"
+E01657,INV-10269,2026-06-08,Top-up,"$80,000"
+E01658,INV-10270,2024-04-11,Registered,Via PLT-070
+E01659,INV-10270,2024-04-30,Eligibility verified,Accredited
+E01660,INV-10270,2024-05-16,Proposal sent,
+E01661,INV-10270,2024-06-27,Subscription started,Series A
+E01662,INV-10270,2024-07-16,Funded,"$400,000"
+E01663,INV-10270,2024-10-07,Top-up,"$230,000"
+E01664,INV-10271,2024-07-19,Registered,Via PLT-179
+E01665,INV-10271,2024-07-23,Eligibility verified,Accredited
+E01666,INV-10271,2024-07-27,Proposal sent,
+E01667,INV-10271,2024-08-08,Subscription started,Series A
+E01668,INV-10271,2024-08-12,Funded,"$205,000"
+E01669,INV-10272,2024-11-02,Registered,Via PLT-179
+E01670,INV-10272,2024-11-05,Eligibility verified,Accredited
+E01671,INV-10272,2024-11-08,Proposal sent,
+E01672,INV-10272,2024-11-18,Subscription started,Series A
+E01673,INV-10272,2024-11-21,Funded,"$215,000"
+E01674,INV-10272,2025-10-12,Top-up,"$50,000"
+E01675,INV-10273,2025-01-14,Registered,Via PLT-178
+E01676,INV-10273,2025-01-20,Eligibility verified,Accredited
+E01677,INV-10273,2025-01-25,Proposal sent,
+E01678,INV-10273,2025-02-07,Subscription started,Series A
+E01679,INV-10273,2025-02-13,Funded,"$60,000"
+E01680,INV-10274,2025-02-04,Registered,Via PLT-122
+E01681,INV-10274,2025-02-08,Eligibility verified,Accredited
+E01682,INV-10274,2025-02-11,Proposal sent,
+E01683,INV-10274,2025-02-20,Subscription started,Series A
+E01684,INV-10274,2025-02-24,Funded,"$265,000"
+E01685,INV-10275,2025-02-09,Registered,Via PLT-149
+E01686,INV-10275,2025-02-14,Eligibility verified,Accredited
+E01687,INV-10275,2025-02-18,Proposal sent,
+E01688,INV-10275,2025-03-03,Subscription started,Series A
+E01689,INV-10275,2025-03-08,Funded,"$215,000"
+E01690,INV-10275,2025-12-25,Redemption requested,Performance drawdown
+E01691,INV-10275,2025-12-28,Fully redeemed,"$242,948"
+E01692,INV-10276,2025-02-11,Registered,Via PLT-070
+E01693,INV-10276,2025-02-19,Eligibility verified,Accredited
+E01694,INV-10276,2025-02-26,Proposal sent,
+E01695,INV-10276,2025-03-18,Subscription started,Series A
+E01696,INV-10276,2025-03-26,Funded,"$145,000"
+E01697,INV-10277,2025-04-06,Registered,Via PLT-070
+E01698,INV-10277,2025-04-09,Eligibility verified,Accredited
+E01699,INV-10277,2025-04-11,Proposal sent,
+E01700,INV-10277,2025-04-18,Subscription started,Series A
+E01701,INV-10277,2025-04-21,Funded,"$165,000"
+E01702,INV-10278,2025-02-24,Registered,Via PLT-122
+E01703,INV-10278,2025-03-06,Eligibility verified,Accredited
+E01704,INV-10278,2025-03-14,Proposal sent,
+E01705,INV-10278,2025-04-05,Subscription started,Series A
+E01706,INV-10278,2025-04-15,Funded,"$140,000"
+E01707,INV-10278,2025-07-21,Top-up,"$45,000"
+E01708,INV-10279,2025-06-23,Registered,Via PLT-018
+E01709,INV-10279,2025-06-28,Eligibility verified,Accredited
+E01710,INV-10279,2025-07-02,Proposal sent,
+E01711,INV-10279,2025-07-15,Subscription started,Series A
+E01712,INV-10279,2025-07-20,Funded,"$220,000"
+E01713,INV-10280,2025-08-28,Registered,Via PLT-128
+E01714,INV-10280,2025-08-31,Eligibility verified,Accredited
+E01715,INV-10280,2025-09-02,Proposal sent,
+E01716,INV-10280,2025-09-10,Subscription started,Series A
+E01717,INV-10280,2025-09-13,Funded,"$350,000"
+E01718,INV-10280,2026-08-08,Redemption requested,Rebalancing
+E01719,INV-10280,2026-08-28,Fully redeemed,"$357,057"
+E01720,INV-10281,2025-10-28,Registered,Via PLT-179
+E01721,INV-10281,2025-10-30,Eligibility verified,Accredited
+E01722,INV-10281,2025-11-01,Proposal sent,
+E01723,INV-10281,2025-11-07,Subscription started,Series A
+E01724,INV-10281,2025-11-09,Funded,"$285,000"
+E01725,INV-10282,2025-10-15,Registered,Via PLT-024
+E01726,INV-10282,2025-10-18,Eligibility verified,Accredited
+E01727,INV-10282,2025-10-21,Proposal sent,
+E01728,INV-10282,2025-10-30,Subscription started,Series A
+E01729,INV-10282,2025-11-02,Funded,"$80,000"
+E01730,INV-10283,2025-11-20,Registered,Via PLT-090
+E01731,INV-10283,2025-11-24,Eligibility verified,Accredited
+E01732,INV-10283,2025-11-27,Proposal sent,
+E01733,INV-10283,2025-12-07,Subscription started,Series A
+E01734,INV-10283,2025-12-11,Funded,"$175,000"
+E01735,INV-10284,2025-12-15,Registered,Via PLT-128
+E01736,INV-10284,2025-12-17,Eligibility verified,Accredited
+E01737,INV-10284,2025-12-18,Proposal sent,
+E01738,INV-10284,2025-12-24,Subscription started,Series A
+E01739,INV-10284,2025-12-26,Funded,"$125,000"
+E01740,INV-10285,2026-01-11,Registered,Via PLT-090
+E01741,INV-10285,2026-01-16,Eligibility verified,Accredited
+E01742,INV-10285,2026-01-20,Proposal sent,
+E01743,INV-10285,2026-02-01,Subscription started,Series A
+E01744,INV-10285,2026-02-06,Funded,"$340,000"
+E01745,INV-10286,2026-01-21,Registered,Via PLT-153
+E01746,INV-10286,2026-01-27,Eligibility verified,Accredited
+E01747,INV-10286,2026-02-01,Proposal sent,
+E01748,INV-10286,2026-02-16,Subscription started,Series A
+E01749,INV-10286,2026-02-22,Funded,"$345,000"
+E01750,INV-10287,2026-03-25,Registered,Via PLT-070
+E01751,INV-10287,2026-03-29,Eligibility verified,Accredited
+E01752,INV-10287,2026-04-01,Proposal sent,
+E01753,INV-10287,2026-04-10,Subscription started,Series A
+E01754,INV-10287,2026-04-14,Funded,"$185,000"
+E01755,INV-10288,2026-05-26,Registered,Via PLT-122
+E01756,INV-10288,2026-05-29,Eligibility verified,Accredited
+E01757,INV-10288,2026-05-31,Proposal sent,
+E01758,INV-10288,2026-06-09,Subscription started,Series A
+E01759,INV-10288,2026-06-12,Funded,"$140,000"
+E01760,INV-10288,2026-07-26,Top-up,"$55,000"
+E01761,INV-10289,2026-05-13,Registered,Via PLT-178
+E01762,INV-10289,2026-05-17,Eligibility verified,Accredited
+E01763,INV-10289,2026-05-20,Proposal sent,
+E01764,INV-10289,2026-05-31,Subscription started,Series A
+E01765,INV-10289,2026-06-04,Funded,"$365,000"
+E01766,INV-10290,2026-04-03,Registered,Via PLT-117
+E01767,INV-10290,2026-04-17,Eligibility verified,QEP
+E01768,INV-10290,2026-04-29,Proposal sent,
+E01769,INV-10290,2026-05-31,Subscription started,Series A
+E01770,INV-10290,2026-06-14,Funded,"$105,000"
+E01771,INV-10291,2026-07-05,Registered,Via PLT-088
+E01772,INV-10291,2026-07-07,Eligibility verified,Accredited
+E01773,INV-10291,2026-07-09,Proposal sent,
+E01774,INV-10291,2026-07-15,Subscription started,Series A
+E01775,INV-10291,2026-07-17,Funded,"$600,000"
+E01776,INV-10292,2026-08-02,Registered,Via PLT-090
+E01777,INV-10292,2026-08-04,Eligibility verified,Accredited
+E01778,INV-10292,2026-08-06,Proposal sent,
+E01779,INV-10292,2026-08-12,Subscription started,Series A
+E01780,INV-10292,2026-08-14,Funded,"$225,000"
+E01781,INV-10293,2026-08-20,Registered,Via PLT-149
+E01782,INV-10293,2026-08-27,Eligibility verified,Accredited
+E01783,INV-10293,2026-09-02,Proposal sent,
+E01784,INV-10293,2026-09-20,Subscription started,Series A
+E01785,INV-10293,2026-09-27,Funded,"$240,000"
+E01786,INV-10294,2026-06-09,First website visit,
+E01787,INV-10294,2026-06-18,Registered,
+E01788,INV-10295,2026-09-05,First website visit,
+E01789,INV-10295,2026-09-10,Registered,
+E01790,INV-10295,2026-09-19,Eligibility verified,
+E01791,INV-10296,2026-06-17,First website visit,
+E01792,INV-10296,2026-06-21,Registered,
+E01793,INV-10296,2026-06-30,Eligibility verified,
+E01794,INV-10297,2026-06-19,First website visit,
+E01795,INV-10297,2026-06-26,Registered,
+E01796,INV-10297,2026-07-07,Eligibility verified,
+E01797,INV-10298,2026-08-28,First website visit,
+E01798,INV-10298,2026-09-08,Registered,
+E01799,INV-10298,2026-09-13,Eligibility verified,
+E01800,INV-10299,2026-09-02,First website visit,
+E01801,INV-10299,2026-09-04,Registered,
+E01802,INV-10300,2026-08-19,First website visit,
+E01803,INV-10300,2026-08-29,Registered,
+E01804,INV-10300,2026-09-08,Eligibility verified,
+E01805,INV-10301,2026-09-18,First website visit,
+E01806,INV-10301,2026-09-20,Registered,
+E01807,INV-10301,2026-09-27,Eligibility verified,
+E01808,INV-10301,2026-09-30,IR meeting,
+E01809,INV-10302,2026-07-04,First website visit,
+E01810,INV-10302,2026-07-07,Registered,
+E01811,INV-10302,2026-07-17,Eligibility verified,
+E01812,INV-10303,2026-08-11,First website visit,
+E01813,INV-10303,2026-08-15,Registered,
+E01814,INV-10304,2026-09-22,First website visit,
+E01815,INV-10304,2026-09-24,Registered,
+E01816,INV-10304,2026-09-30,Eligibility verified,
+E01817,INV-10305,2026-08-05,First website visit,
+E01818,INV-10305,2026-08-17,Registered,
+E01819,INV-10306,2026-08-24,First website visit,
+E01820,INV-10306,2026-09-01,Registered,
+E01821,INV-10306,2026-09-05,Eligibility verified,
+E01822,INV-10307,2026-09-19,First website visit,
+E01823,INV-10307,2026-09-21,Registered,
+E01824,INV-10307,2026-09-23,Eligibility verified,
+E01825,INV-10307,2026-09-29,IR meeting,
+E01826,INV-10308,2026-09-18,Registered,
+E01827,INV-10309,2026-07-10,Registered,
+E01828,INV-10309,2026-07-21,Eligibility verified,
+E01829,INV-10310,2026-07-16,Registered,
+E01830,INV-10310,2026-07-25,Eligibility verified,
+E01831,INV-10310,2026-08-03,IR meeting,
+E01832,INV-10311,2026-07-31,Registered,
+E01833,INV-10311,2026-08-11,Eligibility verified,
+E01834,INV-10312,2026-08-05,Registered,
+E01835,INV-10312,2026-08-11,Eligibility verified,
+E01836,INV-10312,2026-08-18,IR meeting,
+E01837,INV-10312,2026-08-26,Subscription started,
+E01838,INV-10313,2026-08-26,Registered,
+E01839,INV-10313,2026-08-31,Eligibility verified,
+E01840,INV-10314,2026-07-31,Registered,
+E01841,INV-10314,2026-08-07,Eligibility verified,
+E01842,INV-10314,2026-08-19,IR meeting,
+E01843,INV-10314,2026-08-24,Subscription started,
+E01844,INV-10315,2026-09-08,Registered,
+E01845,INV-10315,2026-09-15,Eligibility verified,
+E01846,INV-10316,2026-07-17,Registered,
+E01847,INV-10317,2026-08-30,Registered,
+E01848,INV-10318,2026-07-15,Registered,Via RIA-115
+E01849,INV-10318,2026-07-17,Eligibility verified,
+E01850,INV-10318,2026-07-23,Proposal sent,
+E01851,INV-10318,2026-07-25,Subscription started,
+E01852,INV-10319,2026-07-01,Registered,Via RIA-019
+E01853,INV-10319,2026-07-11,Eligibility verified,
+E01854,INV-10319,2026-07-19,Proposal sent,
+E01855,INV-10319,2026-07-26,Subscription started,
+E01856,INV-10320,2026-08-06,Registered,Via RIA-074
+E01857,INV-10320,2026-08-13,Eligibility verified,
+E01858,INV-10320,2026-08-25,Proposal sent,
+E01859,INV-10321,2026-09-11,Registered,Via RIA-135
+E01860,INV-10321,2026-09-20,Eligibility verified,
+E01861,INV-10321,2026-09-23,Proposal sent,
+E01862,INV-10321,2026-09-30,Subscription started,
+E01863,INV-10322,2026-07-08,Registered,Via RIA-115
+E01864,INV-10322,2026-07-16,Eligibility verified,
+E01865,INV-10323,2026-07-16,Registered,Via RIA-043
+E01866,INV-10323,2026-07-23,Eligibility verified,
+E01867,INV-10324,2026-09-11,Registered,Via RIA-108
+E01868,INV-10324,2026-09-16,Eligibility verified,
+E01869,INV-10324,2026-09-25,Proposal sent,
+E01870,INV-10325,2026-08-31,Registered,Via RIA-108
+E01871,INV-10325,2026-09-04,Eligibility verified,
+E01872,INV-10326,2026-07-17,Registered,Via RIA-108
+E01873,INV-10326,2026-07-23,Eligibility verified,
+E01874,INV-10327,2026-09-15,Registered,Via RIA-135
+E01875,INV-10327,2026-09-26,Eligibility verified,
+E01876,INV-10327,2026-09-28,Proposal sent,
+E01877,INV-10327,2026-09-30,Subscription started,
+E01878,INV-10328,2026-07-16,Registered,Via RIA-088
+E01879,INV-10328,2026-07-18,Eligibility verified,
+E01880,INV-10329,2026-09-09,Registered,Via RIA-043
+E01881,INV-10329,2026-09-18,Eligibility verified,
+E01882,INV-10329,2026-09-28,Proposal sent,
+E01883,INV-10330,2026-09-24,Registered,Via RIA-019
+E01884,INV-10331,2026-07-04,Registered,Via RIA-135
+E01885,INV-10331,2026-07-12,Eligibility verified,
+E01886,INV-10332,2026-08-06,Registered,Via RIA-156
+E01887,INV-10332,2026-08-14,Eligibility verified,
+E01888,INV-10332,2026-08-23,Proposal sent,
+E01889,INV-10332,2026-08-28,Subscription started,
+E01890,INV-10333,2026-06-02,Registered,Via RIA-108
+E01891,INV-10334,2026-08-07,Registered,Via RIA-127
+E01892,INV-10334,2026-08-14,Eligibility verified,
+E01893,INV-10334,2026-08-17,Proposal sent,
+E01894,INV-10335,2026-09-18,Registered,Via RIA-132
+E01895,INV-10335,2026-09-27,Eligibility verified,
+E01896,INV-10335,2026-09-30,Proposal sent,
+E01897,INV-10336,2026-08-17,Registered,Via RIA-031
+E01898,INV-10337,2026-06-03,Registered,Via RIA-132
+E01899,INV-10337,2026-06-05,Eligibility verified,
+E01900,INV-10338,2026-07-22,Registered,Via RIA-088
+E01901,INV-10338,2026-07-27,Eligibility verified,
+E01902,INV-10338,2026-08-08,Proposal sent,
+E01903,INV-10338,2026-08-20,Subscription started,
+E01904,INV-10339,2026-09-10,Registered,Via RIA-088
+E01905,INV-10339,2026-09-13,Eligibility verified,
+E01906,INV-10340,2026-08-05,Registered,Via RIA-132
+E01907,INV-10340,2026-08-13,Eligibility verified,
+E01908,INV-10340,2026-08-16,Proposal sent,
+E01909,INV-10340,2026-08-28,Subscription started,
+E01910,INV-10341,2026-07-23,Registered,Via BD-126
+E01911,INV-10342,2026-08-29,Registered,Via BD-020
+E01912,INV-10342,2026-09-09,Eligibility verified,
+E01913,INV-10343,2026-06-17,Registered,Via BD-172
+E01914,INV-10343,2026-06-28,Eligibility verified,
+E01915,INV-10344,2026-09-01,Registered,Via BD-143
+E01916,INV-10344,2026-09-06,Eligibility verified,
+E01917,INV-10345,2026-07-14,Registered,Via BD-126
+E01918,INV-10345,2026-07-18,Eligibility verified,
+E01919,INV-10346,2026-08-24,Registered,Via BD-194
+E01920,INV-10346,2026-08-30,Eligibility verified,
+E01921,INV-10347,2026-06-10,Registered,Via BD-126
+E01922,INV-10347,2026-06-12,Eligibility verified,
+E01923,INV-10348,2026-08-27,Registered,Via BD-039
+E01924,INV-10348,2026-09-04,Eligibility verified,
+E01925,INV-10349,2026-07-09,Registered,Via BD-011
+E01926,INV-10349,2026-07-13,Eligibility verified,
+E01927,INV-10350,2026-07-16,Registered,Via BD-147
+E01928,INV-10351,2026-08-13,Registered,Via BD-172
+E01929,INV-10352,2026-08-09,Registered,Via BD-196
+E01930,INV-10352,2026-08-14,Eligibility verified,
+E01931,INV-10353,2026-08-29,Registered,Via BD-020
+E01932,INV-10354,2026-09-08,Registered,Via BD-039
+E01933,INV-10355,2026-09-02,Registered,Via BD-126
+E01934,INV-10355,2026-09-06,Eligibility verified,
+E01935,INV-10355,2026-09-09,Proposal sent,
+E01936,INV-10356,2026-09-24,Registered,Via BD-081
+E01937,INV-10356,2026-09-26,Eligibility verified,
+E01938,INV-10357,2026-06-08,Registered,Via BD-088
+E01939,INV-10357,2026-06-11,Eligibility verified,
+E01940,INV-10357,2026-06-20,Proposal sent,
+E01941,INV-10358,2026-08-27,Registered,Via BD-088
+E01942,INV-10359,2026-07-08,Registered,Via PLT-070
+E01943,INV-10359,2026-07-10,Eligibility verified,
+E01944,INV-10359,2026-07-13,Proposal sent,
+E01945,INV-10359,2026-07-19,Subscription started,
+E01946,INV-10360,2026-08-19,Registered,Via PLT-153
+E01947,INV-10360,2026-08-23,Eligibility verified,
+E01948,INV-10361,2026-08-27,Registered,Via PLT-090
+E01949,INV-10361,2026-08-30,Eligibility verified,
+E01950,INV-10362,2026-09-20,Registered,Via PLT-179
+E01951,INV-10362,2026-09-26,Eligibility verified,
+E01952,INV-10363,2026-08-29,Registered,Via PLT-070
+E01953,INV-10364,2026-07-06,Registered,Via PLT-149
+E01954,INV-10364,2026-07-08,Eligibility verified,
+E01955,INV-10365,2026-09-08,Registered,Via PLT-128
+E01956,INV-10365,2026-09-10,Eligibility verified,
+E01957,INV-10365,2026-09-14,Proposal sent,
+E01958,INV-10366,2026-08-03,Registered,Via PLT-090
+E01959,INV-10367,2026-07-14,Registered,Via PLT-179
+E01960,INV-10367,2026-07-25,Eligibility verified,
+E01961,INV-10367,2026-08-02,Proposal sent,
+E01962,INV-10367,2026-08-08,Subscription started,

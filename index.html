@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investor Lifecycle Analytics</title>
+<link rel="stylesheet" href="theme.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="dash-shim.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<style>
+.lx { position: relative; font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-lg); }
+.lx-head { display: grid; gap: var(--cds-gap-sm); }
+.lx-titlerow { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-sm) var(--cds-gap-md); justify-content: space-between; }
+.lx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.lx-pill { font-size: var(--cds-font-size-caption); color: var(--color-warn); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 2px var(--cds-pad-sm); white-space: nowrap; }
+.lx-take { margin: 0; color: var(--color-fg); max-width: 70ch; line-height: 1.5; }
+.lx-take b { font-weight: 600; }
+.lx-sub { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.lx-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md); align-items: center; justify-content: space-between; }
+.lx-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.lx-tab { font: inherit; font-size: var(--cds-font-size-body); background: var(--color-panel); color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.lx-tab:hover { border-color: var(--color-fg-muted); }
+.lx-tab[aria-selected="true"] { color: var(--color-panel); background: var(--color-fg); border-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.lx-tab:focus-visible, .lx select:focus-visible, .lx input:focus-visible, .lx-row:focus-visible, .lx-x:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 1px; }
+.lx label.lx-field { display: flex; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.lx select, .lx input[type="search"] { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); min-width: 0; }
+.lx-page { display: grid; gap: var(--cds-gap-lg); }
+.lx-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.lx-tile, .lx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.lx-tile { display: grid; gap: var(--cds-gap-xs); align-content: start; }
+.lx-tl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.lx-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; }
+.lx-delta { font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; color: var(--color-fg-muted); }
+.lx-delta .up { color: var(--color-ok); } .lx-delta .down { color: var(--color-bad); }
+.lx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+.lx-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.lx-note { margin: var(--cds-gap-xs) 0 var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.45; }
+.lx-chart { min-height: 240px; position: relative; }
+.lx-chart svg { display: block; overflow: visible; }
+.lx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: var(--cds-gap-sm); }
+.lx-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.lx-legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.lx-fun { display: grid; gap: 2px; min-height: 300px; }
+.lx-frow { display: grid; grid-template-columns: minmax(7rem, 10rem) 1fr auto; gap: var(--cds-gap-sm); align-items: center; font-size: var(--cds-font-size-caption); }
+.lx-fname { color: var(--color-fg); }
+.lx-ftrack { display: grid; gap: 3px; }
+.lx-fbar { height: 18px; border-radius: 4px; background: var(--lx-c0); min-width: 2px; }
+.lx-fprior { height: 4px; border-radius: 2px; background: var(--cds-chart-muted); min-width: 2px; }
+.lx-fval { font-variant-numeric: tabular-nums; text-align: right; min-width: 3.5rem; }
+.lx-floss { grid-column: 2 / 4; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: 1px 0 4px; font-variant-numeric: tabular-nums; }
+.lx-floss.worst { color: var(--color-bad); font-weight: 600; }
+.lx-after { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr)); gap: var(--cds-gap-sm); margin-top: var(--cds-gap-sm); }
+.lx-after div { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm); display: grid; gap: 2px; }
+.lx-after .lx-big { font-size: var(--cds-font-size-heading); font-family: var(--font-anthropic-serif); }
+.lx-tablebox { overflow: auto; max-height: 30rem; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+.lx-tablebox.short { max-height: none; }
+.lx table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.lx th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; z-index: 1; }
+.lx td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.lx th.num, .lx td.num { text-align: right; }
+.lx tr.lx-row { cursor: pointer; }
+.lx tr.lx-row:hover td { background: var(--color-bg); }
+.lx tr.lx-row.sel td { background: var(--color-bg); font-weight: 600; }
+.lx tr.lx-cur td { font-weight: 600; }
+.lx-chip { display: inline-block; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--color-border-line); font-size: var(--cds-font-size-caption); }
+.lx-chip.Active { color: var(--color-ok); } .lx-chip.Redeemed { color: var(--color-fg-muted); } .lx-chip.Redemption { color: var(--color-bad); }
+.lx-risk { color: var(--color-warn); }
+.lx-status { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-bottom: var(--cds-gap-sm); }
+.lx-sbtn { font: inherit; font-size: var(--cds-font-size-caption); background: none; color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.lx-sbtn[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+.lx-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); margin-bottom: var(--cds-gap-sm); }
+.lx-filters input { flex: 1 1 14rem; }
+.lx-detail { display: grid; gap: var(--cds-gap-md); }
+.lx-dhead { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg); align-items: baseline; justify-content: space-between; }
+.lx-x { font: inherit; font-size: var(--cds-font-size-caption); background: none; border: 1px solid var(--color-border-line); color: var(--color-fg); border-radius: var(--cds-radius); padding: 2px 8px; cursor: pointer; }
+.lx-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-sm); }
+.lx-facts div { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); }
+.lx-facts b { font-weight: 400; font-size: var(--cds-font-size-body); font-variant-numeric: tabular-nums; }
+.lx-track { display: flex; flex-wrap: wrap; gap: 0; list-style: none; margin: 0; padding: 0; }
+.lx-track li { flex: 1 1 7rem; min-width: 7rem; padding: var(--cds-pad-xs) var(--cds-pad-sm) var(--cds-pad-xs) 0; border-top: 3px solid var(--cds-chart-muted); font-size: var(--cds-font-size-caption); display: grid; gap: 2px; }
+.lx-track li.done { border-top-color: var(--lx-c0); }
+.lx-track li.bad { border-top-color: var(--cds-chart-status-critical); }
+.lx-track li span { color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.lx-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md) 0; }
+.lx-src { margin: 0; padding-left: 1.1rem; display: grid; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); line-height: 1.5; }
+.lx-src a { color: inherit; }
+.lx-fail { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; }
+.lx-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.lx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); z-index: 5; display: grid; gap: 2px; min-width: 9rem; font-variant-numeric: tabular-nums; }
+.lx-tip .t { color: var(--cds-text-secondary); }
+.lx-tip .l { display: flex; align-items: center; gap: 6px; justify-content: space-between; }
+.lx-tip .l span { display: inline-flex; align-items: center; gap: 6px; }
+.lx-tip i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 560px) { .lx-frow { grid-template-columns: 6.5rem 1fr auto; } .lx-hide-sm { display: none; } }
+</style>
+
+<div class="lx" id="lx-root">
+  <header class="lx-head" id="top">
+    <div class="lx-titlerow">
+      <h1 class="lx-title">Investor lifecycle analytics</h1>
+      <span class="lx-pill">Sample data</span>
+    </div>
+    <p class="lx-take" id="lx-take"><span class="dash-skeleton">—</span></p>
+    <p class="lx-sub">Last 12 months = Oct 2025 – Sep 2026, compared with Oct 2024 – Sep 2025. Individual and adviser-introduced investors in the Multi-Markets fund.</p>
+    <div class="lx-controls">
+      <div class="lx-tabs" role="tablist" aria-label="Pages">
+        <button class="lx-tab" role="tab" data-page="overview" aria-selected="true">Overview</button>
+        <button class="lx-tab" role="tab" data-page="channels" aria-selected="false">Channels</button>
+        <button class="lx-tab" role="tab" data-page="investors" aria-selected="false">Investors</button>
+        <button class="lx-tab" role="tab" data-page="retention" aria-selected="false">Retention</button>
+      </div>
+      <label class="lx-field" for="lx-channel">Source
+        <select id="lx-channel">
+          <option value="all">All channels</option>
+          <option value="website">Website (direct)</option>
+          <option value="referral">Referral (direct)</option>
+          <option value="ria">RIA advisers</option>
+          <option value="broker">Broker-dealer agents</option>
+          <option value="platform">Alt platforms</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="lx-page" id="overview">
+    <div class="lx-tiles">
+      <div class="lx-tile"><div class="lx-tl">New investors funded · 12 mo</div><div class="lx-big"><span class="lx-k" data-source="kpis" data-field="new_investors" data-k="int">—</span></div><div class="lx-delta"><span class="lx-k" data-source="kpis" data-field="new_investors_change" data-k="chg">—</span> vs prior 12 mo</div></div>
+      <div class="lx-tile"><div class="lx-tl">Assets raised · 12 mo</div><div class="lx-big"><span class="lx-k" data-source="kpis" data-field="assets_raised" data-k="usd">—</span></div><div class="lx-delta"><span class="lx-k" data-source="kpis" data-field="assets_raised_change" data-k="chg">—</span> vs prior 12 mo</div></div>
+      <div class="lx-tile"><div class="lx-tl">Net flows · 12 mo</div><div class="lx-big"><span class="lx-k" data-source="kpis" data-field="net_flows" data-k="usd">—</span></div><div class="lx-delta">prior 12 mo <span class="lx-k" data-source="kpis" data-field="net_flows_prior" data-k="usd">—</span></div></div>
+      <div class="lx-tile"><div class="lx-tl">Active investors · Sep 2026</div><div class="lx-big"><span class="lx-k" data-source="kpis" data-field="active_investors" data-k="int">—</span></div><div class="lx-delta"><span class="lx-k" data-source="kpis" data-field="active_change" data-k="chg">—</span> vs Sep 2025</div></div>
+      <div class="lx-tile"><div class="lx-tl">Assets held · Sep 2026</div><div class="lx-big"><span class="lx-k" data-source="kpis" data-field="aum" data-k="usd">—</span></div><div class="lx-delta"><span class="lx-k" data-source="kpis" data-field="aum_change" data-k="chg">—</span> vs Sep 2025</div></div>
+    </div>
+
+    <div class="lx-grid">
+      <div class="lx-card" id="funnel-card">
+        <h3>From first visit to funded</h3>
+        <p class="lx-note" id="lx-funnote">Investors at each stage in the last 12 months; the thin bar is the prior 12 months. Red marks the step that loses the most.</p>
+        <div class="lx-fun dash-skeleton" id="lx-funnel" data-source="funnel_totals"></div>
+      </div>
+      <div class="lx-card" id="after-card">
+        <h3>After funding</h3>
+        <p class="lx-note">What happened to funded investors in the last 12 months, through to full redemption.</p>
+        <div class="lx-after">
+          <div><span class="lx-tl">Active now</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="active_investors" data-k="int">—</span></span></div>
+          <div><span class="lx-tl">Top-ups</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="topups" data-k="int">—</span></span></div>
+          <div><span class="lx-tl">Redemption requests</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="redemption_requests" data-k="int">—</span></span></div>
+          <div><span class="lx-tl">Fully redeemed</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="full_redemptions" data-k="int">—</span></span></div>
+          <div><span class="lx-tl">Lead to funded</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="lead_to_funded" data-k="pct">—</span></span></div>
+          <div><span class="lx-tl">Median days to fund</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="median_days_to_fund" data-k="int">—</span></span></div>
+          <div><span class="lx-tl">Still invested after 12 mo</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="retention_12m" data-k="pct">—</span></span></div>
+          <div><span class="lx-tl">Redeemed · 12 mo</span><span class="lx-big"><span class="lx-k" data-source="kpis" data-field="redemptions" data-k="usd">—</span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lx-grid">
+      <div class="lx-card" id="new-card">
+        <h3>New investors funded per month</h3>
+        <p class="lx-note">By source. The dashed line marks the start of the last 12 months.</p>
+        <div class="lx-legend" id="lx-newleg"></div>
+        <div class="lx-chart dash-skeleton" id="lx-newchart" data-source="monthly"></div>
+      </div>
+      <div class="lx-card" id="flows-card">
+        <h3>Money in and out per month</h3>
+        <p class="lx-note">Subscriptions and top-ups above the line, redemptions below.</p>
+        <div class="lx-legend" id="lx-flowleg"></div>
+        <div class="lx-chart dash-skeleton" id="lx-flowchart" data-source="monthly"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHANNELS -->
+  <section class="lx-page" id="channels" hidden>
+    <div class="lx-card" id="channel-table-card">
+      <h3>Every source side by side</h3>
+      <p class="lx-note">Last 12 months. "Lead to funded" is funded investors divided by qualified leads. "Still invested after 12 mo" covers investors funded before Oct 2025.</p>
+      <div class="lx-tablebox short">
+        <table id="lx-chtable" data-source="kpis" data-row-key="channel">
+          <thead><tr>
+            <th data-field="channel">Source</th>
+            <th class="num" data-field="new_investors">New investors</th>
+            <th class="num" data-field="assets_raised">Assets raised</th>
+            <th class="num" data-field="avg_ticket">Avg first ticket</th>
+            <th class="num" data-field="qualified_leads">Qualified leads</th>
+            <th class="num" data-field="lead_to_funded">Lead to funded</th>
+            <th class="num" data-field="median_days_to_fund">Median days to fund</th>
+            <th class="num" data-field="net_flows">Net flows</th>
+            <th class="num" data-field="active_investors">Active</th>
+            <th class="num" data-field="aum">Assets held</th>
+            <th class="num" data-field="retention_12m">Still invested after 12 mo</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="lx-grid">
+      <div class="lx-card" id="conv-card">
+        <h3>Where each source loses people</h3>
+        <p class="lx-note">Share moving to the next stage, last 12 months. The weakest step in each row is red.</p>
+        <div class="lx-tablebox short">
+          <table id="lx-convtable" data-source="stage_conversion" data-row-key="channel">
+            <thead><tr>
+              <th data-field="channel">Source</th>
+              <th class="num" data-field="visitor_to_registered">Visitor to registered</th>
+              <th class="num" data-field="registered_to_verified">Registered to verified</th>
+              <th class="num" data-field="verified_to_lead">Verified to lead</th>
+              <th class="num" data-field="lead_to_subscription">Lead to subscription</th>
+              <th class="num" data-field="subscription_to_funded">Subscription to funded</th>
+            </tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="lx-card" id="aum-card">
+        <h3>Assets held by source</h3>
+        <p class="lx-note">Month-end value of investors still invested.</p>
+        <div class="lx-chart dash-skeleton" id="lx-aumchart" data-source="monthly"></div>
+      </div>
+    </div>
+    <div class="lx-card" id="about-sources">
+      <h3>Where these sources come from</h3>
+      <p class="lx-note">The five sources are based on Millburn's public filings and coverage. The volumes on this page are sample data.</p>
+      <ul class="lx-src">
+        <li><b>Website (direct):</b> individuals who find Millburn through millburn.com, its Insights research and contact forms.</li>
+        <li><b>Referral (direct):</b> introductions through existing relationships. Millburn's <a href="https://millburn.com/form-crs" target="_blank" rel="noopener">Form CRS</a> says its retail clients are financial planning clients with an extensive overall relationship, and that it acts as placement agent for its funds.</li>
+        <li><b>RIA advisers:</b> registered investment advisers placing clients. The <a href="https://www.sec.gov/Archives/edgar/data/1468910/000146891026000002/c910-20251231x10k.htm" target="_blank" rel="noopener">Multi-Markets Fund 10-K for 2025</a> records RIA platform fees, and Series D carries a 0.75% ongoing fee.</li>
+        <li><b>Broker-dealer agents:</b> the same 10-K says units are sold "through the General Partner and selling agents", with Series A paying selling agents 2% a year. <a href="https://www.opalesque.com/OFI196/an_inside_look_at_Millburn_a_rare96.html" target="_blank" rel="noopener">Opalesque</a> notes Millburn historically sold through broker-dealers such as Merrill Lynch.</li>
+        <li><b>Alt platforms:</b> alternative-investment and separate-account platforms that advisers use to buy funds. Opalesque lists separate-account platforms as a Millburn channel; which platforms Millburn uses today is an assumption to confirm.</li>
+        <li><b>Outside this view:</b> the <a href="https://www.businesswire.com/news/home/20210601006031/en/Catalyst-Funds-Expands-Partnership-with-Millburn-Ridgefield-Corporation-to-Launch-Dynamic-Commodity-Fund" target="_blank" rel="noopener">Catalyst/Millburn mutual funds</a> (Hedge Strategy MBXIX, Dynamic Commodity DCXIX) and the European UCITS fund. Their investors are held by the fund sponsor or platform, so only asset flows could be added, not individual journeys.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INVESTORS -->
+  <section class="lx-page" id="investors" hidden>
+    <div class="lx-card" id="investor-list">
+      <h3>Every investor and prospect</h3>
+      <p class="lx-note">Pick a stage, search by ID or introducing firm, then click a row to see that investor's full journey.</p>
+      <div class="lx-status" id="lx-status" data-source="status_counts"></div>
+      <div class="lx-filters">
+        <input type="search" id="lx-search" placeholder="Search investor ID, firm, state" aria-label="Search investors">
+      </div>
+      <div class="lx-tablebox">
+        <table id="lx-invtable" data-source="investors" data-row-key="investor_id">
+          <thead><tr>
+            <th data-field="investor_id">Investor</th>
+            <th data-field="channel_label">Source</th>
+            <th data-field="introduced_by">Introduced by</th>
+            <th class="lx-hide-sm" data-field="investor_type">Type</th>
+            <th data-field="status">Stage</th>
+            <th data-field="funded">Funded</th>
+            <th class="num" data-field="initial_usd">First ticket</th>
+            <th class="num" data-field="current_value_usd">Current value</th>
+            <th class="num lx-hide-sm" data-field="days_to_fund">Days to fund</th>
+            <th data-field="risk_flag">Watch</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+      <p class="lx-note" id="lx-invcount"></p>
+    </div>
+    <div class="lx-card lx-detail" id="investor-detail">
+      <div class="lx-empty" id="lx-dempty">Select an investor above to see their journey from first contact to today.</div>
+      <div id="lx-dbody" hidden>
+        <div class="lx-dhead">
+          <h3 id="lx-dtitle">—</h3>
+          <button class="lx-x" id="lx-dclose" type="button">Clear selection</button>
+        </div>
+        <div class="lx-facts" id="lx-facts" data-source="investors"></div>
+        <h3 style="margin-top: var(--cds-gap-md)">Journey</h3>
+        <ol class="lx-track" id="lx-track" data-source="events"></ol>
+        <div class="lx-tablebox short" style="margin-top: var(--cds-gap-md)">
+          <table id="lx-evtable" data-source="events" data-row-key="event_id">
+            <thead><tr><th data-field="date">Date</th><th data-field="event">Event</th><th data-field="detail">Detail</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETENTION -->
+  <section class="lx-page" id="retention" hidden>
+    <div class="lx-grid">
+      <div class="lx-card" id="cohort-card">
+        <h3>Share still invested, by year funded</h3>
+        <p class="lx-note">Each line follows the investors funded in one year, quarter by quarter after funding.</p>
+        <div class="lx-chart dash-skeleton" id="lx-cohort" data-source="cohorts"></div>
+      </div>
+      <div class="lx-card" id="reason-card">
+        <h3>Why investors asked to redeem</h3>
+        <p class="lx-note">Redemption requests in the last 12 months, with the value they held.</p>
+        <div class="lx-chart dash-skeleton" id="lx-reasons" data-source="reasons"></div>
+      </div>
+    </div>
+    <div class="lx-card" id="risk-card">
+      <h3>Active investors to call</h3>
+      <p class="lx-note">Active investors with a warning sign. Click one to open their journey.</p>
+      <div class="lx-tablebox short">
+        <table id="lx-risktable" data-source="investors" data-row-key="investor_id">
+          <thead><tr>
+            <th data-field="investor_id">Investor</th>
+            <th data-field="channel_label">Source</th>
+            <th data-field="introduced_by">Introduced by</th>
+            <th data-field="risk_flag">Warning sign</th>
+            <th data-field="funded">Funded</th>
+            <th class="num" data-field="current_value_usd">Current value</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="lx-tip" id="lx-tip" hidden></div>
+</div>
+
+<script>
+/* ---------- calculations (readers can open each in Sources) ---------- */
+dash.calc('kpis', {
+  inputs: ['flows', 'funnel', 'investors'],
+  title: 'Headline figures by source',
+  description: 'Totals for the last 12 months (Oct 2025 to Sep 2026) against the 12 months before, per source and for all sources.',
+  fn: (flows, funnel, investors) => {
+    const sources = ['all', 'website', 'referral', 'ria', 'broker', 'platform'];
+    const n = (v) => +v || 0;
+    const sum = (rows, k) => rows.reduce((a, r) => a + n(r[k]), 0);
+    const chg = (a, b) => (b ? (a - b) / b : null);
+    const plusYear = (d) => String(+d.slice(0, 4) + 1) + d.slice(4);
+    return sources.map((channel) => {
+      const mine = (r) => channel === 'all' || r.channel === channel;
+      const f = flows.filter(mine);
+      const cur = f.filter((r) => r.month >= '2025-10');
+      const pri = f.filter((r) => r.month < '2025-10');
+      const sep26 = f.filter((r) => r.month === '2026-09');
+      const sep25 = f.filter((r) => r.month === '2025-09');
+      const leads = sum(funnel.filter((r) => mine(r) && r.month >= '2025-10' && r.stage === 'Qualified lead'), 'count');
+      const days = investors.filter((r) => mine(r) && r.funded >= '2025-10-01').map((r) => n(r.days_to_fund)).sort((a, b) => a - b);
+      const mid = days.length / 2;
+      const median = days.length ? (days.length % 2 ? days[Math.floor(mid)] : (days[mid - 1] + days[mid]) / 2) : null;
+      const cohort = investors.filter((r) => mine(r) && r.funded && r.funded <= '2025-09-30');
+      const kept = cohort.filter((r) => !r.redeemed || r.redeemed > plusYear(r.funded));
+      const newInv = sum(cur, 'new_investors');
+      const raised = sum(cur, 'subscriptions_usd') + sum(cur, 'topups_usd');
+      const raisedPrior = sum(pri, 'subscriptions_usd') + sum(pri, 'topups_usd');
+      return {
+        channel,
+        new_investors: newInv, new_investors_change: chg(newInv, sum(pri, 'new_investors')),
+        assets_raised: raised, assets_raised_change: chg(raised, raisedPrior),
+        avg_ticket: newInv ? sum(cur, 'subscriptions_usd') / newInv : null,
+        redemptions: sum(cur, 'redemptions_usd'),
+        net_flows: raised - sum(cur, 'redemptions_usd'), net_flows_prior: raisedPrior - sum(pri, 'redemptions_usd'),
+        active_investors: sum(sep26, 'active_investors'), active_change: chg(sum(sep26, 'active_investors'), sum(sep25, 'active_investors')),
+        aum: sum(sep26, 'aum_usd'), aum_change: chg(sum(sep26, 'aum_usd'), sum(sep25, 'aum_usd')),
+        qualified_leads: leads, lead_to_funded: leads ? newInv / leads : null, median_days_to_fund: median,
+        topups: sum(cur, 'topup_count'), redemption_requests: sum(cur, 'redemption_requests'), full_redemptions: sum(cur, 'full_redemptions'),
+        retention_12m: cohort.length ? kept.length / cohort.length : null,
+      };
+    });
+  },
+});
+
+dash.calc('funnel_totals', {
+  inputs: ['funnel'],
+  title: 'Funnel stage totals',
+  description: 'People reaching each stage, summed over the last 12 months and the 12 months before, per source and for all sources.',
+  fn: (funnel) => {
+    const sources = ['all', 'website', 'referral', 'ria', 'broker', 'platform'];
+    const out = [];
+    for (const channel of sources) {
+      for (let o = 1; o <= 7; o++) {
+        const rows = funnel.filter((r) => +r.stage_order === o && (channel === 'all' || r.channel === channel));
+        const current = rows.filter((r) => r.month >= '2025-10').reduce((a, r) => a + (+r.count || 0), 0);
+        const prior = rows.filter((r) => r.month < '2025-10').reduce((a, r) => a + (+r.count || 0), 0);
+        out.push({ key: channel + '|' + o, channel, stage_order: o, stage: rows.length ? rows[0].stage : '', current, prior });
+      }
+    }
+    return out;
+  },
+});
+
+dash.calc('stage_conversion', {
+  inputs: ['funnel'],
+  title: 'Stage-to-stage conversion',
+  description: 'Share of people at one stage who reach the next, last 12 months, per source.',
+  fn: (funnel) => {
+    const sources = ['all', 'website', 'referral', 'ria', 'broker', 'platform'];
+    return sources.map((channel) => {
+      const t = (stage) => funnel.filter((r) => r.month >= '2025-10' && r.stage === stage && (channel === 'all' || r.channel === channel)).reduce((a, r) => a + (+r.count || 0), 0);
+      const vis = t('Website visitors'), reg = t('Registered'), ver = t('Eligibility verified'), lead = t('Qualified lead'), sub = t('Subscription started'), fun = t('Funded');
+      const webReg = funnel.filter((r) => r.month >= '2025-10' && r.stage === 'Registered' && r.channel === 'website').reduce((a, r) => a + (+r.count || 0), 0);
+      return {
+        channel,
+        visitor_to_registered: vis ? (channel === 'all' ? webReg : reg) / vis : null,
+        registered_to_verified: reg ? ver / reg : null,
+        verified_to_lead: ver ? lead / ver : null,
+        lead_to_subscription: lead ? sub / lead : null,
+        subscription_to_funded: sub ? fun / sub : null,
+      };
+    });
+  },
+});
+
+dash.calc('monthly', {
+  inputs: ['flows'],
+  title: 'Monthly flows by source',
+  description: 'New investors, money in (subscriptions plus top-ups), money out (redemptions) and month-end assets, per month and source, with all sources summed.',
+  fn: (flows) => {
+    const out = [];
+    const months = [...new Set(flows.map((r) => r.month))].sort();
+    for (const month of months) {
+      const rows = flows.filter((r) => r.month === month);
+      const add = (channel, rs) => out.push({
+        key: month + '|' + channel, month, channel,
+        new_investors: rs.reduce((a, r) => a + (+r.new_investors || 0), 0),
+        money_in: rs.reduce((a, r) => a + (+r.subscriptions_usd || 0) + (+r.topups_usd || 0), 0),
+        money_out: rs.reduce((a, r) => a + (+r.redemptions_usd || 0), 0),
+        aum: rs.reduce((a, r) => a + (+r.aum_usd || 0), 0),
+      });
+      add('all', rows);
+      for (const r of rows) add(r.channel, [r]);
+    }
+    return out;
+  },
+});
+
+dash.calc('cohorts', {
+  inputs: ['investors'],
+  title: 'Retention by year funded',
+  description: 'Of investors funded in each year, the share not fully redeemed after each quarter, counting only investors funded at least that long before 30 Sep 2026.',
+  fn: (investors) => {
+    const sources = ['all', 'website', 'referral', 'ria', 'broker', 'platform'];
+    const later = (d, months) => { const x = new Date(d + 'T00:00:00Z'); x.setUTCMonth(x.getUTCMonth() + months); return x.toISOString().slice(0, 10); };
+    const out = [];
+    for (const channel of sources) {
+      for (const cohort of ['2023', '2024', '2025']) {
+        const group = investors.filter((r) => r.funded && r.funded.startsWith(cohort) && (channel === 'all' || r.channel === channel));
+        for (let q = 0; q <= 14; q++) {
+          const seen = group.filter((r) => later(r.funded, 3 * q) <= '2026-09-30');
+          if (seen.length < 3) continue;
+          const kept = seen.filter((r) => !r.redeemed || r.redeemed > later(r.funded, 3 * q));
+          out.push({ key: channel + '|' + cohort + '|' + q, channel, cohort, quarter: q, investors: seen.length, share: kept.length / seen.length });
+        }
+      }
+    }
+    return out;
+  },
+});
+
+dash.calc('reasons', {
+  inputs: ['investors'],
+  title: 'Redemption reasons',
+  description: 'Redemption requests made from Oct 2025 to Sep 2026 by stated reason, with the value held at the time.',
+  fn: (investors) => {
+    const sources = ['all', 'website', 'referral', 'ria', 'broker', 'platform'];
+    const out = [];
+    for (const channel of sources) {
+      const rows = investors.filter((r) => r.redemption_requested >= '2025-10-01' && (channel === 'all' || r.channel === channel));
+      for (const reason of [...new Set(investors.map((r) => r.redemption_reason).filter(Boolean))]) {
+        const rs = rows.filter((r) => r.redemption_reason === reason);
+        out.push({ key: channel + '|' + reason, channel, reason, requests: rs.length, value_usd: rs.reduce((a, r) => a + (+r.redeemed_usd || +r.current_value_usd || 0), 0) });
+      }
+    }
+    return out;
+  },
+});
+
+dash.calc('status_counts', {
+  inputs: ['investors'],
+  title: 'Investors by stage',
+  description: 'How many investors and prospects sit at each stage today, per source.',
+  fn: (investors) => {
+    const sources = ['all', 'website', 'referral', 'ria', 'broker', 'platform'];
+    const stages = ['Registered', 'Verified', 'Qualified lead', 'Onboarding', 'Active', 'Redemption requested', 'Redeemed'];
+    const out = [];
+    for (const channel of sources) for (const status of stages) {
+      out.push({ key: channel + '|' + status, channel, status, count: investors.filter((r) => r.status === status && (channel === 'all' || r.channel === channel)).length });
+    }
+    return out;
+  },
+});
+
+/* ---------- page ---------- */
+(function () {
+  const SOURCES = [
+    { id: 'website', label: 'Website (direct)' }, { id: 'referral', label: 'Referral (direct)' },
+    { id: 'ria', label: 'RIA advisers' }, { id: 'broker', label: 'Broker-dealer agents' }, { id: 'platform', label: 'Alt platforms' },
+  ];
+  const labelOf = (id) => (id === 'all' ? 'All channels' : (SOURCES.find((s) => s.id === id) || {}).label || id);
+  const root = document.getElementById('lx-root');
+  root.style.setProperty('--lx-c0', dash.colors[0]);
+  const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+  const fInt = d3.format(',');
+  const fPct = d3.format('.0%');
+  const usd = (v) => (v == null || isNaN(v) ? '—' : '$' + compact.format(v));
+  const usdFull = (v) => (v == null || v === '' || isNaN(+v) ? '—' : '$' + d3.format(',')(Math.round(+v)));
+  const chgTxt = (v) => (v == null ? '—' : (v > 0 ? '+' : '') + d3.format('.0%')(v));
+  const fmt = { int: (v) => (v == null ? '—' : fInt(Math.round(v))), usd, pct: (v) => (v == null ? '—' : fPct(v)), chg: chgTxt };
+  const month = d3.utcParse('%Y-%m');
+  const mLabel = d3.utcFormat("%b '%y");
+  const dayFmt = (s) => (s ? d3.utcFormat('%b %-d, %Y')(new Date(s + 'T00:00:00Z')) : '—');
+  const D = (id) => dash.data(id);
+  const ok = (id) => D(id).status === 'ok';
+  const rows = (id) => (ok(id) ? D(id).data : []);
+  const failed = (id) => D(id).status === 'error';
+
+  let page = 'overview';
+  const state = { status: null, q: '' };
+  const tip = document.getElementById('lx-tip');
+
+  function showTip(event, title, lines) {
+    tip.replaceChildren();
+    const t = document.createElement('div'); t.className = 't'; t.textContent = title; tip.append(t);
+    for (const l of lines) {
+      const row = document.createElement('div'); row.className = 'l';
+      const left = document.createElement('span');
+      if (l.color) { const i = document.createElement('i'); i.style.background = l.color; left.append(i); }
+      left.append(document.createTextNode(l.name));
+      const v = document.createElement('b'); v.textContent = l.value;
+      row.append(left, v); tip.append(row);
+    }
+    tip.hidden = false;
+    const box = root.getBoundingClientRect();
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    let x = event.clientX - box.left + 12, y = event.clientY - box.top - h - 8;
+    if (x + w > box.width) x = event.clientX - box.left - w - 12;
+    if (x < 0) x = 0;
+    if (y < 0) y = event.clientY - box.top + 14;
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => { tip.hidden = true; };
+
+  function failBox(el) { el.classList.remove('dash-skeleton'); el.replaceChildren(); const d = document.createElement('div'); d.className = 'lx-fail'; d.textContent = 'Failed to load'; el.append(d); }
+  function ready(el, ids) {
+    if (ids.some(failed)) { failBox(el); return false; }
+    if (!ids.every(ok)) { el.classList.add('dash-skeleton'); el.replaceChildren(); return false; }
+    el.classList.remove('dash-skeleton'); return true;
+  }
+  function styleAxis(g) { g.attr('font-size', null).attr('font-family', null); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)'); g.selectAll('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('.tick line').attr('stroke', 'var(--cds-chart-grid)'); }
+  function measure(svg, texts) { const t = svg.append('text').style('font-size', 'var(--cds-font-size-caption)'); let w = 0; for (const s of texts) { t.text(s); w = Math.max(w, t.node().getComputedTextLength()); } t.remove(); return w; }
+
+  /* ---------- tabs and filter ---------- */
+  const tabs = [...document.querySelectorAll('.lx-tab')];
+  function show(p) {
+    page = p;
+    for (const t of tabs) t.setAttribute('aria-selected', String(t.dataset.page === p));
+    for (const s of document.querySelectorAll('.lx-page')) s.hidden = s.id !== p;
+    dash.setLink(p);
+    render();
+  }
+  for (const t of tabs) t.addEventListener('click', () => show(t.dataset.page));
+  const sel = document.getElementById('lx-channel');
+  sel.addEventListener('change', () => dash.setParams({ channel: sel.value }));
+
+  /* ---------- header ---------- */
+  function drawHeader(ch) {
+    const p = document.getElementById('lx-take');
+    if (!ok('kpis') || !ok('funnel_totals')) return;
+    const k = rows('kpis');
+    const me = k.find((r) => r.channel === ch);
+    const bySrc = k.filter((r) => r.channel !== 'all').sort((a, b) => b.new_investors - a.new_investors);
+    const top = bySrc[0];
+    const worst = worstStep(ch);
+    p.replaceChildren();
+    const mark = (field, src, txt) => { const b = document.createElement('b'); b.dataset.source = 'kpis'; b.dataset.field = field; b.dataset.where = 'channel=' + src; b.textContent = txt; return b; };
+    const add = (s) => p.append(document.createTextNode(s));
+    add(ch === 'all' ? '' : labelOf(ch) + ': ');
+    p.append(mark('new_investors', ch, fmt.int(me.new_investors)));
+    add(' new investors funded in the last 12 months (');
+    p.append(mark('new_investors_change', ch, chgTxt(me.new_investors_change)));
+    add('), bringing ');
+    p.append(mark('assets_raised', ch, usd(me.assets_raised)));
+    add('. ');
+    if (ch === 'all') { add(top ? labelOf(top.channel) + ' brought the most, ' : ''); if (top) p.append(mark('new_investors', top.channel, fmt.int(top.new_investors))); add('. '); }
+    if (worst) add('The biggest drop-off is from ' + worst.from.toLowerCase() + ' to ' + worst.to.toLowerCase() + '.');
+  }
+
+  /* ---------- KPI marks ---------- */
+  function drawKpis(ch) {
+    const k = rows('kpis');
+    const me = k.find((r) => r.channel === ch);
+    for (const el of document.querySelectorAll('.lx-k')) {
+      el.dataset.where = 'channel=' + ch;
+      if (failed('kpis')) { el.textContent = '—'; continue; }
+      if (!me) { el.classList.add('dash-skeleton'); continue; }
+      el.classList.remove('dash-skeleton');
+      const v = me[el.dataset.field];
+      el.textContent = fmt[el.dataset.k](v);
+      el.classList.toggle('up', el.dataset.k === 'chg' && v > 0);
+      el.classList.toggle('down', el.dataset.k === 'chg' && v < 0);
+      el.parentElement.classList.toggle('lx-delta-host', el.dataset.k === 'chg');
+    }
+    for (const el of document.querySelectorAll('.lx-delta .lx-k[data-k="chg"]')) { el.className = 'lx-k ' + (el.classList.contains('up') ? 'up' : el.classList.contains('down') ? 'down' : ''); }
+  }
+
+  /* ---------- funnel ---------- */
+  function stagesFor(ch) {
+    return rows('funnel_totals').filter((r) => r.channel === ch && r.current + r.prior > 0).sort((a, b) => a.stage_order - b.stage_order);
+  }
+  function worstStep(ch) {
+    const s = stagesFor(ch);
+    let worst = null;
+    for (let i = 1; i < s.length; i++) {
+      const rate = s[i - 1].current ? s[i].current / s[i - 1].current : null;
+      if (rate != null && (!worst || rate < worst.rate)) worst = { i, rate, from: s[i - 1].stage, to: s[i].stage };
+    }
+    return worst;
+  }
+  function drawFunnel(ch) {
+    const el = document.getElementById('lx-funnel');
+    if (!ready(el, ['funnel_totals'])) return;
+    const s = stagesFor(ch);
+    const note = document.getElementById('lx-funnote');
+    const intermediated = ['ria', 'broker', 'platform', 'referral'].includes(ch);
+    note.textContent = 'Investors at each stage in the last 12 months; the thin bar is the prior 12 months. Red marks the step that loses the most.' +
+      (ch === 'all' ? ' Visitor stages count the website only; other sources start at Registered.' : intermediated ? ' This source starts at Registered, when a client is introduced.' : '');
+    const max = d3.max(s, (r) => Math.max(r.current, r.prior)) || 1;
+    const worst = worstStep(ch);
+    el.replaceChildren();
+    s.forEach((r, i) => {
+      if (i > 0) {
+        const prev = s[i - 1];
+        const loss = document.createElement('div');
+        loss.className = 'lx-floss' + (worst && worst.i === i ? ' worst' : '');
+        loss.textContent = prev.current ? fPct(r.current / prev.current) + ' move on · ' + fPct(1 - r.current / prev.current) + ' lost' : '—';
+        const row = document.createElement('div'); row.className = 'lx-frow';
+        row.append(document.createElement('span'), loss); el.append(row);
+      }
+      const row = document.createElement('div'); row.className = 'lx-frow';
+      const name = document.createElement('span'); name.className = 'lx-fname'; name.textContent = r.stage;
+      const track = document.createElement('div'); track.className = 'lx-ftrack';
+      const bar = document.createElement('div'); bar.className = 'lx-fbar'; bar.style.width = (r.current / max * 100) + '%';
+      const pr = document.createElement('div'); pr.className = 'lx-fprior'; pr.style.width = (r.prior / max * 100) + '%';
+      track.append(bar, pr);
+      track.addEventListener('mousemove', (e) => showTip(e, r.stage, [{ name: 'Last 12 months', value: fInt(r.current), color: dash.colors[0] }, { name: 'Prior 12 months', value: fInt(r.prior), color: 'var(--cds-chart-muted)' }]));
+      track.addEventListener('mouseleave', hideTip);
+      const val = document.createElement('span'); val.className = 'lx-fval';
+      val.dataset.source = 'funnel_totals'; val.dataset.field = 'current'; val.dataset.where = 'key=' + encodeURIComponent(r.key);
+      val.textContent = fInt(r.current);
+      row.append(name, track, val); el.append(row);
+    });
+  }
+
+  /* ---------- monthly charts ---------- */
+  function monthAxis(svg, x, h, w) {
+    const ms = x.domain();
+    const every = w < 480 ? 6 : 3;
+    const g = svg.append('g').attr('transform', `translate(0,${h})`).call(d3.axisBottom(x).tickValues(ms.filter((m, i) => i % every === 0)).tickFormat((m) => mLabel(month(m))).tickSize(0).tickPadding(8));
+    styleAxis(g); g.select('.domain').remove();
+  }
+  function cutLine(svg, x, top, h) {
+    const cx = x('2025-10') - x.step() * x.paddingInner() / 2;
+    svg.append('line').attr('x1', cx).attr('x2', cx).attr('y1', top).attr('y2', h).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+    svg.append('text').attr('x', cx + 4).attr('y', top + 10).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('Last 12 months');
+  }
+  function legend(el, items) {
+    el.replaceChildren(...items.map((it) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = it.color; s.append(i, document.createTextNode(it.name)); return s; }));
+  }
+  function drawNew(ch) {
+    const el = document.getElementById('lx-newchart');
+    if (!ready(el, ['monthly'])) return;
+    const data = rows('monthly');
+    const months = [...new Set(data.map((r) => r.month))].sort();
+    const keys = ch === 'all' ? SOURCES.map((s) => s.id) : [ch];
+    const colorOf = (k) => dash.colors[SOURCES.findIndex((s) => s.id === k)];
+    legend(document.getElementById('lx-newleg'), keys.map((k) => ({ name: labelOf(k), color: colorOf(k) })));
+    const table = months.map((m) => { const o = { month: m }; for (const k of keys) { const r = data.find((d) => d.month === m && d.channel === k); o[k] = r ? r.new_investors : 0; } return o; });
+    const stack = d3.stack().keys(keys)(table);
+    const W = el.clientWidth || 600, H = 240;
+    el.replaceChildren();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const yMax = d3.max(table, (o) => d3.sum(keys, (k) => o[k])) || 1;
+    const y = d3.scaleLinear([0, yMax], [H - 24, 16]).nice();
+    const ml = measure(svg, y.ticks(4).map(String)) + 10;
+    const x = d3.scaleBand(months, [ml, W - 4]).paddingInner(0.25);
+    const gy = svg.append('g').attr('transform', `translate(${ml},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(W - ml - 4)).tickFormat(d3.format('d')));
+    styleAxis(gy); gy.select('.domain').remove();
+    monthAxis(svg, x, H - 24, W);
+    svg.append('g').selectAll('g').data(stack).join('g').attr('fill', (s) => colorOf(s.key))
+      .selectAll('rect').data((s) => s.map((d) => Object.assign(d, { key: s.key }))).join('rect')
+      .attr('x', (d) => x(d.data.month)).attr('width', x.bandwidth())
+      .attr('y', (d) => y(d[1])).attr('height', (d) => Math.max(0, y(d[0]) - y(d[1]))).attr('rx', keys.length === 1 ? 3 : 0)
+      .on('mousemove', (event, d) => showTip(event, mLabel(month(d.data.month)), keys.slice().reverse().map((k) => ({ name: labelOf(k), value: fInt(d.data[k]), color: colorOf(k) })).concat(keys.length > 1 ? [{ name: 'Total', value: fInt(d3.sum(keys, (k) => d.data[k])) }] : [])))
+      .on('mouseleave', hideTip);
+    cutLine(svg, x, 4, H - 24);
+  }
+  function drawFlows(ch) {
+    const el = document.getElementById('lx-flowchart');
+    if (!ready(el, ['monthly'])) return;
+    const data = rows('monthly').filter((r) => r.channel === ch).sort((a, b) => d3.ascending(a.month, b.month));
+    const cin = dash.colors[0], cout = dash.colors[1];
+    legend(document.getElementById('lx-flowleg'), [{ name: 'Money in', color: cin }, { name: 'Money out', color: cout }]);
+    const W = el.clientWidth || 600, H = 240;
+    el.replaceChildren();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([-(d3.max(data, (d) => d.money_out) || 1), d3.max(data, (d) => d.money_in) || 1], [H - 24, 16]).nice();
+    const tf = (v) => (v === 0 ? '0' : (v < 0 ? '−$' : '$') + compact.format(Math.abs(v)));
+    const ml = measure(svg, y.ticks(4).map(tf)) + 10;
+    const x = d3.scaleBand(data.map((d) => d.month), [ml, W - 4]).paddingInner(0.25);
+    const gy = svg.append('g').attr('transform', `translate(${ml},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(W - ml - 4)).tickFormat(tf));
+    styleAxis(gy); gy.select('.domain').remove();
+    monthAxis(svg, x, H - 24, W);
+    svg.append('line').attr('x1', ml).attr('x2', W - 4).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    const g = svg.append('g');
+    g.selectAll('.in').data(data).join('rect').attr('fill', cin).attr('x', (d) => x(d.month)).attr('width', x.bandwidth()).attr('y', (d) => y(d.money_in)).attr('height', (d) => y(0) - y(d.money_in));
+    g.selectAll('.out').data(data).join('rect').attr('fill', cout).attr('x', (d) => x(d.month)).attr('width', x.bandwidth()).attr('y', y(0)).attr('height', (d) => y(-d.money_out) - y(0));
+    svg.append('g').selectAll('rect').data(data).join('rect').attr('fill', 'transparent').attr('x', (d) => x(d.month)).attr('width', x.step()).attr('y', 0).attr('height', H - 24)
+      .on('mousemove', (event, d) => showTip(event, mLabel(month(d.month)), [{ name: 'Money in', value: usd(d.money_in), color: cin }, { name: 'Money out', value: usd(d.money_out), color: cout }, { name: 'Net', value: usd(d.money_in - d.money_out) }]))
+      .on('mouseleave', hideTip);
+    cutLine(svg, x, 4, H - 24);
+  }
+
+  /* ---------- channels page ---------- */
+  function cell(tr, txt, cls) { const td = document.createElement('td'); if (cls) td.className = cls; td.textContent = txt; tr.append(td); return td; }
+  function drawChannelTable(ch) {
+    const tb = document.querySelector('#lx-chtable tbody');
+    if (!ok('kpis')) { tb.replaceChildren(); return; }
+    const order = ['website', 'referral', 'ria', 'broker', 'platform', 'all'];
+    tb.replaceChildren();
+    for (const id of order) {
+      const r = rows('kpis').find((k) => k.channel === id); if (!r) continue;
+      const tr = document.createElement('tr'); tr.dataset.key = id;
+      if (id === ch || id === 'all') tr.className = 'lx-cur';
+      cell(tr, labelOf(id));
+      cell(tr, fmt.int(r.new_investors), 'num'); cell(tr, usd(r.assets_raised), 'num'); cell(tr, usd(r.avg_ticket), 'num');
+      cell(tr, fmt.int(r.qualified_leads), 'num'); cell(tr, fmt.pct(r.lead_to_funded), 'num'); cell(tr, fmt.int(r.median_days_to_fund), 'num');
+      cell(tr, usd(r.net_flows), 'num'); cell(tr, fmt.int(r.active_investors), 'num'); cell(tr, usd(r.aum), 'num'); cell(tr, fmt.pct(r.retention_12m), 'num');
+      tb.append(tr);
+    }
+  }
+  function drawConv(ch) {
+    const tb = document.querySelector('#lx-convtable tbody');
+    if (!ok('stage_conversion')) { tb.replaceChildren(); return; }
+    const cols = ['visitor_to_registered', 'registered_to_verified', 'verified_to_lead', 'lead_to_subscription', 'subscription_to_funded'];
+    tb.replaceChildren();
+    for (const id of ['website', 'referral', 'ria', 'broker', 'platform', 'all']) {
+      const r = rows('stage_conversion').find((k) => k.channel === id); if (!r) continue;
+      const tr = document.createElement('tr'); tr.dataset.key = id;
+      if (id === ch || id === 'all') tr.className = 'lx-cur';
+      cell(tr, labelOf(id));
+      const vals = cols.map((c) => r[c]).filter((v) => v != null);
+      const min = d3.min(vals);
+      for (const c of cols) { const td = cell(tr, r[c] == null ? 'n/a' : fPct(r[c]), 'num'); if (r[c] != null && r[c] === min) td.style.color = 'var(--color-bad)'; }
+      tb.append(tr);
+    }
+  }
+  function drawAum(ch) {
+    const el = document.getElementById('lx-aumchart');
+    if (!ready(el, ['monthly'])) return;
+    const data = rows('monthly').filter((r) => r.channel !== 'all');
+    const months = [...new Set(data.map((r) => r.month))].sort();
+    const W = el.clientWidth || 600, H = 260;
+    el.replaceChildren();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const series = SOURCES.map((s, i) => ({ id: s.id, color: dash.colors[i], pts: months.map((m) => ({ month: m, v: (data.find((d) => d.month === m && d.channel === s.id) || {}).aum || 0 })) }));
+    const y = d3.scaleLinear([0, d3.max(data, (d) => d.aum) || 1], [H - 24, 12]).nice();
+    const ml = measure(svg, y.ticks(4).map((v) => '$' + compact.format(v))) + 10;
+    const ends = series.map((s) => labelOf(s.id) + ' ' + usd(s.pts[s.pts.length - 1].v));
+    const mr = Math.min(measure(svg, ends) + 12, W * 0.42);
+    const x = d3.scalePoint(months, [ml, W - mr]);
+    const gy = svg.append('g').attr('transform', `translate(${ml},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(W - ml - mr)).tickFormat((v) => '$' + compact.format(v)));
+    styleAxis(gy); gy.select('.domain').remove();
+    const every = W < 480 ? 6 : 3;
+    const gx = svg.append('g').attr('transform', `translate(0,${H - 24})`).call(d3.axisBottom(x).tickValues(months.filter((m, i) => i % every === 0)).tickFormat((m) => mLabel(month(m))).tickSize(0).tickPadding(8));
+    styleAxis(gx); gx.select('.domain').remove();
+    const line = d3.line().x((p) => x(p.month)).y((p) => y(p.v));
+    const focus = (s) => ch === 'all' || s.id === ch;
+    const ordered = series.slice().sort((a, b) => focus(a) - focus(b));
+    svg.append('g').selectAll('path').data(ordered).join('path').attr('fill', 'none').attr('stroke', (s) => (focus(s) ? s.color : 'var(--cds-chart-muted)'))
+      .attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', (s) => line(s.pts));
+    const lab = series.map((s) => ({ s, y: y(s.pts[s.pts.length - 1].v) })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < lab.length; i++) if (lab[i].y - lab[i - 1].y < 14) lab[i].y = lab[i - 1].y + 14;
+    svg.append('g').selectAll('text').data(lab).join('text').attr('x', W - mr + 6).attr('y', (d) => d.y + 4)
+      .attr('fill', (d) => (focus(d.s) ? 'var(--color-fg)' : 'var(--color-fg-muted)')).style('font-size', 'var(--cds-font-size-caption)')
+      .text((d) => labelOf(d.s.id) + ' ' + usd(d.s.pts[d.s.pts.length - 1].v));
+    const rule = svg.append('line').attr('y1', 12).attr('y2', H - 24).attr('stroke', 'var(--cds-chart-reference)').attr('opacity', 0);
+    svg.append('rect').attr('x', ml).attr('width', W - ml - mr).attr('y', 0).attr('height', H - 24).attr('fill', 'transparent')
+      .on('mousemove', (event) => {
+        const [mx] = d3.pointer(event); const m = months[Math.max(0, Math.min(months.length - 1, Math.round((mx - ml) / x.step())))];
+        rule.attr('x1', x(m)).attr('x2', x(m)).attr('opacity', 1);
+        showTip(event, mLabel(month(m)), series.map((s) => ({ name: labelOf(s.id), value: usd(s.pts.find((p) => p.month === m).v), color: s.color })));
+      })
+      .on('mouseleave', () => { rule.attr('opacity', 0); hideTip(); });
+  }
+
+  /* ---------- investors page ---------- */
+  const STAGES = ['Registered', 'Verified', 'Qualified lead', 'Onboarding', 'Active', 'Redemption requested', 'Redeemed'];
+  function drawStatus(ch) {
+    const el = document.getElementById('lx-status');
+    if (!ok('status_counts')) return;
+    el.replaceChildren();
+    const mk = (label, value, count) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'lx-sbtn';
+      b.setAttribute('aria-pressed', String(state.status === value));
+      b.append(document.createTextNode(label + ' '));
+      const n = document.createElement('span'); n.textContent = fInt(count);
+      if (value) { n.dataset.source = 'status_counts'; n.dataset.field = 'count'; n.dataset.where = 'key=' + encodeURIComponent(ch + '|' + value); }
+      b.append(n);
+      b.addEventListener('click', () => { state.status = state.status === value ? null : value; render(); });
+      return b;
+    };
+    const counts = rows('status_counts').filter((r) => r.channel === ch);
+    el.append(mk('All', null, d3.sum(counts, (r) => r.count)));
+    for (const s of STAGES) { const r = counts.find((c) => c.status === s); el.append(mk(s, s, r ? r.count : 0)); }
+  }
+  function chip(status) { const s = document.createElement('span'); s.className = 'lx-chip ' + status.split(' ')[0]; s.textContent = status; return s; }
+  function drawInvestors(ch) {
+    const tb = document.querySelector('#lx-invtable tbody');
+    if (!ok('investors')) { tb.replaceChildren(); return; }
+    const q = state.q.trim().toLowerCase();
+    const list = rows('investors').filter((r) => (ch === 'all' || r.channel === ch) && (!state.status || r.status === state.status) &&
+      (!q || [r.investor_id, r.introduced_by, r.state, r.investor_type, r.channel_label].join(' ').toLowerCase().includes(q)))
+      .sort((a, b) => d3.descending(a.funded || a.first_touch, b.funded || b.first_touch));
+    const picked = dash.params().investor;
+    tb.replaceChildren();
+    for (const r of list) {
+      const tr = document.createElement('tr'); tr.className = 'lx-row' + (r.investor_id === picked ? ' sel' : ''); tr.tabIndex = 0;
+      cell(tr, r.investor_id); cell(tr, r.channel_label); cell(tr, r.introduced_by || '—'); cell(tr, r.investor_type, 'lx-hide-sm');
+      const td = document.createElement('td'); td.append(chip(r.status)); tr.append(td);
+      cell(tr, r.funded ? dayFmt(r.funded) : '—'); cell(tr, +r.initial_usd ? usdFull(r.initial_usd) : '—', 'num');
+      cell(tr, +r.current_value_usd ? usdFull(r.current_value_usd) : '—', 'num'); cell(tr, r.days_to_fund || '—', 'num lx-hide-sm');
+      cell(tr, r.risk_flag || '', 'lx-risk');
+      const go = () => { dash.setParams({ investor: r.investor_id }); document.getElementById('investor-detail').scrollIntoView({ block: 'nearest' }); };
+      tr.addEventListener('click', go); tr.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
+      tb.append(tr);
+    }
+    document.getElementById('lx-invcount').textContent = fInt(list.length) + ' shown';
+  }
+  function drawDetail() {
+    const id = dash.params().investor;
+    const empty = document.getElementById('lx-dempty'), body = document.getElementById('lx-dbody');
+    const r = id && rows('investors').find((x) => x.investor_id === id);
+    empty.hidden = !!r; body.hidden = !r;
+    if (!r) return;
+    document.getElementById('lx-dtitle').textContent = r.investor_id + ' · ' + r.channel_label;
+    const facts = document.getElementById('lx-facts'); facts.replaceChildren();
+    const fact = (label, field, txt) => { const d = document.createElement('div'); const l = document.createElement('span'); l.className = 'lx-tl'; l.textContent = label; const b = document.createElement('b'); b.dataset.source = 'investors'; b.dataset.field = field; b.dataset.where = 'investor_id=' + encodeURIComponent(r.investor_id); b.textContent = txt; d.append(l, b); facts.append(d); };
+    fact('Stage', 'status', r.status); fact('Introduced by', 'introduced_by', r.introduced_by || 'Direct');
+    fact('Type', 'investor_type', r.investor_type); fact('Eligibility', 'tier', r.tier || 'Not verified');
+    fact('Fund series', 'series', r.series ? 'Series ' + r.series : '—'); fact('First contact', 'first_touch', dayFmt(r.first_touch));
+    fact('Funded', 'funded', dayFmt(r.funded)); fact('Days to fund', 'days_to_fund', r.days_to_fund || '—');
+    fact('First ticket', 'initial_usd', +r.initial_usd ? usdFull(r.initial_usd) : '—'); fact('Top-ups', 'topups_usd', +r.topups_usd ? usdFull(r.topups_usd) : '—');
+    fact('Current value', 'current_value_usd', +r.current_value_usd ? usdFull(r.current_value_usd) : '—');
+    if (r.redeemed) fact('Redeemed', 'redeemed_usd', usdFull(r.redeemed_usd));
+    if (r.redemption_reason) fact('Redemption reason', 'redemption_reason', r.redemption_reason);
+    if (r.risk_flag) fact('Warning sign', 'risk_flag', r.risk_flag);
+    const ev = rows('events').filter((e) => e.investor_id === r.investor_id).sort((a, b) => d3.ascending(a.date, b.date));
+    const steps = [['First website visit'], ['Registered'], ['Eligibility verified'], ['IR meeting', 'Proposal sent'], ['Subscription started'], ['Funded'], ['Redemption requested'], ['Fully redeemed']];
+    const track = document.getElementById('lx-track'); track.replaceChildren();
+    for (const names of steps) {
+      if (names[0] === 'First website visit' && r.channel !== 'website') continue;
+      const e = ev.find((x) => names.includes(x.event));
+      if (!e && (names[0] === 'Redemption requested' || names[0] === 'Fully redeemed') && !r.redemption_requested) continue;
+      const li = document.createElement('li'); li.className = e ? (names[0].startsWith('Redemption') || names[0] === 'Fully redeemed' ? 'bad' : 'done') : '';
+      const t = document.createElement('b'); t.textContent = e ? e.event : names[0];
+      const d = document.createElement('span'); d.textContent = e ? dayFmt(e.date) : 'Not yet';
+      li.append(t, d); track.append(li);
+    }
+    const tb = document.querySelector('#lx-evtable tbody'); tb.replaceChildren();
+    for (const e of ev) { const tr = document.createElement('tr'); tr.dataset.key = e.event_id; cell(tr, dayFmt(e.date)); cell(tr, e.event); cell(tr, e.detail || ''); tb.append(tr); }
+  }
+  document.getElementById('lx-search').addEventListener('input', (e) => { state.q = e.target.value; render(); });
+  document.getElementById('lx-dclose').addEventListener('click', () => dash.setParams({ investor: null }));
+
+  /* ---------- retention page ---------- */
+  function drawCohorts(ch) {
+    const el = document.getElementById('lx-cohort');
+    if (!ready(el, ['cohorts'])) return;
+    const data = rows('cohorts').filter((r) => r.channel === ch);
+    const years = ['2023', '2024', '2025'].filter((y) => data.some((d) => d.cohort === y));
+    const W = el.clientWidth || 600, H = 260;
+    el.replaceChildren();
+    if (!data.length) { const p = document.createElement('div'); p.className = 'lx-empty'; p.textContent = 'Too few investors in this source to show retention.'; el.append(p); return; }
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const lo = Math.min(0.5, Math.floor((d3.min(data, (d) => d.share) || 0.5) * 10) / 10);
+    const y = d3.scaleLinear([lo, 1], [H - 34, 12]);
+    const ml = measure(svg, y.ticks(5).map(fPct)) + 10;
+    const mr = measure(svg, years.map((yv) => yv + ' 100%')) + 12;
+    const x = d3.scaleLinear([0, d3.max(data, (d) => d.quarter) || 1], [ml, W - mr]);
+    const gy = svg.append('g').attr('transform', `translate(${ml},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(W - ml - mr)).tickFormat(fPct));
+    styleAxis(gy); gy.select('.domain').remove();
+    const gx = svg.append('g').attr('transform', `translate(0,${H - 34})`).call(d3.axisBottom(x).ticks(Math.min(7, x.domain()[1])).tickFormat((q) => 'Q' + q).tickSize(0).tickPadding(8));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('text').attr('x', (ml + W - mr) / 2).attr('y', H - 4).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('Quarters after funding');
+    const color = (yv) => dash.colors[years.indexOf(yv) + 2];
+    const line = d3.line().x((d) => x(d.quarter)).y((d) => y(d.share));
+    const lab = [];
+    for (const yv of years) {
+      const pts = data.filter((d) => d.cohort === yv).sort((a, b) => a.quarter - b.quarter);
+      svg.append('path').attr('fill', 'none').attr('stroke', color(yv)).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', line(pts));
+      svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (d) => x(d.quarter)).attr('cy', (d) => y(d.share)).attr('r', 3).attr('fill', color(yv))
+        .on('mousemove', (event, d) => showTip(event, 'Funded in ' + yv + ' · Q' + d.quarter, [{ name: 'Still invested', value: fPct(d.share), color: color(yv) }, { name: 'Investors counted', value: fInt(d.investors) }]))
+        .on('mouseleave', hideTip);
+      const last = pts[pts.length - 1]; lab.push({ yv, x: x(last.quarter), y: y(last.share), share: last.share });
+    }
+    lab.sort((a, b) => a.y - b.y);
+    for (let i = 1; i < lab.length; i++) if (lab[i].y - lab[i - 1].y < 14) lab[i].y = lab[i - 1].y + 14;
+    svg.append('g').selectAll('text').data(lab).join('text').attr('x', (d) => d.x + 6).attr('y', (d) => d.y + 4).attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((d) => d.yv + ' ' + fPct(d.share));
+  }
+  function drawReasons(ch) {
+    const el = document.getElementById('lx-reasons');
+    if (!ready(el, ['reasons'])) return;
+    const data = rows('reasons').filter((r) => r.channel === ch).sort((a, b) => b.requests - a.requests);
+    el.replaceChildren();
+    if (!d3.sum(data, (d) => d.requests)) { const p = document.createElement('div'); p.className = 'lx-empty'; p.textContent = 'No redemption requests from this source in the last 12 months.'; el.append(p); return; }
+    const W = el.clientWidth || 600, rowH = 34, H = data.length * rowH + 8;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const ml = measure(svg, data.map((d) => d.reason)) + 12;
+    const mr = measure(svg, data.map((d) => fInt(d.requests) + ' · ' + usd(d.value_usd))) + 10;
+    const x = d3.scaleLinear([0, d3.max(data, (d) => d.requests) || 1], [ml, W - mr]);
+    const g = svg.selectAll('g').data(data).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 6})`);
+    g.append('text').attr('x', 0).attr('y', 15).attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((d) => d.reason);
+    g.append('rect').attr('x', ml).attr('y', 4).attr('height', 16).attr('rx', 4).attr('width', (d) => Math.max(2, x(d.requests) - ml)).attr('fill', (d, i) => (i === 0 ? dash.colors[1] : 'var(--cds-chart-muted)'))
+      .on('mousemove', (event, d) => showTip(event, d.reason, [{ name: 'Requests', value: fInt(d.requests) }, { name: 'Value held', value: usd(d.value_usd) }])).on('mouseleave', hideTip);
+    g.append('text').attr('x', (d) => x(d.requests) + 6).attr('y', 15).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').style('font-variant-numeric', 'tabular-nums').text((d) => fInt(d.requests) + ' · ' + usd(d.value_usd));
+    el.style.minHeight = H + 'px';
+  }
+  function drawRisk(ch) {
+    const tb = document.querySelector('#lx-risktable tbody');
+    if (!ok('investors')) { tb.replaceChildren(); return; }
+    const list = rows('investors').filter((r) => r.status === 'Active' && r.risk_flag && (ch === 'all' || r.channel === ch)).sort((a, b) => (+b.current_value_usd) - (+a.current_value_usd));
+    tb.replaceChildren();
+    if (!list.length) { const tr = document.createElement('tr'); const td = cell(tr, 'No active investors with a warning sign in this source.'); td.colSpan = 6; tb.append(tr); return; }
+    for (const r of list) {
+      const tr = document.createElement('tr'); tr.className = 'lx-row'; tr.tabIndex = 0;
+      cell(tr, r.investor_id); cell(tr, r.channel_label); cell(tr, r.introduced_by || '—'); cell(tr, r.risk_flag, 'lx-risk'); cell(tr, dayFmt(r.funded)); cell(tr, usdFull(r.current_value_usd), 'num');
+      const go = () => { dash.setParams({ investor: r.investor_id }); show('investors'); document.getElementById('investor-detail').scrollIntoView({ block: 'nearest' }); };
+      tr.addEventListener('click', go); tr.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
+      tb.append(tr);
+    }
+  }
+
+  /* ---------- render ---------- */
+  function render() {
+    const ch = dash.params().channel || 'all';
+    sel.value = ch;
+    drawHeader(ch);
+    drawKpis(ch);
+    if (page === 'overview') { drawFunnel(ch); drawNew(ch); drawFlows(ch); }
+    if (page === 'channels') { drawChannelTable(ch); drawConv(ch); drawAum(ch); }
+    if (page === 'investors') { drawStatus(ch); drawInvestors(ch); drawDetail(); }
+    if (page === 'retention') { drawCohorts(ch); drawReasons(ch); drawRisk(ch); }
+  }
+  dash.onData(render);
+  const named = location.hash.slice(1);
+  if (['overview', 'channels', 'investors', 'retention'].includes(named)) show(named);
+})();
+</script>
+
+</div>
+</body>
+</html>

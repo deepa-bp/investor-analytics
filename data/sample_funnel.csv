@@ -1,0 +1,841 @@
+month,channel,stage_order,stage,count
+2024-10,website,1,Website visitors,6252
+2024-10,website,2,Engaged visitors,610
+2024-10,website,3,Registered,62
+2024-10,website,4,Eligibility verified,12
+2024-10,website,5,Qualified lead,6
+2024-10,website,6,Subscription started,3
+2024-10,website,7,Funded,1
+2024-11,website,1,Website visitors,6192
+2024-11,website,2,Engaged visitors,562
+2024-11,website,3,Registered,59
+2024-11,website,4,Eligibility verified,5
+2024-11,website,5,Qualified lead,2
+2024-11,website,6,Subscription started,1
+2024-11,website,7,Funded,0
+2024-12,website,1,Website visitors,5610
+2024-12,website,2,Engaged visitors,403
+2024-12,website,3,Registered,52
+2024-12,website,4,Eligibility verified,14
+2024-12,website,5,Qualified lead,6
+2024-12,website,6,Subscription started,3
+2024-12,website,7,Funded,2
+2025-01,website,1,Website visitors,5349
+2025-01,website,2,Engaged visitors,428
+2025-01,website,3,Registered,51
+2025-01,website,4,Eligibility verified,10
+2025-01,website,5,Qualified lead,5
+2025-01,website,6,Subscription started,2
+2025-01,website,7,Funded,0
+2025-02,website,1,Website visitors,6180
+2025-02,website,2,Engaged visitors,583
+2025-02,website,3,Registered,75
+2025-02,website,4,Eligibility verified,0
+2025-02,website,5,Qualified lead,0
+2025-02,website,6,Subscription started,0
+2025-02,website,7,Funded,0
+2025-03,website,1,Website visitors,5975
+2025-03,website,2,Engaged visitors,470
+2025-03,website,3,Registered,68
+2025-03,website,4,Eligibility verified,22
+2025-03,website,5,Qualified lead,9
+2025-03,website,6,Subscription started,4
+2025-03,website,7,Funded,3
+2025-04,website,1,Website visitors,5593
+2025-04,website,2,Engaged visitors,513
+2025-04,website,3,Registered,71
+2025-04,website,4,Eligibility verified,11
+2025-04,website,5,Qualified lead,6
+2025-04,website,6,Subscription started,3
+2025-04,website,7,Funded,1
+2025-05,website,1,Website visitors,6170
+2025-05,website,2,Engaged visitors,438
+2025-05,website,3,Registered,45
+2025-05,website,4,Eligibility verified,12
+2025-05,website,5,Qualified lead,6
+2025-05,website,6,Subscription started,3
+2025-05,website,7,Funded,1
+2025-06,website,1,Website visitors,5288
+2025-06,website,2,Engaged visitors,427
+2025-06,website,3,Registered,86
+2025-06,website,4,Eligibility verified,32
+2025-06,website,5,Qualified lead,14
+2025-06,website,6,Subscription started,7
+2025-06,website,7,Funded,6
+2025-07,website,1,Website visitors,6035
+2025-07,website,2,Engaged visitors,551
+2025-07,website,3,Registered,75
+2025-07,website,4,Eligibility verified,4
+2025-07,website,5,Qualified lead,2
+2025-07,website,6,Subscription started,1
+2025-07,website,7,Funded,1
+2025-08,website,1,Website visitors,6044
+2025-08,website,2,Engaged visitors,499
+2025-08,website,3,Registered,59
+2025-08,website,4,Eligibility verified,19
+2025-08,website,5,Qualified lead,8
+2025-08,website,6,Subscription started,4
+2025-08,website,7,Funded,2
+2025-09,website,1,Website visitors,6305
+2025-09,website,2,Engaged visitors,502
+2025-09,website,3,Registered,64
+2025-09,website,4,Eligibility verified,9
+2025-09,website,5,Qualified lead,5
+2025-09,website,6,Subscription started,2
+2025-09,website,7,Funded,0
+2025-10,website,1,Website visitors,6975
+2025-10,website,2,Engaged visitors,694
+2025-10,website,3,Registered,85
+2025-10,website,4,Eligibility verified,23
+2025-10,website,5,Qualified lead,12
+2025-10,website,6,Subscription started,6
+2025-10,website,7,Funded,4
+2025-11,website,1,Website visitors,7523
+2025-11,website,2,Engaged visitors,588
+2025-11,website,3,Registered,66
+2025-11,website,4,Eligibility verified,5
+2025-11,website,5,Qualified lead,2
+2025-11,website,6,Subscription started,1
+2025-11,website,7,Funded,0
+2025-12,website,1,Website visitors,7118
+2025-12,website,2,Engaged visitors,559
+2025-12,website,3,Registered,77
+2025-12,website,4,Eligibility verified,9
+2025-12,website,5,Qualified lead,4
+2025-12,website,6,Subscription started,2
+2025-12,website,7,Funded,2
+2026-01,website,1,Website visitors,7021
+2026-01,website,2,Engaged visitors,692
+2026-01,website,3,Registered,80
+2026-01,website,4,Eligibility verified,8
+2026-01,website,5,Qualified lead,4
+2026-01,website,6,Subscription started,2
+2026-01,website,7,Funded,0
+2026-02,website,1,Website visitors,7316
+2026-02,website,2,Engaged visitors,587
+2026-02,website,3,Registered,74
+2026-02,website,4,Eligibility verified,5
+2026-02,website,5,Qualified lead,2
+2026-02,website,6,Subscription started,1
+2026-02,website,7,Funded,1
+2026-03,website,1,Website visitors,7611
+2026-03,website,2,Engaged visitors,745
+2026-03,website,3,Registered,78
+2026-03,website,4,Eligibility verified,14
+2026-03,website,5,Qualified lead,6
+2026-03,website,6,Subscription started,3
+2026-03,website,7,Funded,1
+2026-04,website,1,Website visitors,7927
+2026-04,website,2,Engaged visitors,607
+2026-04,website,3,Registered,84
+2026-04,website,4,Eligibility verified,4
+2026-04,website,5,Qualified lead,2
+2026-04,website,6,Subscription started,1
+2026-04,website,7,Funded,0
+2026-05,website,1,Website visitors,8009
+2026-05,website,2,Engaged visitors,708
+2026-05,website,3,Registered,88
+2026-05,website,4,Eligibility verified,12
+2026-05,website,5,Qualified lead,6
+2026-05,website,6,Subscription started,3
+2026-05,website,7,Funded,3
+2026-06,website,1,Website visitors,8264
+2026-06,website,2,Engaged visitors,725
+2026-06,website,3,Registered,77
+2026-06,website,4,Eligibility verified,16
+2026-06,website,5,Qualified lead,9
+2026-06,website,6,Subscription started,4
+2026-06,website,7,Funded,3
+2026-07,website,1,Website visitors,8220
+2026-07,website,2,Engaged visitors,780
+2026-07,website,3,Registered,83
+2026-07,website,4,Eligibility verified,7
+2026-07,website,5,Qualified lead,4
+2026-07,website,6,Subscription started,2
+2026-07,website,7,Funded,2
+2026-08,website,1,Website visitors,7083
+2026-08,website,2,Engaged visitors,547
+2026-08,website,3,Registered,67
+2026-08,website,4,Eligibility verified,17
+2026-08,website,5,Qualified lead,9
+2026-08,website,6,Subscription started,5
+2026-08,website,7,Funded,3
+2026-09,website,1,Website visitors,8274
+2026-09,website,2,Engaged visitors,706
+2026-09,website,3,Registered,98
+2026-09,website,4,Eligibility verified,13
+2026-09,website,5,Qualified lead,7
+2026-09,website,6,Subscription started,3
+2026-09,website,7,Funded,1
+2024-10,referral,1,Website visitors,0
+2024-10,referral,2,Engaged visitors,0
+2024-10,referral,3,Registered,0
+2024-10,referral,4,Eligibility verified,0
+2024-10,referral,5,Qualified lead,0
+2024-10,referral,6,Subscription started,0
+2024-10,referral,7,Funded,0
+2024-11,referral,1,Website visitors,0
+2024-11,referral,2,Engaged visitors,0
+2024-11,referral,3,Registered,6
+2024-11,referral,4,Eligibility verified,5
+2024-11,referral,5,Qualified lead,4
+2024-11,referral,6,Subscription started,2
+2024-11,referral,7,Funded,1
+2024-12,referral,1,Website visitors,0
+2024-12,referral,2,Engaged visitors,0
+2024-12,referral,3,Registered,0
+2024-12,referral,4,Eligibility verified,0
+2024-12,referral,5,Qualified lead,0
+2024-12,referral,6,Subscription started,0
+2024-12,referral,7,Funded,0
+2025-01,referral,1,Website visitors,0
+2025-01,referral,2,Engaged visitors,0
+2025-01,referral,3,Registered,3
+2025-01,referral,4,Eligibility verified,3
+2025-01,referral,5,Qualified lead,2
+2025-01,referral,6,Subscription started,1
+2025-01,referral,7,Funded,1
+2025-02,referral,1,Website visitors,0
+2025-02,referral,2,Engaged visitors,0
+2025-02,referral,3,Registered,4
+2025-02,referral,4,Eligibility verified,3
+2025-02,referral,5,Qualified lead,2
+2025-02,referral,6,Subscription started,1
+2025-02,referral,7,Funded,0
+2025-03,referral,1,Website visitors,0
+2025-03,referral,2,Engaged visitors,0
+2025-03,referral,3,Registered,7
+2025-03,referral,4,Eligibility verified,6
+2025-03,referral,5,Qualified lead,4
+2025-03,referral,6,Subscription started,2
+2025-03,referral,7,Funded,1
+2025-04,referral,1,Website visitors,0
+2025-04,referral,2,Engaged visitors,0
+2025-04,referral,3,Registered,8
+2025-04,referral,4,Eligibility verified,7
+2025-04,referral,5,Qualified lead,6
+2025-04,referral,6,Subscription started,3
+2025-04,referral,7,Funded,1
+2025-05,referral,1,Website visitors,0
+2025-05,referral,2,Engaged visitors,0
+2025-05,referral,3,Registered,23
+2025-05,referral,4,Eligibility verified,18
+2025-05,referral,5,Qualified lead,14
+2025-05,referral,6,Subscription started,6
+2025-05,referral,7,Funded,4
+2025-06,referral,1,Website visitors,0
+2025-06,referral,2,Engaged visitors,0
+2025-06,referral,3,Registered,6
+2025-06,referral,4,Eligibility verified,5
+2025-06,referral,5,Qualified lead,4
+2025-06,referral,6,Subscription started,2
+2025-06,referral,7,Funded,0
+2025-07,referral,1,Website visitors,0
+2025-07,referral,2,Engaged visitors,0
+2025-07,referral,3,Registered,11
+2025-07,referral,4,Eligibility verified,10
+2025-07,referral,5,Qualified lead,8
+2025-07,referral,6,Subscription started,4
+2025-07,referral,7,Funded,3
+2025-08,referral,1,Website visitors,0
+2025-08,referral,2,Engaged visitors,0
+2025-08,referral,3,Registered,6
+2025-08,referral,4,Eligibility verified,5
+2025-08,referral,5,Qualified lead,4
+2025-08,referral,6,Subscription started,2
+2025-08,referral,7,Funded,0
+2025-09,referral,1,Website visitors,0
+2025-09,referral,2,Engaged visitors,0
+2025-09,referral,3,Registered,0
+2025-09,referral,4,Eligibility verified,0
+2025-09,referral,5,Qualified lead,0
+2025-09,referral,6,Subscription started,0
+2025-09,referral,7,Funded,0
+2025-10,referral,1,Website visitors,0
+2025-10,referral,2,Engaged visitors,0
+2025-10,referral,3,Registered,11
+2025-10,referral,4,Eligibility verified,9
+2025-10,referral,5,Qualified lead,7
+2025-10,referral,6,Subscription started,3
+2025-10,referral,7,Funded,2
+2025-11,referral,1,Website visitors,0
+2025-11,referral,2,Engaged visitors,0
+2025-11,referral,3,Registered,8
+2025-11,referral,4,Eligibility verified,7
+2025-11,referral,5,Qualified lead,6
+2025-11,referral,6,Subscription started,3
+2025-11,referral,7,Funded,2
+2025-12,referral,1,Website visitors,0
+2025-12,referral,2,Engaged visitors,0
+2025-12,referral,3,Registered,7
+2025-12,referral,4,Eligibility verified,6
+2025-12,referral,5,Qualified lead,5
+2025-12,referral,6,Subscription started,2
+2025-12,referral,7,Funded,1
+2026-01,referral,1,Website visitors,0
+2026-01,referral,2,Engaged visitors,0
+2026-01,referral,3,Registered,7
+2026-01,referral,4,Eligibility verified,6
+2026-01,referral,5,Qualified lead,4
+2026-01,referral,6,Subscription started,2
+2026-01,referral,7,Funded,1
+2026-02,referral,1,Website visitors,0
+2026-02,referral,2,Engaged visitors,0
+2026-02,referral,3,Registered,3
+2026-02,referral,4,Eligibility verified,2
+2026-02,referral,5,Qualified lead,2
+2026-02,referral,6,Subscription started,1
+2026-02,referral,7,Funded,1
+2026-03,referral,1,Website visitors,0
+2026-03,referral,2,Engaged visitors,0
+2026-03,referral,3,Registered,4
+2026-03,referral,4,Eligibility verified,3
+2026-03,referral,5,Qualified lead,2
+2026-03,referral,6,Subscription started,1
+2026-03,referral,7,Funded,0
+2026-04,referral,1,Website visitors,0
+2026-04,referral,2,Engaged visitors,0
+2026-04,referral,3,Registered,6
+2026-04,referral,4,Eligibility verified,5
+2026-04,referral,5,Qualified lead,4
+2026-04,referral,6,Subscription started,2
+2026-04,referral,7,Funded,1
+2026-05,referral,1,Website visitors,0
+2026-05,referral,2,Engaged visitors,0
+2026-05,referral,3,Registered,0
+2026-05,referral,4,Eligibility verified,0
+2026-05,referral,5,Qualified lead,0
+2026-05,referral,6,Subscription started,0
+2026-05,referral,7,Funded,0
+2026-06,referral,1,Website visitors,0
+2026-06,referral,2,Engaged visitors,0
+2026-06,referral,3,Registered,0
+2026-06,referral,4,Eligibility verified,0
+2026-06,referral,5,Qualified lead,0
+2026-06,referral,6,Subscription started,0
+2026-06,referral,7,Funded,0
+2026-07,referral,1,Website visitors,0
+2026-07,referral,2,Engaged visitors,0
+2026-07,referral,3,Registered,4
+2026-07,referral,4,Eligibility verified,3
+2026-07,referral,5,Qualified lead,2
+2026-07,referral,6,Subscription started,1
+2026-07,referral,7,Funded,1
+2026-08,referral,1,Website visitors,0
+2026-08,referral,2,Engaged visitors,0
+2026-08,referral,3,Registered,10
+2026-08,referral,4,Eligibility verified,9
+2026-08,referral,5,Qualified lead,7
+2026-08,referral,6,Subscription started,3
+2026-08,referral,7,Funded,2
+2026-09,referral,1,Website visitors,0
+2026-09,referral,2,Engaged visitors,0
+2026-09,referral,3,Registered,16
+2026-09,referral,4,Eligibility verified,14
+2026-09,referral,5,Qualified lead,10
+2026-09,referral,6,Subscription started,4
+2026-09,referral,7,Funded,2
+2024-10,ria,1,Website visitors,0
+2024-10,ria,2,Engaged visitors,0
+2024-10,ria,3,Registered,15
+2024-10,ria,4,Eligibility verified,13
+2024-10,ria,5,Qualified lead,10
+2024-10,ria,6,Subscription started,7
+2024-10,ria,7,Funded,5
+2024-11,ria,1,Website visitors,0
+2024-11,ria,2,Engaged visitors,0
+2024-11,ria,3,Registered,5
+2024-11,ria,4,Eligibility verified,4
+2024-11,ria,5,Qualified lead,3
+2024-11,ria,6,Subscription started,2
+2024-11,ria,7,Funded,0
+2024-12,ria,1,Website visitors,0
+2024-12,ria,2,Engaged visitors,0
+2024-12,ria,3,Registered,5
+2024-12,ria,4,Eligibility verified,4
+2024-12,ria,5,Qualified lead,3
+2024-12,ria,6,Subscription started,2
+2024-12,ria,7,Funded,2
+2025-01,ria,1,Website visitors,0
+2025-01,ria,2,Engaged visitors,0
+2025-01,ria,3,Registered,4
+2025-01,ria,4,Eligibility verified,3
+2025-01,ria,5,Qualified lead,2
+2025-01,ria,6,Subscription started,1
+2025-01,ria,7,Funded,0
+2025-02,ria,1,Website visitors,0
+2025-02,ria,2,Engaged visitors,0
+2025-02,ria,3,Registered,11
+2025-02,ria,4,Eligibility verified,9
+2025-02,ria,5,Qualified lead,7
+2025-02,ria,6,Subscription started,4
+2025-02,ria,7,Funded,2
+2025-03,ria,1,Website visitors,0
+2025-03,ria,2,Engaged visitors,0
+2025-03,ria,3,Registered,5
+2025-03,ria,4,Eligibility verified,4
+2025-03,ria,5,Qualified lead,3
+2025-03,ria,6,Subscription started,2
+2025-03,ria,7,Funded,1
+2025-04,ria,1,Website visitors,0
+2025-04,ria,2,Engaged visitors,0
+2025-04,ria,3,Registered,5
+2025-04,ria,4,Eligibility verified,4
+2025-04,ria,5,Qualified lead,3
+2025-04,ria,6,Subscription started,2
+2025-04,ria,7,Funded,1
+2025-05,ria,1,Website visitors,0
+2025-05,ria,2,Engaged visitors,0
+2025-05,ria,3,Registered,5
+2025-05,ria,4,Eligibility verified,4
+2025-05,ria,5,Qualified lead,3
+2025-05,ria,6,Subscription started,2
+2025-05,ria,7,Funded,2
+2025-06,ria,1,Website visitors,0
+2025-06,ria,2,Engaged visitors,0
+2025-06,ria,3,Registered,8
+2025-06,ria,4,Eligibility verified,7
+2025-06,ria,5,Qualified lead,5
+2025-06,ria,6,Subscription started,3
+2025-06,ria,7,Funded,1
+2025-07,ria,1,Website visitors,0
+2025-07,ria,2,Engaged visitors,0
+2025-07,ria,3,Registered,2
+2025-07,ria,4,Eligibility verified,2
+2025-07,ria,5,Qualified lead,1
+2025-07,ria,6,Subscription started,1
+2025-07,ria,7,Funded,0
+2025-08,ria,1,Website visitors,0
+2025-08,ria,2,Engaged visitors,0
+2025-08,ria,3,Registered,9
+2025-08,ria,4,Eligibility verified,7
+2025-08,ria,5,Qualified lead,5
+2025-08,ria,6,Subscription started,3
+2025-08,ria,7,Funded,1
+2025-09,ria,1,Website visitors,0
+2025-09,ria,2,Engaged visitors,0
+2025-09,ria,3,Registered,5
+2025-09,ria,4,Eligibility verified,4
+2025-09,ria,5,Qualified lead,3
+2025-09,ria,6,Subscription started,2
+2025-09,ria,7,Funded,1
+2025-10,ria,1,Website visitors,0
+2025-10,ria,2,Engaged visitors,0
+2025-10,ria,3,Registered,15
+2025-10,ria,4,Eligibility verified,12
+2025-10,ria,5,Qualified lead,8
+2025-10,ria,6,Subscription started,5
+2025-10,ria,7,Funded,3
+2025-11,ria,1,Website visitors,0
+2025-11,ria,2,Engaged visitors,0
+2025-11,ria,3,Registered,6
+2025-11,ria,4,Eligibility verified,5
+2025-11,ria,5,Qualified lead,4
+2025-11,ria,6,Subscription started,3
+2025-11,ria,7,Funded,3
+2025-12,ria,1,Website visitors,0
+2025-12,ria,2,Engaged visitors,0
+2025-12,ria,3,Registered,10
+2025-12,ria,4,Eligibility verified,8
+2025-12,ria,5,Qualified lead,6
+2025-12,ria,6,Subscription started,4
+2025-12,ria,7,Funded,2
+2026-01,ria,1,Website visitors,0
+2026-01,ria,2,Engaged visitors,0
+2026-01,ria,3,Registered,12
+2026-01,ria,4,Eligibility verified,10
+2026-01,ria,5,Qualified lead,8
+2026-01,ria,6,Subscription started,5
+2026-01,ria,7,Funded,4
+2026-02,ria,1,Website visitors,0
+2026-02,ria,2,Engaged visitors,0
+2026-02,ria,3,Registered,8
+2026-02,ria,4,Eligibility verified,7
+2026-02,ria,5,Qualified lead,6
+2026-02,ria,6,Subscription started,4
+2026-02,ria,7,Funded,2
+2026-03,ria,1,Website visitors,0
+2026-03,ria,2,Engaged visitors,0
+2026-03,ria,3,Registered,6
+2026-03,ria,4,Eligibility verified,5
+2026-03,ria,5,Qualified lead,4
+2026-03,ria,6,Subscription started,3
+2026-03,ria,7,Funded,1
+2026-04,ria,1,Website visitors,0
+2026-04,ria,2,Engaged visitors,0
+2026-04,ria,3,Registered,12
+2026-04,ria,4,Eligibility verified,10
+2026-04,ria,5,Qualified lead,7
+2026-04,ria,6,Subscription started,5
+2026-04,ria,7,Funded,3
+2026-05,ria,1,Website visitors,0
+2026-05,ria,2,Engaged visitors,0
+2026-05,ria,3,Registered,13
+2026-05,ria,4,Eligibility verified,10
+2026-05,ria,5,Qualified lead,8
+2026-05,ria,6,Subscription started,5
+2026-05,ria,7,Funded,3
+2026-06,ria,1,Website visitors,0
+2026-06,ria,2,Engaged visitors,0
+2026-06,ria,3,Registered,15
+2026-06,ria,4,Eligibility verified,12
+2026-06,ria,5,Qualified lead,10
+2026-06,ria,6,Subscription started,6
+2026-06,ria,7,Funded,4
+2026-07,ria,1,Website visitors,0
+2026-07,ria,2,Engaged visitors,0
+2026-07,ria,3,Registered,11
+2026-07,ria,4,Eligibility verified,8
+2026-07,ria,5,Qualified lead,5
+2026-07,ria,6,Subscription started,3
+2026-07,ria,7,Funded,2
+2026-08,ria,1,Website visitors,0
+2026-08,ria,2,Engaged visitors,0
+2026-08,ria,3,Registered,9
+2026-08,ria,4,Eligibility verified,8
+2026-08,ria,5,Qualified lead,6
+2026-08,ria,6,Subscription started,4
+2026-08,ria,7,Funded,2
+2026-09,ria,1,Website visitors,0
+2026-09,ria,2,Engaged visitors,0
+2026-09,ria,3,Registered,4
+2026-09,ria,4,Eligibility verified,3
+2026-09,ria,5,Qualified lead,2
+2026-09,ria,6,Subscription started,1
+2026-09,ria,7,Funded,1
+2024-10,broker,1,Website visitors,0
+2024-10,broker,2,Engaged visitors,0
+2024-10,broker,3,Registered,4
+2024-10,broker,4,Eligibility verified,4
+2024-10,broker,5,Qualified lead,3
+2024-10,broker,6,Subscription started,2
+2024-10,broker,7,Funded,1
+2024-11,broker,1,Website visitors,0
+2024-11,broker,2,Engaged visitors,0
+2024-11,broker,3,Registered,0
+2024-11,broker,4,Eligibility verified,0
+2024-11,broker,5,Qualified lead,0
+2024-11,broker,6,Subscription started,0
+2024-11,broker,7,Funded,0
+2024-12,broker,1,Website visitors,0
+2024-12,broker,2,Engaged visitors,0
+2024-12,broker,3,Registered,5
+2024-12,broker,4,Eligibility verified,4
+2024-12,broker,5,Qualified lead,3
+2024-12,broker,6,Subscription started,2
+2024-12,broker,7,Funded,1
+2025-01,broker,1,Website visitors,0
+2025-01,broker,2,Engaged visitors,0
+2025-01,broker,3,Registered,1
+2025-01,broker,4,Eligibility verified,1
+2025-01,broker,5,Qualified lead,1
+2025-01,broker,6,Subscription started,1
+2025-01,broker,7,Funded,1
+2025-02,broker,1,Website visitors,0
+2025-02,broker,2,Engaged visitors,0
+2025-02,broker,3,Registered,5
+2025-02,broker,4,Eligibility verified,4
+2025-02,broker,5,Qualified lead,3
+2025-02,broker,6,Subscription started,2
+2025-02,broker,7,Funded,1
+2025-03,broker,1,Website visitors,0
+2025-03,broker,2,Engaged visitors,0
+2025-03,broker,3,Registered,5
+2025-03,broker,4,Eligibility verified,4
+2025-03,broker,5,Qualified lead,3
+2025-03,broker,6,Subscription started,2
+2025-03,broker,7,Funded,1
+2025-04,broker,1,Website visitors,0
+2025-04,broker,2,Engaged visitors,0
+2025-04,broker,3,Registered,1
+2025-04,broker,4,Eligibility verified,1
+2025-04,broker,5,Qualified lead,1
+2025-04,broker,6,Subscription started,1
+2025-04,broker,7,Funded,0
+2025-05,broker,1,Website visitors,0
+2025-05,broker,2,Engaged visitors,0
+2025-05,broker,3,Registered,14
+2025-05,broker,4,Eligibility verified,12
+2025-05,broker,5,Qualified lead,8
+2025-05,broker,6,Subscription started,5
+2025-05,broker,7,Funded,4
+2025-06,broker,1,Website visitors,0
+2025-06,broker,2,Engaged visitors,0
+2025-06,broker,3,Registered,5
+2025-06,broker,4,Eligibility verified,4
+2025-06,broker,5,Qualified lead,3
+2025-06,broker,6,Subscription started,2
+2025-06,broker,7,Funded,1
+2025-07,broker,1,Website visitors,0
+2025-07,broker,2,Engaged visitors,0
+2025-07,broker,3,Registered,11
+2025-07,broker,4,Eligibility verified,9
+2025-07,broker,5,Qualified lead,6
+2025-07,broker,6,Subscription started,4
+2025-07,broker,7,Funded,3
+2025-08,broker,1,Website visitors,0
+2025-08,broker,2,Engaged visitors,0
+2025-08,broker,3,Registered,10
+2025-08,broker,4,Eligibility verified,8
+2025-08,broker,5,Qualified lead,6
+2025-08,broker,6,Subscription started,4
+2025-08,broker,7,Funded,2
+2025-09,broker,1,Website visitors,0
+2025-09,broker,2,Engaged visitors,0
+2025-09,broker,3,Registered,5
+2025-09,broker,4,Eligibility verified,4
+2025-09,broker,5,Qualified lead,3
+2025-09,broker,6,Subscription started,2
+2025-09,broker,7,Funded,1
+2025-10,broker,1,Website visitors,0
+2025-10,broker,2,Engaged visitors,0
+2025-10,broker,3,Registered,10
+2025-10,broker,4,Eligibility verified,9
+2025-10,broker,5,Qualified lead,7
+2025-10,broker,6,Subscription started,4
+2025-10,broker,7,Funded,3
+2025-11,broker,1,Website visitors,0
+2025-11,broker,2,Engaged visitors,0
+2025-11,broker,3,Registered,6
+2025-11,broker,4,Eligibility verified,5
+2025-11,broker,5,Qualified lead,4
+2025-11,broker,6,Subscription started,3
+2025-11,broker,7,Funded,1
+2025-12,broker,1,Website visitors,0
+2025-12,broker,2,Engaged visitors,0
+2025-12,broker,3,Registered,7
+2025-12,broker,4,Eligibility verified,6
+2025-12,broker,5,Qualified lead,4
+2025-12,broker,6,Subscription started,3
+2025-12,broker,7,Funded,1
+2026-01,broker,1,Website visitors,0
+2026-01,broker,2,Engaged visitors,0
+2026-01,broker,3,Registered,1
+2026-01,broker,4,Eligibility verified,1
+2026-01,broker,5,Qualified lead,1
+2026-01,broker,6,Subscription started,1
+2026-01,broker,7,Funded,1
+2026-02,broker,1,Website visitors,0
+2026-02,broker,2,Engaged visitors,0
+2026-02,broker,3,Registered,5
+2026-02,broker,4,Eligibility verified,4
+2026-02,broker,5,Qualified lead,3
+2026-02,broker,6,Subscription started,2
+2026-02,broker,7,Funded,1
+2026-03,broker,1,Website visitors,0
+2026-03,broker,2,Engaged visitors,0
+2026-03,broker,3,Registered,6
+2026-03,broker,4,Eligibility verified,5
+2026-03,broker,5,Qualified lead,3
+2026-03,broker,6,Subscription started,2
+2026-03,broker,7,Funded,1
+2026-04,broker,1,Website visitors,0
+2026-04,broker,2,Engaged visitors,0
+2026-04,broker,3,Registered,8
+2026-04,broker,4,Eligibility verified,7
+2026-04,broker,5,Qualified lead,5
+2026-04,broker,6,Subscription started,3
+2026-04,broker,7,Funded,3
+2026-05,broker,1,Website visitors,0
+2026-05,broker,2,Engaged visitors,0
+2026-05,broker,3,Registered,5
+2026-05,broker,4,Eligibility verified,4
+2026-05,broker,5,Qualified lead,3
+2026-05,broker,6,Subscription started,2
+2026-05,broker,7,Funded,1
+2026-06,broker,1,Website visitors,0
+2026-06,broker,2,Engaged visitors,0
+2026-06,broker,3,Registered,0
+2026-06,broker,4,Eligibility verified,0
+2026-06,broker,5,Qualified lead,0
+2026-06,broker,6,Subscription started,0
+2026-06,broker,7,Funded,0
+2026-07,broker,1,Website visitors,0
+2026-07,broker,2,Engaged visitors,0
+2026-07,broker,3,Registered,7
+2026-07,broker,4,Eligibility verified,6
+2026-07,broker,5,Qualified lead,4
+2026-07,broker,6,Subscription started,3
+2026-07,broker,7,Funded,2
+2026-08,broker,1,Website visitors,0
+2026-08,broker,2,Engaged visitors,0
+2026-08,broker,3,Registered,8
+2026-08,broker,4,Eligibility verified,7
+2026-08,broker,5,Qualified lead,6
+2026-08,broker,6,Subscription started,4
+2026-08,broker,7,Funded,3
+2026-09,broker,1,Website visitors,0
+2026-09,broker,2,Engaged visitors,0
+2026-09,broker,3,Registered,0
+2026-09,broker,4,Eligibility verified,0
+2026-09,broker,5,Qualified lead,0
+2026-09,broker,6,Subscription started,0
+2026-09,broker,7,Funded,0
+2024-10,platform,1,Website visitors,0
+2024-10,platform,2,Engaged visitors,0
+2024-10,platform,3,Registered,0
+2024-10,platform,4,Eligibility verified,0
+2024-10,platform,5,Qualified lead,0
+2024-10,platform,6,Subscription started,0
+2024-10,platform,7,Funded,0
+2024-11,platform,1,Website visitors,0
+2024-11,platform,2,Engaged visitors,0
+2024-11,platform,3,Registered,8
+2024-11,platform,4,Eligibility verified,7
+2024-11,platform,5,Qualified lead,5
+2024-11,platform,6,Subscription started,3
+2024-11,platform,7,Funded,1
+2024-12,platform,1,Website visitors,0
+2024-12,platform,2,Engaged visitors,0
+2024-12,platform,3,Registered,3
+2024-12,platform,4,Eligibility verified,2
+2024-12,platform,5,Qualified lead,2
+2024-12,platform,6,Subscription started,1
+2024-12,platform,7,Funded,0
+2025-01,platform,1,Website visitors,0
+2025-01,platform,2,Engaged visitors,0
+2025-01,platform,3,Registered,5
+2025-01,platform,4,Eligibility verified,4
+2025-01,platform,5,Qualified lead,3
+2025-01,platform,6,Subscription started,2
+2025-01,platform,7,Funded,0
+2025-02,platform,1,Website visitors,0
+2025-02,platform,2,Engaged visitors,0
+2025-02,platform,3,Registered,7
+2025-02,platform,4,Eligibility verified,6
+2025-02,platform,5,Qualified lead,4
+2025-02,platform,6,Subscription started,3
+2025-02,platform,7,Funded,2
+2025-03,platform,1,Website visitors,0
+2025-03,platform,2,Engaged visitors,0
+2025-03,platform,3,Registered,8
+2025-03,platform,4,Eligibility verified,7
+2025-03,platform,5,Qualified lead,6
+2025-03,platform,6,Subscription started,4
+2025-03,platform,7,Funded,2
+2025-04,platform,1,Website visitors,0
+2025-04,platform,2,Engaged visitors,0
+2025-04,platform,3,Registered,5
+2025-04,platform,4,Eligibility verified,4
+2025-04,platform,5,Qualified lead,3
+2025-04,platform,6,Subscription started,2
+2025-04,platform,7,Funded,2
+2025-05,platform,1,Website visitors,0
+2025-05,platform,2,Engaged visitors,0
+2025-05,platform,3,Registered,5
+2025-05,platform,4,Eligibility verified,4
+2025-05,platform,5,Qualified lead,3
+2025-05,platform,6,Subscription started,2
+2025-05,platform,7,Funded,0
+2025-06,platform,1,Website visitors,0
+2025-06,platform,2,Engaged visitors,0
+2025-06,platform,3,Registered,0
+2025-06,platform,4,Eligibility verified,0
+2025-06,platform,5,Qualified lead,0
+2025-06,platform,6,Subscription started,0
+2025-06,platform,7,Funded,0
+2025-07,platform,1,Website visitors,0
+2025-07,platform,2,Engaged visitors,0
+2025-07,platform,3,Registered,5
+2025-07,platform,4,Eligibility verified,4
+2025-07,platform,5,Qualified lead,3
+2025-07,platform,6,Subscription started,2
+2025-07,platform,7,Funded,1
+2025-08,platform,1,Website visitors,0
+2025-08,platform,2,Engaged visitors,0
+2025-08,platform,3,Registered,6
+2025-08,platform,4,Eligibility verified,5
+2025-08,platform,5,Qualified lead,3
+2025-08,platform,6,Subscription started,2
+2025-08,platform,7,Funded,0
+2025-09,platform,1,Website visitors,0
+2025-09,platform,2,Engaged visitors,0
+2025-09,platform,3,Registered,4
+2025-09,platform,4,Eligibility verified,4
+2025-09,platform,5,Qualified lead,3
+2025-09,platform,6,Subscription started,2
+2025-09,platform,7,Funded,1
+2025-10,platform,1,Website visitors,0
+2025-10,platform,2,Engaged visitors,0
+2025-10,platform,3,Registered,1
+2025-10,platform,4,Eligibility verified,1
+2025-10,platform,5,Qualified lead,1
+2025-10,platform,6,Subscription started,1
+2025-10,platform,7,Funded,0
+2025-11,platform,1,Website visitors,0
+2025-11,platform,2,Engaged visitors,0
+2025-11,platform,3,Registered,8
+2025-11,platform,4,Eligibility verified,6
+2025-11,platform,5,Qualified lead,4
+2025-11,platform,6,Subscription started,3
+2025-11,platform,7,Funded,2
+2025-12,platform,1,Website visitors,0
+2025-12,platform,2,Engaged visitors,0
+2025-12,platform,3,Registered,9
+2025-12,platform,4,Eligibility verified,7
+2025-12,platform,5,Qualified lead,5
+2025-12,platform,6,Subscription started,3
+2025-12,platform,7,Funded,2
+2026-01,platform,1,Website visitors,0
+2026-01,platform,2,Engaged visitors,0
+2026-01,platform,3,Registered,0
+2026-01,platform,4,Eligibility verified,0
+2026-01,platform,5,Qualified lead,0
+2026-01,platform,6,Subscription started,0
+2026-01,platform,7,Funded,0
+2026-02,platform,1,Website visitors,0
+2026-02,platform,2,Engaged visitors,0
+2026-02,platform,3,Registered,12
+2026-02,platform,4,Eligibility verified,10
+2026-02,platform,5,Qualified lead,7
+2026-02,platform,6,Subscription started,4
+2026-02,platform,7,Funded,2
+2026-03,platform,1,Website visitors,0
+2026-03,platform,2,Engaged visitors,0
+2026-03,platform,3,Registered,1
+2026-03,platform,4,Eligibility verified,1
+2026-03,platform,5,Qualified lead,1
+2026-03,platform,6,Subscription started,1
+2026-03,platform,7,Funded,0
+2026-04,platform,1,Website visitors,0
+2026-04,platform,2,Engaged visitors,0
+2026-04,platform,3,Registered,6
+2026-04,platform,4,Eligibility verified,5
+2026-04,platform,5,Qualified lead,4
+2026-04,platform,6,Subscription started,3
+2026-04,platform,7,Funded,1
+2026-05,platform,1,Website visitors,0
+2026-05,platform,2,Engaged visitors,0
+2026-05,platform,3,Registered,4
+2026-05,platform,4,Eligibility verified,3
+2026-05,platform,5,Qualified lead,2
+2026-05,platform,6,Subscription started,1
+2026-05,platform,7,Funded,0
+2026-06,platform,1,Website visitors,0
+2026-06,platform,2,Engaged visitors,0
+2026-06,platform,3,Registered,8
+2026-06,platform,4,Eligibility verified,6
+2026-06,platform,5,Qualified lead,5
+2026-06,platform,6,Subscription started,3
+2026-06,platform,7,Funded,3
+2026-07,platform,1,Website visitors,0
+2026-07,platform,2,Engaged visitors,0
+2026-07,platform,3,Registered,1
+2026-07,platform,4,Eligibility verified,1
+2026-07,platform,5,Qualified lead,1
+2026-07,platform,6,Subscription started,1
+2026-07,platform,7,Funded,1
+2026-08,platform,1,Website visitors,0
+2026-08,platform,2,Engaged visitors,0
+2026-08,platform,3,Registered,4
+2026-08,platform,4,Eligibility verified,3
+2026-08,platform,5,Qualified lead,2
+2026-08,platform,6,Subscription started,1
+2026-08,platform,7,Funded,1
+2026-09,platform,1,Website visitors,0
+2026-09,platform,2,Engaged visitors,0
+2026-09,platform,3,Registered,6
+2026-09,platform,4,Eligibility verified,5
+2026-09,platform,5,Qualified lead,3
+2026-09,platform,6,Subscription started,2
+2026-09,platform,7,Funded,1

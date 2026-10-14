@@ -1,0 +1,29 @@
+/* Design tokens the dashboard page expects. Light by default, dark follows the OS. */
+:root {
+  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --color-fg: #1d1f24; --color-fg-muted: #636873; --color-bg: #f6f6f4; --color-panel: #ffffff; --color-border-line: #e2e2de;
+  --color-ok: #2f7d4f; --color-warn: #a46412; --color-bad: #b4372f;
+  --cds-chart-muted: #c9cbd0; --cds-chart-status-critical: #c4423a; --cds-chart-grid: #ececea; --cds-chart-axis: #c4c6cb; --cds-chart-reference: #8a8e96;
+  --cds-surface-popover: #ffffff; --cds-border: #e2e2de; --cds-shadow-popover: 0 4px 16px rgba(0,0,0,.12); --cds-text-secondary: #636873;
+  --cds-radius: 8px; --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px; --cds-pad-xl: 24px;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 16px; --cds-gap-lg: 24px; --cds-gap-xl: 32px;
+  --cds-font-size-caption: 12px; --cds-font-size-body: 14px; --cds-font-size-heading: 16px; --cds-font-size-title: 28px; --cds-font-weight-medium: 500;
+  --cds-dur-slow: 300ms; --cds-ease-out: cubic-bezier(.2,.8,.2,1);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: #ececee; --color-fg-muted: #9a9ea8; --color-bg: #17181b; --color-panel: #202226; --color-border-line: #33363c;
+    --color-ok: #6cc28f; --color-warn: #e0a24f; --color-bad: #ef7a70;
+    --cds-chart-muted: #4a4e56; --cds-chart-status-critical: #ef7a70; --cds-chart-grid: #2c2f34; --cds-chart-axis: #4a4e56; --cds-chart-reference: #8a8e96;
+    --cds-surface-popover: #26282d; --cds-border: #3a3d43; --cds-shadow-popover: 0 4px 16px rgba(0,0,0,.5); --cds-text-secondary: #9a9ea8;
+    color-scheme: dark;
+  }
+}
+html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 14px; }
+#dash-root { max-width: 1280px; margin: 0 auto; padding: 24px max(16px, 3vw) 48px; }
+.dash-skeleton { color: transparent !important; background: linear-gradient(90deg, var(--color-border-line), var(--color-panel), var(--color-border-line)); background-size: 200% 100%; border-radius: 6px; animation: dash-sk 1.4s linear infinite; }
+@keyframes dash-sk { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .dash-skeleton { animation: none; } }
+[hidden] { display: none !important; }
