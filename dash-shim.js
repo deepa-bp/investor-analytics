@@ -11,7 +11,7 @@ window.dash = (function () {
     funnel: 'data/sample_funnel.csv',
   };
   const DEFAULT_PARAMS = { channel: 'all', investor: null };
-  const COLORS = ['#3b6fd8', '#d9673a', '#2f9e7a', '#9a5cc9', '#c9a227', '#3fa7c4', '#d0508a', '#6b7a8f'];
+  const COLORS = ['#0f7c7e', '#d9673a', '#3b6fd8', '#9a5cc9', '#c9a227', '#d0508a', '#2b5f75', '#6b7a8f'];
 
   const store = {};
   const calcs = {};
